@@ -62,7 +62,7 @@ Exit:	addi $sp, $sp, -8 # Prepare stack to pop $s0, $s1, $s2, $ra
 	lw   $ra, 4($sp) # Load $ra before returning
 	jr   $ra		# Return
 	
-########## Routine to invert the array, then calculate the average of the all elements of the array and desplays it and ret to poc_a
+########## Routine to invert the array, then calculate the average of the all elements of the array and desplays it and ret to proc_a
 	.text
 proc_b: move  $t0, $a0 # Move argument 1, array addr, out of $a0
 	move  $t1, $a1 # move argument 2, size, out of $a1
