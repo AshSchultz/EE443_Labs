@@ -1,10 +1,11 @@
 # LAB3.asm by Ashley Schultz
-# Last modified: 2/10/2026
+# Last modified: 2/17/2026
 
 	.data
-rad_prompt: .asciiz "Input circle radius in millimeters: "
-pi_prompt: .asciiz "Input value to use for pi: "
-result_prompt: .asciiz "Resulting circle area (in millimeters squared): "
+rad_prompt: 	.asciiz "Input circle radius in millimeters (input 0 to exit): "
+pi_prompt: 	.asciiz "Input value to use for pi: "
+result_prompt: 	.asciiz "Resulting circle area (in millimeters squared): "
+newline_char:	.asciiz "\n"
 
 	.text 
 main:	la	$a0, rad_prompt		# input_prompt as argument for print_string
@@ -32,6 +33,9 @@ main:	la	$a0, rad_prompt		# input_prompt as argument for print_string
 	syscall
 	mov.d	$f12, $f6		# move area variable into argument for print_double
 	li	$v0, 3			# System call for print_double
+	syscall
+	la	$a0, newline_char	# load newline character into argument for print_char
+	li	$v0, 4			# system call code for print_char
 	syscall
 	j	main			# Restart, we didn't get zero as input
 Exit:	li   	$v0, 10          	# system call for exit
