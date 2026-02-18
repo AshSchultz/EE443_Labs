@@ -23,10 +23,10 @@ main:	la	$a0, rad_prompt		# input_prompt as argument for print_string
 	li 	$v0, 7			# system call for read_double
 	syscall
 	mov.d 	$f2, $f0		# move pi out of $f0
-	mul	$t3, $t0, $t0		# int r_squared = pow(input, 2); // square input which is in $t0
-	mtc1.d	$t3, $f4		# double r_squared_f = r_squared;
+	mtc1.d	$t0, $f4		# double r_squared_f = r_squared;
 	cvt.d.w	$f4, $f4		# r_squared_f = (double) r_squared_f; // convert value in $f4 to double
-	mul.d	$f6, $f4, $f2		# double area = pi * r_squared_f; // area in $f6, pi in $f2,
+	mul.d	$f4, $f4, $f4		# double r_squared = pow(input, 2);
+	mul.d	$f6, $f4, $f2		# double area = pi * r_squared; // area in $f6, pi in $f2,
 					# r_squared_f in $f4
 	la	$a0, result_prompt	# load result prompt into argument to print_string
 	li	$v0, 4			# System call for print_string
