@@ -1,4 +1,4 @@
-// Copyright (C) 2023  Intel Corporation. All rights reserved.
+// Copyright (C) 2024  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
 // and other software and tools, and any partner logic 
 // functions, and any output files from any of the foregoing 
@@ -15,9 +15,9 @@
 
 // VENDOR "Altera"
 // PROGRAM "Quartus Prime"
-// VERSION "Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition"
+// VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
-// DATE "01/20/2026 16:14:28"
+// DATE "02/23/2026 13:05:24"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -134,8 +134,8 @@ wire \R[14]~input_o ;
 wire \reg_2|y[6]~feeder_combout ;
 wire \R[15]~input_o ;
 wire \reg_2|y[7]~feeder_combout ;
-wire [7:0] \reg_1|y ;
 wire [7:0] \reg_2|y ;
+wire [7:0] \reg_1|y ;
 
 
 hard_block auto_generated_inst(

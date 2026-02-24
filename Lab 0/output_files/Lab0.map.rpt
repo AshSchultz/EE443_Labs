@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Lab0
-Tue Jan 20 16:14:11 2026
-Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Mon Feb 23 13:05:02 2026
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -23,7 +23,7 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2024  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -43,8 +43,8 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jan 20 16:14:11 2026          ;
-; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Mon Feb 23 13:05:02 2026          ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; Lab0                                           ;
 ; Top-level Entity Name              ; REG16                                          ;
 ; Family                             ; Cyclone IV E                                   ;
@@ -151,8 +151,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -162,14 +162,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                             ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                      ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
-; REG8.vhd                         ; yes             ; User VHDL File  ; D:/Users/akmooreschultz/Documents/Lab 0/REG8.vhd  ;         ;
-; REG16.vhd                        ; yes             ; User VHDL File  ; D:/Users/akmooreschultz/Documents/Lab 0/REG16.vhd ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                     ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+; REG8.vhd                         ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG8.vhd  ;         ;
+; REG16.vhd                        ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG16.vhd ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -259,19 +259,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Tue Jan 20 16:14:03 2026
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Mon Feb 23 13:04:50 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab0 -c Lab0
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file reg8.vhd
-    Info (12022): Found design unit 1: REG8-clk File: D:/Users/akmooreschultz/Documents/Lab 0/REG8.vhd Line: 12
-    Info (12023): Found entity 1: REG8 File: D:/Users/akmooreschultz/Documents/Lab 0/REG8.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file reg16.vhd
-    Info (12022): Found design unit 1: REG16-logical_stuff File: D:/Users/akmooreschultz/Documents/Lab 0/REG16.vhd Line: 13
-    Info (12023): Found entity 1: REG16 File: D:/Users/akmooreschultz/Documents/Lab 0/REG16.vhd Line: 4
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file REG8.vhd
+    Info (12022): Found design unit 1: REG8-clk File: /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG8.vhd Line: 12
+    Info (12023): Found entity 1: REG8 File: /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG8.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file REG16.vhd
+    Info (12022): Found design unit 1: REG16-logical_stuff File: /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG16.vhd Line: 13
+    Info (12023): Found entity 1: REG16 File: /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG16.vhd Line: 4
 Info (12127): Elaborating entity "REG16" for the top level hierarchy
-Info (12128): Elaborating entity "REG8" for hierarchy "REG8:reg_1" File: D:/Users/akmooreschultz/Documents/Lab 0/REG16.vhd Line: 26
+Info (12128): Elaborating entity "REG8" for hierarchy "REG8:reg_1" File: /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG16.vhd Line: 26
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -280,9 +280,9 @@ Info (21057): Implemented 50 device resources after synthesis - the final resour
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 16 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4829 megabytes
-    Info: Processing ended: Tue Jan 20 16:14:11 2026
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Peak virtual memory: 434 megabytes
+    Info: Processing ended: Mon Feb 23 13:05:03 2026
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:40
 
 

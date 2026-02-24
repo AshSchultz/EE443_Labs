@@ -35,7 +35,7 @@ architecture logical_stuff of REG16 is
         R(15 downto 8),
         ENABLE, 
         Clock, 
-        Q(15 downto 8)S
+        Q(15 downto 8)
     ); 
 
 end logical_stuff;
