@@ -187,17 +187,38 @@ DOUT2[15] << MUX8X16:mux_2.f[15]
 
 
 |REG8x16|DCD3x8:add_reg1_dcd
-S[0] => ~NO_FANOUT~
-S[1] => ~NO_FANOUT~
-S[2] => ~NO_FANOUT~
-D[0] <= <VCC>
-D[1] <= <VCC>
-D[2] <= <VCC>
-D[3] <= <VCC>
-D[4] <= <VCC>
-D[5] <= <VCC>
-D[6] <= <VCC>
-D[7] <= <VCC>
+S[0] => Mux0.IN10
+S[0] => Mux1.IN10
+S[0] => Mux2.IN10
+S[0] => Mux3.IN10
+S[0] => Mux4.IN10
+S[0] => Mux5.IN10
+S[0] => Mux6.IN10
+S[0] => Mux7.IN10
+S[1] => Mux0.IN9
+S[1] => Mux1.IN9
+S[1] => Mux2.IN9
+S[1] => Mux3.IN9
+S[1] => Mux4.IN9
+S[1] => Mux5.IN9
+S[1] => Mux6.IN9
+S[1] => Mux7.IN9
+S[2] => Mux0.IN8
+S[2] => Mux1.IN8
+S[2] => Mux2.IN8
+S[2] => Mux3.IN8
+S[2] => Mux4.IN8
+S[2] => Mux5.IN8
+S[2] => Mux6.IN8
+S[2] => Mux7.IN8
+D[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+D[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+D[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+D[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+D[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |REG8x16|REG16:\reg_gen:0:regs

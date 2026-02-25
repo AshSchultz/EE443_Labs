@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Lab4
-Tue Feb 24 00:15:17 2026
-Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Tue Feb 24 14:14:40 2026
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
 ---------------------
@@ -13,8 +13,8 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
  10. Port Connectivity Checks: "MUX8X16:mux_1|MUX4X16:mux_1"
  11. Post-Synthesis Netlist Statistics for Top Partition
  12. Elapsed Time Per Partition
@@ -25,7 +25,7 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2024  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -45,15 +45,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Feb 24 00:15:17 2026          ;
-; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Tue Feb 24 14:14:40 2026          ;
+; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; Lab4                                           ;
 ; Top-level Entity Name              ; REG8X16                                        ;
 ; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 16                                             ;
-;     Total combinational functions  ; 0                                              ;
-;     Dedicated logic registers      ; 16                                             ;
-; Total registers                    ; 16                                             ;
+; Total logic elements               ; 296                                            ;
+;     Total combinational functions  ; 168                                            ;
+;     Dedicated logic registers      ; 128                                            ;
+; Total registers                    ; 128                                            ;
 ; Total pins                         ; 59                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
@@ -153,8 +153,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -164,19 +164,19 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                       ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------+---------+
-; ../Lab 0/REG8.vhd                ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG8.vhd    ;         ;
-; ../Lab 0/REG16.vhd               ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG16.vhd   ;         ;
-; REG8x16.vhd                      ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab_4/REG8x16.vhd ;         ;
-; DCD3x8.vhd                       ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab_4/DCD3x8.vhd  ;         ;
-; MUX4X4.vhd                       ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX4X4.vhd  ;         ;
-; MUX8X16.vhd                      ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX8X16.vhd ;         ;
-; MUX4X16.vhd                      ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX4X16.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                         ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+; ../Lab 0/REG8.vhd                ; yes             ; User VHDL File  ; D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab 0/REG8.vhd    ;         ;
+; ../Lab 0/REG16.vhd               ; yes             ; User VHDL File  ; D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab 0/REG16.vhd   ;         ;
+; REG8x16.vhd                      ; yes             ; User VHDL File  ; D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/REG8x16.vhd ;         ;
+; DCD3x8.vhd                       ; yes             ; User VHDL File  ; D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/DCD3x8.vhd  ;         ;
+; MUX4X4.vhd                       ; yes             ; User VHDL File  ; D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/MUX4X4.vhd  ;         ;
+; MUX8X16.vhd                      ; yes             ; User VHDL File  ; D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/MUX8X16.vhd ;         ;
+; MUX4X16.vhd                      ; yes             ; User VHDL File  ; D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/MUX4X16.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -184,20 +184,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 16        ;
+; Estimated Total logic elements              ; 296       ;
 ;                                             ;           ;
-; Total combinational functions               ; 0         ;
+; Total combinational functions               ; 168       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 0         ;
-;     -- 3 input functions                    ; 0         ;
+;     -- 4 input functions                    ; 136       ;
+;     -- 3 input functions                    ; 32        ;
 ;     -- <=2 input functions                  ; 0         ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 0         ;
+;     -- normal mode                          ; 168       ;
 ;     -- arithmetic mode                      ; 0         ;
 ;                                             ;           ;
-; Total registers                             ; 16        ;
-;     -- Dedicated logic registers            ; 16        ;
+; Total registers                             ; 128       ;
+;     -- Dedicated logic registers            ; 128       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 59        ;
@@ -205,144 +205,57 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 16        ;
-; Total fan-out                               ; 139       ;
-; Average fan-out                             ; 1.04      ;
+; Maximum fan-out                             ; 128       ;
+; Total fan-out                               ; 1115      ;
+; Average fan-out                             ; 2.69      ;
 +---------------------------------------------+-----------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                            ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+-------------+--------------+
-; |REG8X16                   ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 59   ; 0            ; |REG8X16                                  ; REG8X16     ; work         ;
-;    |REG16:\reg_gen:0:regs| ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:0:regs            ; REG16       ; work         ;
-;       |REG8:reg_1|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:0:regs|REG8:reg_1 ; REG8        ; work         ;
-;       |REG8:reg_2|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:0:regs|REG8:reg_2 ; REG8        ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+-------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                 ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                               ; Entity Name ; Library Name ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+-------------+--------------+
+; |REG8X16                                ; 168 (0)             ; 128 (0)                   ; 0           ; 0            ; 0       ; 0         ; 59   ; 0            ; |REG8X16                                                          ; REG8X16     ; work         ;
+;    |DCD3x8:add_reg1_dcd|                ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|DCD3x8:add_reg1_dcd                                      ; DCD3x8      ; work         ;
+;    |MUX8X16:mux_1|                      ; 80 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|MUX8X16:mux_1                                            ; MUX8X16     ; work         ;
+;       |MUX4X16:mux_1|                   ; 80 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|MUX8X16:mux_1|MUX4X16:mux_1                              ; MUX4X16     ; work         ;
+;          |MUX4X4:\mux_generate:0:mux_i| ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:0:mux_i ; MUX4X4      ; work         ;
+;          |MUX4X4:\mux_generate:1:mux_i| ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:1:mux_i ; MUX4X4      ; work         ;
+;          |MUX4X4:\mux_generate:2:mux_i| ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:2:mux_i ; MUX4X4      ; work         ;
+;          |MUX4X4:\mux_generate:3:mux_i| ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:3:mux_i ; MUX4X4      ; work         ;
+;    |MUX8X16:mux_2|                      ; 80 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|MUX8X16:mux_2                                            ; MUX8X16     ; work         ;
+;       |MUX4X16:mux_1|                   ; 80 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|MUX8X16:mux_2|MUX4X16:mux_1                              ; MUX4X16     ; work         ;
+;          |MUX4X4:\mux_generate:0:mux_i| ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:0:mux_i ; MUX4X4      ; work         ;
+;          |MUX4X4:\mux_generate:1:mux_i| ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:1:mux_i ; MUX4X4      ; work         ;
+;          |MUX4X4:\mux_generate:2:mux_i| ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:2:mux_i ; MUX4X4      ; work         ;
+;          |MUX4X4:\mux_generate:3:mux_i| ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:3:mux_i ; MUX4X4      ; work         ;
+;    |REG16:\reg_gen:0:regs|              ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:0:regs                                    ; REG16       ; work         ;
+;       |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:0:regs|REG8:reg_1                         ; REG8        ; work         ;
+;       |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:0:regs|REG8:reg_2                         ; REG8        ; work         ;
+;    |REG16:\reg_gen:1:regs|              ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:1:regs                                    ; REG16       ; work         ;
+;       |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:1:regs|REG8:reg_1                         ; REG8        ; work         ;
+;       |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:1:regs|REG8:reg_2                         ; REG8        ; work         ;
+;    |REG16:\reg_gen:2:regs|              ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:2:regs                                    ; REG16       ; work         ;
+;       |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:2:regs|REG8:reg_1                         ; REG8        ; work         ;
+;       |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:2:regs|REG8:reg_2                         ; REG8        ; work         ;
+;    |REG16:\reg_gen:3:regs|              ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:3:regs                                    ; REG16       ; work         ;
+;       |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:3:regs|REG8:reg_1                         ; REG8        ; work         ;
+;       |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:3:regs|REG8:reg_2                         ; REG8        ; work         ;
+;    |REG16:\reg_gen:4:regs|              ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:4:regs                                    ; REG16       ; work         ;
+;       |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:4:regs|REG8:reg_1                         ; REG8        ; work         ;
+;       |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:4:regs|REG8:reg_2                         ; REG8        ; work         ;
+;    |REG16:\reg_gen:5:regs|              ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:5:regs                                    ; REG16       ; work         ;
+;       |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:5:regs|REG8:reg_1                         ; REG8        ; work         ;
+;       |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:5:regs|REG8:reg_2                         ; REG8        ; work         ;
+;    |REG16:\reg_gen:6:regs|              ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:6:regs                                    ; REG16       ; work         ;
+;       |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:6:regs|REG8:reg_1                         ; REG8        ; work         ;
+;       |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:6:regs|REG8:reg_2                         ; REG8        ; work         ;
+;    |REG16:\reg_gen:7:regs|              ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:7:regs                                    ; REG16       ; work         ;
+;       |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:7:regs|REG8:reg_1                         ; REG8        ; work         ;
+;       |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8X16|REG16:\reg_gen:7:regs|REG8:reg_2                         ; REG8        ; work         ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+---------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                          ;
-+-----------------------------------------+---------------------------------------------------+
-; Register name                           ; Reason for Removal                                ;
-+-----------------------------------------+---------------------------------------------------+
-; REG16:\reg_gen:1:regs|REG8:reg_1|y[0]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[0] ;
-; REG16:\reg_gen:2:regs|REG8:reg_1|y[0]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[0] ;
-; REG16:\reg_gen:3:regs|REG8:reg_1|y[0]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[0] ;
-; REG16:\reg_gen:4:regs|REG8:reg_1|y[0]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[0] ;
-; REG16:\reg_gen:5:regs|REG8:reg_1|y[0]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[0] ;
-; REG16:\reg_gen:6:regs|REG8:reg_1|y[0]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[0] ;
-; REG16:\reg_gen:7:regs|REG8:reg_1|y[0]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[0] ;
-; REG16:\reg_gen:1:regs|REG8:reg_1|y[1]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[1] ;
-; REG16:\reg_gen:2:regs|REG8:reg_1|y[1]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[1] ;
-; REG16:\reg_gen:3:regs|REG8:reg_1|y[1]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[1] ;
-; REG16:\reg_gen:4:regs|REG8:reg_1|y[1]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[1] ;
-; REG16:\reg_gen:5:regs|REG8:reg_1|y[1]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[1] ;
-; REG16:\reg_gen:6:regs|REG8:reg_1|y[1]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[1] ;
-; REG16:\reg_gen:7:regs|REG8:reg_1|y[1]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[1] ;
-; REG16:\reg_gen:1:regs|REG8:reg_1|y[2]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[2] ;
-; REG16:\reg_gen:2:regs|REG8:reg_1|y[2]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[2] ;
-; REG16:\reg_gen:3:regs|REG8:reg_1|y[2]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[2] ;
-; REG16:\reg_gen:4:regs|REG8:reg_1|y[2]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[2] ;
-; REG16:\reg_gen:5:regs|REG8:reg_1|y[2]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[2] ;
-; REG16:\reg_gen:6:regs|REG8:reg_1|y[2]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[2] ;
-; REG16:\reg_gen:7:regs|REG8:reg_1|y[2]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[2] ;
-; REG16:\reg_gen:1:regs|REG8:reg_1|y[3]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[3] ;
-; REG16:\reg_gen:2:regs|REG8:reg_1|y[3]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[3] ;
-; REG16:\reg_gen:3:regs|REG8:reg_1|y[3]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[3] ;
-; REG16:\reg_gen:4:regs|REG8:reg_1|y[3]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[3] ;
-; REG16:\reg_gen:5:regs|REG8:reg_1|y[3]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[3] ;
-; REG16:\reg_gen:6:regs|REG8:reg_1|y[3]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[3] ;
-; REG16:\reg_gen:7:regs|REG8:reg_1|y[3]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[3] ;
-; REG16:\reg_gen:1:regs|REG8:reg_1|y[4]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[4] ;
-; REG16:\reg_gen:2:regs|REG8:reg_1|y[4]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[4] ;
-; REG16:\reg_gen:3:regs|REG8:reg_1|y[4]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[4] ;
-; REG16:\reg_gen:4:regs|REG8:reg_1|y[4]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[4] ;
-; REG16:\reg_gen:5:regs|REG8:reg_1|y[4]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[4] ;
-; REG16:\reg_gen:6:regs|REG8:reg_1|y[4]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[4] ;
-; REG16:\reg_gen:7:regs|REG8:reg_1|y[4]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[4] ;
-; REG16:\reg_gen:1:regs|REG8:reg_1|y[5]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[5] ;
-; REG16:\reg_gen:2:regs|REG8:reg_1|y[5]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[5] ;
-; REG16:\reg_gen:3:regs|REG8:reg_1|y[5]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[5] ;
-; REG16:\reg_gen:4:regs|REG8:reg_1|y[5]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[5] ;
-; REG16:\reg_gen:5:regs|REG8:reg_1|y[5]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[5] ;
-; REG16:\reg_gen:6:regs|REG8:reg_1|y[5]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[5] ;
-; REG16:\reg_gen:7:regs|REG8:reg_1|y[5]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[5] ;
-; REG16:\reg_gen:1:regs|REG8:reg_1|y[6]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[6] ;
-; REG16:\reg_gen:2:regs|REG8:reg_1|y[6]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[6] ;
-; REG16:\reg_gen:3:regs|REG8:reg_1|y[6]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[6] ;
-; REG16:\reg_gen:4:regs|REG8:reg_1|y[6]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[6] ;
-; REG16:\reg_gen:5:regs|REG8:reg_1|y[6]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[6] ;
-; REG16:\reg_gen:6:regs|REG8:reg_1|y[6]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[6] ;
-; REG16:\reg_gen:7:regs|REG8:reg_1|y[6]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[6] ;
-; REG16:\reg_gen:1:regs|REG8:reg_1|y[7]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[7] ;
-; REG16:\reg_gen:2:regs|REG8:reg_1|y[7]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[7] ;
-; REG16:\reg_gen:3:regs|REG8:reg_1|y[7]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[7] ;
-; REG16:\reg_gen:4:regs|REG8:reg_1|y[7]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[7] ;
-; REG16:\reg_gen:5:regs|REG8:reg_1|y[7]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[7] ;
-; REG16:\reg_gen:6:regs|REG8:reg_1|y[7]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[7] ;
-; REG16:\reg_gen:7:regs|REG8:reg_1|y[7]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_1|y[7] ;
-; REG16:\reg_gen:1:regs|REG8:reg_2|y[0]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[0] ;
-; REG16:\reg_gen:2:regs|REG8:reg_2|y[0]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[0] ;
-; REG16:\reg_gen:3:regs|REG8:reg_2|y[0]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[0] ;
-; REG16:\reg_gen:4:regs|REG8:reg_2|y[0]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[0] ;
-; REG16:\reg_gen:5:regs|REG8:reg_2|y[0]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[0] ;
-; REG16:\reg_gen:6:regs|REG8:reg_2|y[0]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[0] ;
-; REG16:\reg_gen:7:regs|REG8:reg_2|y[0]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[0] ;
-; REG16:\reg_gen:1:regs|REG8:reg_2|y[1]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[1] ;
-; REG16:\reg_gen:2:regs|REG8:reg_2|y[1]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[1] ;
-; REG16:\reg_gen:3:regs|REG8:reg_2|y[1]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[1] ;
-; REG16:\reg_gen:4:regs|REG8:reg_2|y[1]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[1] ;
-; REG16:\reg_gen:5:regs|REG8:reg_2|y[1]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[1] ;
-; REG16:\reg_gen:6:regs|REG8:reg_2|y[1]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[1] ;
-; REG16:\reg_gen:7:regs|REG8:reg_2|y[1]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[1] ;
-; REG16:\reg_gen:1:regs|REG8:reg_2|y[2]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[2] ;
-; REG16:\reg_gen:2:regs|REG8:reg_2|y[2]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[2] ;
-; REG16:\reg_gen:3:regs|REG8:reg_2|y[2]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[2] ;
-; REG16:\reg_gen:4:regs|REG8:reg_2|y[2]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[2] ;
-; REG16:\reg_gen:5:regs|REG8:reg_2|y[2]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[2] ;
-; REG16:\reg_gen:6:regs|REG8:reg_2|y[2]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[2] ;
-; REG16:\reg_gen:7:regs|REG8:reg_2|y[2]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[2] ;
-; REG16:\reg_gen:1:regs|REG8:reg_2|y[3]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[3] ;
-; REG16:\reg_gen:2:regs|REG8:reg_2|y[3]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[3] ;
-; REG16:\reg_gen:3:regs|REG8:reg_2|y[3]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[3] ;
-; REG16:\reg_gen:4:regs|REG8:reg_2|y[3]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[3] ;
-; REG16:\reg_gen:5:regs|REG8:reg_2|y[3]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[3] ;
-; REG16:\reg_gen:6:regs|REG8:reg_2|y[3]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[3] ;
-; REG16:\reg_gen:7:regs|REG8:reg_2|y[3]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[3] ;
-; REG16:\reg_gen:1:regs|REG8:reg_2|y[4]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[4] ;
-; REG16:\reg_gen:2:regs|REG8:reg_2|y[4]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[4] ;
-; REG16:\reg_gen:3:regs|REG8:reg_2|y[4]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[4] ;
-; REG16:\reg_gen:4:regs|REG8:reg_2|y[4]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[4] ;
-; REG16:\reg_gen:5:regs|REG8:reg_2|y[4]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[4] ;
-; REG16:\reg_gen:6:regs|REG8:reg_2|y[4]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[4] ;
-; REG16:\reg_gen:7:regs|REG8:reg_2|y[4]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[4] ;
-; REG16:\reg_gen:1:regs|REG8:reg_2|y[5]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[5] ;
-; REG16:\reg_gen:2:regs|REG8:reg_2|y[5]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[5] ;
-; REG16:\reg_gen:3:regs|REG8:reg_2|y[5]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[5] ;
-; REG16:\reg_gen:4:regs|REG8:reg_2|y[5]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[5] ;
-; REG16:\reg_gen:5:regs|REG8:reg_2|y[5]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[5] ;
-; REG16:\reg_gen:6:regs|REG8:reg_2|y[5]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[5] ;
-; REG16:\reg_gen:7:regs|REG8:reg_2|y[5]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[5] ;
-; REG16:\reg_gen:1:regs|REG8:reg_2|y[6]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[6] ;
-; REG16:\reg_gen:2:regs|REG8:reg_2|y[6]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[6] ;
-; REG16:\reg_gen:3:regs|REG8:reg_2|y[6]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[6] ;
-; REG16:\reg_gen:4:regs|REG8:reg_2|y[6]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[6] ;
-; REG16:\reg_gen:5:regs|REG8:reg_2|y[6]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[6] ;
-; REG16:\reg_gen:6:regs|REG8:reg_2|y[6]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[6] ;
-; REG16:\reg_gen:7:regs|REG8:reg_2|y[6]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[6] ;
-; REG16:\reg_gen:1:regs|REG8:reg_2|y[7]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[7] ;
-; REG16:\reg_gen:2:regs|REG8:reg_2|y[7]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[7] ;
-; REG16:\reg_gen:3:regs|REG8:reg_2|y[7]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[7] ;
-; REG16:\reg_gen:4:regs|REG8:reg_2|y[7]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[7] ;
-; REG16:\reg_gen:5:regs|REG8:reg_2|y[7]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[7] ;
-; REG16:\reg_gen:6:regs|REG8:reg_2|y[7]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[7] ;
-; REG16:\reg_gen:7:regs|REG8:reg_2|y[7]   ; Merged with REG16:\reg_gen:0:regs|REG8:reg_2|y[7] ;
-; Total Number of Removed Registers = 112 ;                                                   ;
-+-----------------------------------------+---------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -350,14 +263,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 16    ;
+; Total registers                              ; 128   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Clock Enable       ; 128   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |REG8X16|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:0:mux_i|Mux3 ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |REG8X16|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:0:mux_i|Mux3 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------+
@@ -373,16 +296,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 59                              ;
-; cycloneiii_ff     ; 16                              ;
-;     ENA           ; 16                              ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 59                          ;
+; cycloneiii_ff         ; 128                         ;
+;     ENA               ; 128                         ;
+; cycloneiii_lcell_comb ; 168                         ;
+;     normal            ; 168                         ;
+;         3 data inputs ; 32                          ;
+;         4 data inputs ; 136                         ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.56                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -399,69 +326,50 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Tue Feb 24 00:15:05 2026
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Processing started: Tue Feb 24 14:14:32 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab4 -c Lab4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG8.vhd
-    Info (12022): Found design unit 1: REG8-clk File: /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG8.vhd Line: 12
-    Info (12023): Found entity 1: REG8 File: /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG8.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG16.vhd
-    Info (12022): Found design unit 1: REG16-logical_stuff File: /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG16.vhd Line: 13
-    Info (12023): Found entity 1: REG16 File: /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file REG8x16.vhd
-    Info (12022): Found design unit 1: REG8X16-behavior File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 13
-    Info (12023): Found entity 1: REG8X16 File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file DCD3x8.vhd
-    Info (12022): Found design unit 1: DCD3x8-behavior File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 11
-    Info (12023): Found entity 1: DCD3x8 File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file MUX4X4.vhd
-    Info (12022): Found design unit 1: MUX4X4-behavior File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX4X4.vhd Line: 12
-    Info (12023): Found entity 1: MUX4X4 File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX4X4.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file MUX8X16.vhd
-    Info (12022): Found design unit 1: MUX8X16-behavior File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX8X16.vhd Line: 12
-    Info (12023): Found entity 1: MUX8X16 File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX8X16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file MUX4X16.vhd
-    Info (12022): Found design unit 1: MUX4X16-behavior File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX4X16.vhd Line: 12
-    Info (12023): Found entity 1: MUX4X16 File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX4X16.vhd Line: 4
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/documents/ee443/ee443_labs/lab 0/reg8.vhd
+    Info (12022): Found design unit 1: REG8-clk File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab 0/REG8.vhd Line: 12
+    Info (12023): Found entity 1: REG8 File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab 0/REG8.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/documents/ee443/ee443_labs/lab 0/reg16.vhd
+    Info (12022): Found design unit 1: REG16-logical_stuff File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab 0/REG16.vhd Line: 13
+    Info (12023): Found entity 1: REG16 File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab 0/REG16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file reg8x16.vhd
+    Info (12022): Found design unit 1: REG8X16-behavior File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/REG8x16.vhd Line: 13
+    Info (12023): Found entity 1: REG8X16 File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/REG8x16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file dcd3x8.vhd
+    Info (12022): Found design unit 1: DCD3x8-behavior File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/DCD3x8.vhd Line: 11
+    Info (12023): Found entity 1: DCD3x8 File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/DCD3x8.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file mux4x4.vhd
+    Info (12022): Found design unit 1: MUX4X4-behavior File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/MUX4X4.vhd Line: 12
+    Info (12023): Found entity 1: MUX4X4 File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/MUX4X4.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file mux8x16.vhd
+    Info (12022): Found design unit 1: MUX8X16-behavior File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/MUX8X16.vhd Line: 12
+    Info (12023): Found entity 1: MUX8X16 File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/MUX8X16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file mux4x16.vhd
+    Info (12022): Found design unit 1: MUX4X16-behavior File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/MUX4X16.vhd Line: 12
+    Info (12023): Found entity 1: MUX4X16 File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/MUX4X16.vhd Line: 4
 Info (12127): Elaborating entity "REG8x16" for the top level hierarchy
-Info (12128): Elaborating entity "DCD3x8" for hierarchy "DCD3x8:add_reg1_dcd" File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 45
-Warning (10631): VHDL Process Statement warning at DCD3x8.vhd(14): inferring latch(es) for signal or variable "D", which holds its previous value in one or more paths through the process File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 14
-Info (10041): Inferred latch for "D[0]" at DCD3x8.vhd(14) File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 14
-Info (10041): Inferred latch for "D[1]" at DCD3x8.vhd(14) File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 14
-Info (10041): Inferred latch for "D[2]" at DCD3x8.vhd(14) File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 14
-Info (10041): Inferred latch for "D[3]" at DCD3x8.vhd(14) File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 14
-Info (10041): Inferred latch for "D[4]" at DCD3x8.vhd(14) File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 14
-Info (10041): Inferred latch for "D[5]" at DCD3x8.vhd(14) File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 14
-Info (10041): Inferred latch for "D[6]" at DCD3x8.vhd(14) File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 14
-Info (10041): Inferred latch for "D[7]" at DCD3x8.vhd(14) File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 14
-Info (12128): Elaborating entity "REG16" for hierarchy "REG16:\reg_gen:0:regs" File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 52
-Info (12128): Elaborating entity "REG8" for hierarchy "REG16:\reg_gen:0:regs|REG8:reg_1" File: /home/ashinashell/class_coding/EE443_Labs/Lab 0/REG16.vhd Line: 26
-Info (12128): Elaborating entity "MUX8X16" for hierarchy "MUX8X16:mux_1" File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 61
-Info (12128): Elaborating entity "MUX4X16" for hierarchy "MUX8X16:mux_1|MUX4X16:mux_1" File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX8X16.vhd Line: 27
-Info (12128): Elaborating entity "MUX4X4" for hierarchy "MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:0:mux_i" File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX4X16.vhd Line: 25
+Info (12128): Elaborating entity "DCD3x8" for hierarchy "DCD3x8:add_reg1_dcd" File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/REG8x16.vhd Line: 45
+Info (12128): Elaborating entity "REG16" for hierarchy "REG16:\reg_gen:0:regs" File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/REG8x16.vhd Line: 52
+Info (12128): Elaborating entity "REG8" for hierarchy "REG16:\reg_gen:0:regs|REG8:reg_1" File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab 0/REG16.vhd Line: 26
+Info (12128): Elaborating entity "MUX8X16" for hierarchy "MUX8X16:mux_1" File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/REG8x16.vhd Line: 61
+Info (12128): Elaborating entity "MUX4X16" for hierarchy "MUX8X16:mux_1|MUX4X16:mux_1" File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/MUX8X16.vhd Line: 27
+Info (12128): Elaborating entity "MUX4X4" for hierarchy "MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:0:mux_i" File: D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/MUX4X16.vhd Line: 25
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 9 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "ADD_R1[2]" File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 6
-    Warning (15610): No output dependent on input pin "ADD_R2[2]" File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 6
-    Warning (15610): No output dependent on input pin "ADD_W[0]" File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 6
-    Warning (15610): No output dependent on input pin "ADD_W[1]" File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 6
-    Warning (15610): No output dependent on input pin "ADD_W[2]" File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 6
-    Warning (15610): No output dependent on input pin "ADD_R1[1]" File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 6
-    Warning (15610): No output dependent on input pin "ADD_R1[0]" File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 6
-    Warning (15610): No output dependent on input pin "ADD_R2[1]" File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 6
-    Warning (15610): No output dependent on input pin "ADD_R2[0]" File: /home/ashinashell/class_coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 6
-Info (21057): Implemented 75 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 355 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 27 input pins
     Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 16 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 428 megabytes
-    Info: Processing ended: Tue Feb 24 00:15:17 2026
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:39
+    Info (21061): Implemented 296 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Tue Feb 24 14:14:40 2026
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:12
 
 

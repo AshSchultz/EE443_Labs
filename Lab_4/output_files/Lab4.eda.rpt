@@ -1,6 +1,6 @@
 EDA Netlist Writer report for Lab4
-Tue Feb 24 00:15:41 2026
-Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Tue Feb 24 14:40:58 2026
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
 ---------------------
@@ -17,7 +17,7 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2024  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Feb 24 00:15:41 2026 ;
+; EDA Netlist Writer Status ; Successful - Tue Feb 24 14:40:58 2026 ;
 ; Revision Name             ; Lab4                                  ;
 ; Top-level Entity Name     ; REG8X16                               ;
 ; Family                    ; Cyclone IV E                          ;
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+--------------------------+
 
 
-+----------------------------------------------------------------------------+
-; Simulation Generated Files                                                 ;
-+----------------------------------------------------------------------------+
-; Generated Files                                                            ;
-+----------------------------------------------------------------------------+
-; /home/ashinashell/class_coding/EE443_Labs/Lab_4/simulation/questa/Lab4.vho ;
-+----------------------------------------------------------------------------+
++------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                         ;
++------------------------------------------------------------------------------------+
+; Generated Files                                                                    ;
++------------------------------------------------------------------------------------+
+; D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/simulation/qsim//Lab4.vho ;
++------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,15 +80,29 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Tue Feb 24 00:15:40 2026
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Lab4 -c Lab4
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Copyright (C) 2023  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Tue Feb 24 14:40:58 2026
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/simulation/qsim/ Lab4 -c Lab4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Lab4.vho in folder "/home/ashinashell/class_coding/EE443_Labs/Lab_4/simulation/questa/" for EDA simulation tool
+Info (204019): Generated file Lab4.vho in folder "D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 587 megabytes
-    Info: Processing ended: Tue Feb 24 00:15:41 2026
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4662 megabytes
+    Info: Processing ended: Tue Feb 24 14:40:58 2026
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
 
 
