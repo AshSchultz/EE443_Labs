@@ -1,0 +1,166 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/home/ashinashell/class_coding/EE443_Labs/Lab_6/simulation/qsim
+T_opt
+Z3 !s110 1774393920
+V:k=HY>FRIZ`=mITdiYKE02
+04 18 11 work inctwo_vhd_vec_tst inctwo_arch 1
+=1-000ae431a4f1-69c31a40-998b5-10c99
+R1
+!s12b OEM100
+!s124 OEM10U3 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+Ehard_block
+Z4 w1774393919
+Z5 DPx4 ieee 16 vital_primitives 0 22 Y]H?Y_]z4@VoaWAGJ=36m1
+Z6 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 FM43ccaBdaD8gjdf^fhXa1
+Z7 DPx4 ieee 12 vital_timing 0 22 6STbz=m1W[80IE06h_el^0
+Z8 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z9 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+Z10 DPx10 cycloneive 21 cycloneive_components 0 22 cmXO:d;25aXGLGm2El8?>3
+!i122 4
+R2
+Z11 8Lab6.vho
+Z12 FLab6.vho
+l0
+L35 1
+VO;cUSklm4Sig<`__bK=J@0
+!s100 0CTYib@dc:ObIVR9DRSK?2
+Z13 OL;C;2023.3;77
+32
+R3
+!i10b 1
+Z14 !s108 1774393920.000000
+Z15 !s90 -work|work|Lab6.vho|
+Z16 !s107 Lab6.vho|
+!i113 0
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 10 hard_block 0 22 O;cUSklm4Sig<`__bK=J@0
+!i122 4
+l65
+L51 20
+VGLY:g5RDEe^dIV`12>FYD3
+!s100 6LcB1AebN6j_bAmfc?Z:_0
+R13
+32
+R3
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Einctwo
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+!i122 4
+R2
+R11
+R12
+l0
+L78 1
+V_7FzmF>:Hd^>lDFUA^@8^2
+!s100 _Bzb3lGhTU[M0I:7bb`KB0
+R13
+32
+R3
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Astructure
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 6 inctwo 0 22 _7FzmF>:Hd^>lDFUA^@8^2
+!i122 4
+l181
+L120 766
+VKel:YcXlJm10SCHWIoc`U3
+!s100 =iVNfnSOncb8?l1HDal2i3
+R13
+32
+R3
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Einctwo_vhd_vec_tst
+Z19 w1774393917
+R8
+R9
+!i122 5
+R2
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L32 1
+VTR27^loO?TeC[M:4NLFXS3
+!s100 ]mJL]nP8:`:8OJggY:HP72
+R13
+32
+R3
+!i10b 1
+R14
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
+!i113 0
+R17
+R18
+Ainctwo_arch
+R8
+R9
+DEx4 work 18 inctwo_vhd_vec_tst 0 22 TR27^loO?TeC[M:4NLFXS3
+!i122 5
+l45
+L34 115
+V]jme[;>oS9b]c7?KUB]::0
+!s100 a0P=LUKWcOzHQ;2Z?GE9i2
+R13
+32
+R3
+!i10b 1
+R14
+R22
+R23
+!i113 0
+R17
+R18

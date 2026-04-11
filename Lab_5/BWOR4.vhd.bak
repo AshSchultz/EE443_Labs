@@ -1,0 +1,18 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity BWOR4 is
+    port (
+        A, B : IN  STD_LOGIC_VECTOR(3 downto 0);                 
+        Result : OUT STD_LOGIC_VECTOR(3 downto 0)
+    );
+end BWOR4;
+
+architecture behavior of BWOR4 is	
+begin
+	
+	or_loop : for i in 0 to 3 generate
+		Result(i) <= A(i) OR B(i);
+	end generate or_loop;
+	
+end behavior;

@@ -1,0 +1,76 @@
+m255
+K4
+z2
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ashinashell/class_coding/EE443_Labs/Lab_4/simulation/questa
+Emux4x4
+Z1 w1771897448
+Z2 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z3 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 0
+R0
+Z5 8/home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX4X4.vhd
+Z6 F/home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX4X4.vhd
+l0
+L5 1
+VzV]SSX8k6CH<fi_JFXSHX2
+!s100 5o[P@Kflb9VgJz6kVjO7?0
+Z7 OL;C;2023.3;77
+31
+Z8 !s110 1771909491
+!i10b 1
+Z9 !s108 1771909491.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX4X4.vhd|
+Z11 !s107 /home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX4X4.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+R4
+DEx4 work 6 mux4x4 0 22 zV]SSX8k6CH<fi_JFXSHX2
+!i122 0
+l14
+L12 19
+V7Ae<:LDeCZTBbO_CV3lk]3
+!s100 @^dG5fg6NCGaZ1Zll_nkR1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Emux8x16
+w1771897290
+R3
+R4
+!i122 1
+R0
+8/home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX8X16.vhd
+F/home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX8X16.vhd
+l0
+L4 1
+VbPba7NagNT=0bW?19I^[82
+!s100 <<0j[?^agOLdXnVMQWdo01
+R7
+31
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-93|-work|work|/home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX8X16.vhd|
+!s107 /home/ashinashell/class_coding/EE443_Labs/Lab_4/MUX8X16.vhd|
+!i113 0
+R12
+R13

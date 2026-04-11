@@ -1,0 +1,283 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_4/simulation/qsim
+T_opt
+!s110 1771976460
+Vbnb02==`F<Z;K1E0>QbgN1
+04 19 12 work reg8x16_vhd_vec_tst reg8x16_arch 1
+=1-509a4c44cdf4-699e370c-122-5664
+Z2 !s124 OEM10U3 
+Z3 o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2;73
+T_opt1
+!s110 1771974842
+VI_o`z14;DLo_]Ibd>CbGE0
+04 18 11 work dcd3x8_vhd_vec_tst dcd3x8_arch 1
+=1-509a4c44cdf4-699e30ba-20-1294
+R2
+R3
+R4
+n@_opt1
+R5
+R1
+Edcd3x8
+Z6 w1771974840
+Z7 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z8 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 gn]m8U<PzXZH32IDQ4:hj3
+Z9 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z10 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z11 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z12 DPx10 cycloneive 21 cycloneive_components 0 22 cSe5`^NYM;IRV3WNS^Q7a2
+!i122 34
+R1
+Z13 8Lab4.vho
+Z14 FLab4.vho
+l0
+L78 1
+VKBK;H8Z;z_=iWDCFR=SXW1
+!s100 eU;6hTQ^;JL0OUUc?k?m>3
+Z15 OL;C;2021.2;73
+32
+Z16 !s110 1771974841
+!i10b 1
+Z17 !s108 1771974841.000000
+Z18 !s90 -work|work|Lab4.vho|
+Z19 !s107 Lab4.vho|
+!i113 0
+Z20 o-work work
+Z21 tExplicit 1 CvgOpt 0
+Astructure
+R7
+R8
+R9
+R10
+R11
+R12
+DEx4 work 6 dcd3x8 0 22 KBK;H8Z;z_=iWDCFR=SXW1
+!i122 34
+l138
+L99 325
+V]:EoB=5j2T@VPfUmD1ghg2
+!s100 l<[JLP]0[4DA8VQQI8m;H2
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Edcd3x8_vhd_vec_tst
+Z22 w1771974839
+R10
+R11
+!i122 35
+R1
+Z23 8Waveform3.vwf.vht
+Z24 FWaveform3.vwf.vht
+l0
+Z25 L32 1
+Ve5SZJI@AC>o40mnf2<1[X2
+!s100 bb;g;=cdgne]Q8R2;@2>23
+R15
+32
+R16
+!i10b 1
+R17
+Z26 !s90 -work|work|Waveform3.vwf.vht|
+Z27 !s107 Waveform3.vwf.vht|
+!i113 0
+R20
+R21
+Adcd3x8_arch
+R10
+R11
+DEx4 work 18 dcd3x8_vhd_vec_tst 0 22 e5SZJI@AC>o40mnf2<1[X2
+!i122 35
+l45
+L34 53
+V<9l`Un9IDdH0C^D83L2`@3
+!s100 R]_Q64IP;Z98?=FIDRE@=0
+R15
+32
+R16
+!i10b 1
+R17
+R26
+R27
+!i113 0
+R20
+R21
+Ehard_block
+Z28 w1771976458
+R7
+R8
+R9
+R10
+R11
+R12
+!i122 40
+R1
+R13
+R14
+l0
+L35 1
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+R15
+32
+Z29 !s110 1771976459
+!i10b 1
+Z30 !s108 1771976459.000000
+R18
+R19
+!i113 0
+R20
+R21
+Astructure
+R7
+R8
+R9
+R10
+R11
+R12
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+!i122 40
+l65
+L51 20
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R15
+32
+R29
+!i10b 1
+R30
+R18
+R19
+!i113 0
+R20
+R21
+Ereg8x16
+R28
+R8
+R12
+R7
+Z31 DPx6 altera 11 dffeas_pack 0 22 ^oS01<AhH<ZbI@CNcPk2V0
+R9
+R10
+R11
+Z32 DPx6 altera 28 altera_primitives_components 0 22 Y19K[Kjfb73Y`YfbP9Kf30
+!i122 40
+R1
+R13
+R14
+l0
+L80 1
+VSZlh`K8OezO:oBJ=o_43C1
+!s100 oNZa]k3zQMbD`:M:X<WcP1
+R15
+32
+R29
+!i10b 1
+R30
+R18
+R19
+!i113 0
+R20
+R21
+Astructure
+R8
+R12
+R7
+R31
+R9
+R10
+R11
+R32
+DEx4 work 7 reg8x16 0 22 SZlh`K8OezO:oBJ=o_43C1
+!i122 40
+l426
+L155 5986
+V4nk[g_PAfA_L8Rk:9D2YG3
+!s100 jm9d3h?`9k]`W;<c:aa0n0
+R15
+32
+R29
+!i10b 1
+R30
+R18
+R19
+!i113 0
+R20
+R21
+Ereg8x16_vhd_vec_tst
+Z33 w1771976457
+R10
+R11
+!i122 41
+R1
+Z34 8Waveform2.vwf.vht
+Z35 FWaveform2.vwf.vht
+l0
+R25
+VHJH>CCU2X@;LdO1N68U=c1
+!s100 kJ1QZK<>JYTH@n><7AIP22
+R15
+32
+R29
+!i10b 1
+R30
+Z36 !s90 -work|work|Waveform2.vwf.vht|
+Z37 !s107 Waveform2.vwf.vht|
+!i113 0
+R20
+R21
+Areg8x16_arch
+R10
+R11
+DEx4 work 19 reg8x16_vhd_vec_tst 0 22 HJH>CCU2X@;LdO1N68U=c1
+!i122 41
+l57
+L34 1254
+V=cmM;bHT8Qc_P7R^iRf^43
+!s100 4kVgITO;8=AdIoE]CSTR=0
+R15
+32
+R29
+!i10b 1
+R30
+R36
+R37
+!i113 0
+R20
+R21

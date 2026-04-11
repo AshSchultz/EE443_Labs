@@ -1,0 +1,276 @@
+$comment
+	File created using the following command:
+		vcd file Lab6.msim.vcd -direction
+$end
+$date
+	Tue Mar 24 15:12:01 2026
+$end
+$version
+	Questa Intel Starter FPGA Edition Version 2023.3
+$end
+$timescale
+	1ps
+$end
+
+$scope module inctwo_vhd_vec_tst $end
+$var wire 1 ! A [15] $end
+$var wire 1 " A [14] $end
+$var wire 1 # A [13] $end
+$var wire 1 $ A [12] $end
+$var wire 1 % A [11] $end
+$var wire 1 & A [10] $end
+$var wire 1 ' A [9] $end
+$var wire 1 ( A [8] $end
+$var wire 1 ) A [7] $end
+$var wire 1 * A [6] $end
+$var wire 1 + A [5] $end
+$var wire 1 , A [4] $end
+$var wire 1 - A [3] $end
+$var wire 1 . A [2] $end
+$var wire 1 / A [1] $end
+$var wire 1 0 A [0] $end
+$var wire 1 1 F [15] $end
+$var wire 1 2 F [14] $end
+$var wire 1 3 F [13] $end
+$var wire 1 4 F [12] $end
+$var wire 1 5 F [11] $end
+$var wire 1 6 F [10] $end
+$var wire 1 7 F [9] $end
+$var wire 1 8 F [8] $end
+$var wire 1 9 F [7] $end
+$var wire 1 : F [6] $end
+$var wire 1 ; F [5] $end
+$var wire 1 < F [4] $end
+$var wire 1 = F [3] $end
+$var wire 1 > F [2] $end
+$var wire 1 ? F [1] $end
+$var wire 1 @ F [0] $end
+
+$scope module i1 $end
+$var wire 1 A gnd $end
+$var wire 1 B vcc $end
+$var wire 1 C unknown $end
+$var wire 1 D devoe $end
+$var wire 1 E devclrn $end
+$var wire 1 F devpor $end
+$var wire 1 G ww_devoe $end
+$var wire 1 H ww_devclrn $end
+$var wire 1 I ww_devpor $end
+$var wire 1 J ww_A [15] $end
+$var wire 1 K ww_A [14] $end
+$var wire 1 L ww_A [13] $end
+$var wire 1 M ww_A [12] $end
+$var wire 1 N ww_A [11] $end
+$var wire 1 O ww_A [10] $end
+$var wire 1 P ww_A [9] $end
+$var wire 1 Q ww_A [8] $end
+$var wire 1 R ww_A [7] $end
+$var wire 1 S ww_A [6] $end
+$var wire 1 T ww_A [5] $end
+$var wire 1 U ww_A [4] $end
+$var wire 1 V ww_A [3] $end
+$var wire 1 W ww_A [2] $end
+$var wire 1 X ww_A [1] $end
+$var wire 1 Y ww_A [0] $end
+$var wire 1 Z ww_F [15] $end
+$var wire 1 [ ww_F [14] $end
+$var wire 1 \ ww_F [13] $end
+$var wire 1 ] ww_F [12] $end
+$var wire 1 ^ ww_F [11] $end
+$var wire 1 _ ww_F [10] $end
+$var wire 1 ` ww_F [9] $end
+$var wire 1 a ww_F [8] $end
+$var wire 1 b ww_F [7] $end
+$var wire 1 c ww_F [6] $end
+$var wire 1 d ww_F [5] $end
+$var wire 1 e ww_F [4] $end
+$var wire 1 f ww_F [3] $end
+$var wire 1 g ww_F [2] $end
+$var wire 1 h ww_F [1] $end
+$var wire 1 i ww_F [0] $end
+$var wire 1 j \F[0]~output_o\ $end
+$var wire 1 k \F[1]~output_o\ $end
+$var wire 1 l \F[2]~output_o\ $end
+$var wire 1 m \F[3]~output_o\ $end
+$var wire 1 n \F[4]~output_o\ $end
+$var wire 1 o \F[5]~output_o\ $end
+$var wire 1 p \F[6]~output_o\ $end
+$var wire 1 q \F[7]~output_o\ $end
+$var wire 1 r \F[8]~output_o\ $end
+$var wire 1 s \F[9]~output_o\ $end
+$var wire 1 t \F[10]~output_o\ $end
+$var wire 1 u \F[11]~output_o\ $end
+$var wire 1 v \F[12]~output_o\ $end
+$var wire 1 w \F[13]~output_o\ $end
+$var wire 1 x \F[14]~output_o\ $end
+$var wire 1 y \F[15]~output_o\ $end
+$var wire 1 z \A[0]~input_o\ $end
+$var wire 1 { \A[1]~input_o\ $end
+$var wire 1 | \A[2]~input_o\ $end
+$var wire 1 } \A[3]~input_o\ $end
+$var wire 1 ~ \A[4]~input_o\ $end
+$var wire 1 !! \alu0|alu1|adder|C~0_combout\ $end
+$var wire 1 "! \A[5]~input_o\ $end
+$var wire 1 #! \A[6]~input_o\ $end
+$var wire 1 $! \A[7]~input_o\ $end
+$var wire 1 %! \alu0|alu1|adder|COUT~0_combout\ $end
+$var wire 1 &! \A[8]~input_o\ $end
+$var wire 1 '! \A[9]~input_o\ $end
+$var wire 1 (! \A[10]~input_o\ $end
+$var wire 1 )! \alu0|alu2|adder|C~0_combout\ $end
+$var wire 1 *! \A[11]~input_o\ $end
+$var wire 1 +! \A[12]~input_o\ $end
+$var wire 1 ,! \A[13]~input_o\ $end
+$var wire 1 -! \A[14]~input_o\ $end
+$var wire 1 .! \alu0|alu3|adder|C~0_combout\ $end
+$var wire 1 /! \A[15]~input_o\ $end
+$var wire 1 0! \alu0|alu3|adder|S\ [3] $end
+$var wire 1 1! \alu0|alu3|adder|S\ [2] $end
+$var wire 1 2! \alu0|alu3|adder|S\ [1] $end
+$var wire 1 3! \alu0|alu3|adder|S\ [0] $end
+$var wire 1 4! \alu0|alu2|adder|S\ [3] $end
+$var wire 1 5! \alu0|alu2|adder|S\ [2] $end
+$var wire 1 6! \alu0|alu2|adder|S\ [1] $end
+$var wire 1 7! \alu0|alu2|adder|S\ [0] $end
+$var wire 1 8! \alu0|alu0|adder|S\ [3] $end
+$var wire 1 9! \alu0|alu0|adder|S\ [2] $end
+$var wire 1 :! \alu0|alu0|adder|S\ [1] $end
+$var wire 1 ;! \alu0|alu0|adder|S\ [0] $end
+$var wire 1 <! \alu0|alu1|adder|S\ [3] $end
+$var wire 1 =! \alu0|alu1|adder|S\ [2] $end
+$var wire 1 >! \alu0|alu1|adder|S\ [1] $end
+$var wire 1 ?! \alu0|alu1|adder|S\ [0] $end
+$var wire 1 @! \ALT_INV_A[1]~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0A
+1B
+xC
+1D
+1E
+1F
+1G
+1H
+1I
+0j
+1k
+1l
+1m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+1|
+1}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+0/!
+1@!
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+1-
+1.
+0/
+00
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+1V
+1W
+0X
+0Y
+00!
+01!
+02!
+03!
+04!
+05!
+06!
+07!
+18!
+19!
+x:!
+x;!
+0<!
+0=!
+0>!
+0?!
+01
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+1=
+1>
+1?
+0@
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+1f
+1g
+1h
+0i
+$end
+#1000000
