@@ -4,131 +4,127 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "F[0]",
+					"name" : "DOUT[0]",
 					"strict" : false
 				},
 				{
-					"name" : "F[1]",
+					"name" : "DOUT[1]",
 					"strict" : false
 				},
 				{
-					"name" : "F[2]",
+					"name" : "DOUT[2]",
 					"strict" : false
 				},
 				{
-					"name" : "F[3]",
+					"name" : "DOUT[3]",
 					"strict" : false
 				},
 				{
-					"name" : "F[4]",
+					"name" : "DOUT[4]",
 					"strict" : false
 				},
 				{
-					"name" : "F[5]",
+					"name" : "DOUT[5]",
 					"strict" : false
 				},
 				{
-					"name" : "F[6]",
+					"name" : "DOUT[6]",
 					"strict" : false
 				},
 				{
-					"name" : "F[7]",
+					"name" : "DOUT[7]",
 					"strict" : false
 				},
 				{
-					"name" : "F[8]",
+					"name" : "DOUT[8]",
 					"strict" : false
 				},
 				{
-					"name" : "F[9]",
+					"name" : "DOUT[9]",
 					"strict" : false
 				},
 				{
-					"name" : "F[10]",
+					"name" : "DOUT[10]",
 					"strict" : false
 				},
 				{
-					"name" : "F[11]",
+					"name" : "DOUT[11]",
 					"strict" : false
 				},
 				{
-					"name" : "F[12]",
+					"name" : "DOUT[12]",
 					"strict" : false
 				},
 				{
-					"name" : "F[13]",
+					"name" : "DOUT[13]",
 					"strict" : false
 				},
 				{
-					"name" : "F[14]",
+					"name" : "DOUT[14]",
 					"strict" : false
 				},
 				{
-					"name" : "F[15]",
+					"name" : "DOUT[15]",
 					"strict" : false
 				},
 				{
-					"name" : "A[0]",
+					"name" : "ADDR[4]",
 					"strict" : false
 				},
 				{
-					"name" : "A[1]",
+					"name" : "ADDR[5]",
 					"strict" : false
 				},
 				{
-					"name" : "A[2]",
+					"name" : "ADDR[6]",
 					"strict" : false
 				},
 				{
-					"name" : "A[3]",
+					"name" : "ADDR[7]",
 					"strict" : false
 				},
 				{
-					"name" : "A[4]",
+					"name" : "ADDR[8]",
 					"strict" : false
 				},
 				{
-					"name" : "A[5]",
+					"name" : "ADDR[9]",
 					"strict" : false
 				},
 				{
-					"name" : "A[6]",
+					"name" : "ADDR[10]",
 					"strict" : false
 				},
 				{
-					"name" : "A[7]",
+					"name" : "ADDR[11]",
 					"strict" : false
 				},
 				{
-					"name" : "A[8]",
+					"name" : "ADDR[12]",
 					"strict" : false
 				},
 				{
-					"name" : "A[9]",
+					"name" : "ADDR[13]",
 					"strict" : false
 				},
 				{
-					"name" : "A[10]",
+					"name" : "ADDR[14]",
 					"strict" : false
 				},
 				{
-					"name" : "A[11]",
+					"name" : "ADDR[15]",
 					"strict" : false
 				},
 				{
-					"name" : "A[12]",
+					"name" : "ADDR[3]",
 					"strict" : false
 				},
 				{
-					"name" : "A[13]",
+					"name" : "ADDR[1]",
 					"strict" : false
 				},
 				{
-					"name" : "A[14]",
-					"strict" : false
-				},
-				{
-					"name" : "A[15]",
+					"name" : "ADDR[2]",
 					"strict" : false
 				}
 			]

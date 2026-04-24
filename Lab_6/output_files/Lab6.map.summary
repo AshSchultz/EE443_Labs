@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Tue Mar 24 15:01:35 2026
+Analysis & Synthesis Status : Successful - Fri Apr 24 00:11:51 2026
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : Lab6
-Top-level Entity Name : INCTWO
+Top-level Entity Name : INS_MEM
 Family : Cyclone IV E
-Total logic elements : 18
-    Total combinational functions : 18
+Total logic elements : 23
+    Total combinational functions : 23
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 32

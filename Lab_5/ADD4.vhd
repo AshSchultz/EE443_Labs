@@ -36,9 +36,9 @@ begin
 	sum_loop : for j in 0 to 3 generate
 		S(j) <= P(j) XOR C(j);
 	end generate sum_loop;
-	
+
 	OVER <= COUT XOR C(3);
-	
+
 end behavior;
 	
 	
