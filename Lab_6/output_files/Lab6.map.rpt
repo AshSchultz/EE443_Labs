@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab6
-Fri Apr 24 00:11:51 2026
+Fri Apr 24 01:59:41 2026
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -45,16 +45,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 24 00:11:51 2026          ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 24 01:59:41 2026          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; Lab6                                           ;
-; Top-level Entity Name              ; INS_MEM                                        ;
+; Top-level Entity Name              ; DAT_MEM                                        ;
 ; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 23                                             ;
-;     Total combinational functions  ; 23                                             ;
-;     Dedicated logic registers      ; 0                                              ;
-; Total registers                    ; 0                                              ;
-; Total pins                         ; 32                                             ;
+; Total logic elements               ; 550                                            ;
+;     Total combinational functions  ; 294                                            ;
+;     Dedicated logic registers      ; 256                                            ;
+; Total registers                    ; 256                                            ;
+; Total pins                         ; 51                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
 ; Embedded Multiplier 9-bit elements ; 0                                              ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; INS_MEM            ; Lab6               ;
+; Top-level entity name                                            ; DAT_MEM            ; Lab6               ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -157,10 +157,11 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -169,43 +170,44 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                  ; Library ;
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
+; ../Lab 0/REG8.vhd                ; yes             ; User VHDL File  ; /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG8.vhd      ;         ;
 ; ../Lab_4/DCD3x8.vhd              ; yes             ; User VHDL File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd    ;         ;
-; INS_MEM.vhd                      ; yes             ; User VHDL File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd   ;         ;
 ; DCD5X32.vhd                      ; yes             ; User VHDL File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd   ;         ;
 ; DCD3X8_EN.vhd                    ; yes             ; User VHDL File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD3X8_EN.vhd ;         ;
+; DAT_MEM.vhd                      ; yes             ; User VHDL File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd   ;         ;
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                 ;
-+---------------------------------------------+---------------+
-; Resource                                    ; Usage         ;
-+---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 23            ;
-;                                             ;               ;
-; Total combinational functions               ; 23            ;
-; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 16            ;
-;     -- 3 input functions                    ; 1             ;
-;     -- <=2 input functions                  ; 6             ;
-;                                             ;               ;
-; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 23            ;
-;     -- arithmetic mode                      ; 0             ;
-;                                             ;               ;
-; Total registers                             ; 0             ;
-;     -- Dedicated logic registers            ; 0             ;
-;     -- I/O registers                        ; 0             ;
-;                                             ;               ;
-; I/O pins                                    ; 32            ;
-;                                             ;               ;
-; Embedded Multiplier 9-bit elements          ; 0             ;
-;                                             ;               ;
-; Maximum fan-out node                        ; ADDR[3]~input ;
-; Maximum fan-out                             ; 12            ;
-; Total fan-out                               ; 127           ;
-; Average fan-out                             ; 1.46          ;
-+---------------------------------------------+---------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 550       ;
+;                                             ;           ;
+; Total combinational functions               ; 294       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 217       ;
+;     -- 3 input functions                    ; 72        ;
+;     -- <=2 input functions                  ; 5         ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 294       ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 256       ;
+;     -- Dedicated logic registers            ; 256       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 51        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 256       ;
+; Total fan-out                               ; 1945      ;
+; Average fan-out                             ; 2.98      ;
++---------------------------------------------+-----------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -213,10 +215,42 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+-------------+--------------+
-; |INS_MEM                   ; 23 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |INS_MEM                                        ; INS_MEM     ; work         ;
-;    |DCD5X32:dec|           ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |INS_MEM|DCD5X32:dec                            ; DCD5X32     ; work         ;
-;       |DCD3X8_EN:dcd_0|    ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |INS_MEM|DCD5X32:dec|DCD3X8_EN:dcd_0            ; DCD3X8_EN   ; work         ;
-;          |DCD3x8:dcd|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |INS_MEM|DCD5X32:dec|DCD3X8_EN:dcd_0|DCD3x8:dcd ; DCD3x8      ; work         ;
+; |DAT_MEM                   ; 294 (293)           ; 256 (0)                   ; 0           ; 0            ; 0       ; 0         ; 51   ; 0            ; |DAT_MEM                                        ; DAT_MEM     ; work         ;
+;    |DCD5X32:dcd|           ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|DCD5X32:dcd                            ; DCD5X32     ; work         ;
+;       |DCD3X8_EN:dcd_3|    ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|DCD5X32:dcd|DCD3X8_EN:dcd_3            ; DCD3X8_EN   ; work         ;
+;          |DCD3x8:dcd|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd ; DCD3x8      ; work         ;
+;    |REG8:\reg_gen:0:regs|  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:0:regs                   ; REG8        ; work         ;
+;    |REG8:\reg_gen:10:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:10:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:11:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:11:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:12:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:12:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:13:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:13:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:14:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:14:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:15:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:15:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:16:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:16:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:17:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:17:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:18:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:18:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:19:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:19:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:1:regs|  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:1:regs                   ; REG8        ; work         ;
+;    |REG8:\reg_gen:20:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:20:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:21:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:21:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:22:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:22:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:23:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:23:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:24:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:24:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:25:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:25:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:26:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:26:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:27:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:27:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:28:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:28:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:29:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:29:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:2:regs|  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:2:regs                   ; REG8        ; work         ;
+;    |REG8:\reg_gen:30:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:30:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:31:regs| ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:31:regs                  ; REG8        ; work         ;
+;    |REG8:\reg_gen:3:regs|  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:3:regs                   ; REG8        ; work         ;
+;    |REG8:\reg_gen:4:regs|  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:4:regs                   ; REG8        ; work         ;
+;    |REG8:\reg_gen:5:regs|  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:5:regs                   ; REG8        ; work         ;
+;    |REG8:\reg_gen:6:regs|  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:6:regs                   ; REG8        ; work         ;
+;    |REG8:\reg_gen:7:regs|  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:7:regs                   ; REG8        ; work         ;
+;    |REG8:\reg_gen:8:regs|  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:8:regs                   ; REG8        ; work         ;
+;    |REG8:\reg_gen:9:regs|  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DAT_MEM|REG8:\reg_gen:9:regs                   ; REG8        ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -226,23 +260,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
 +-----------------------------------------------------+---------------------+------------------------+
-; data_out[0]                                         ; data_out[0]         ; yes                    ;
-; data_out[1]                                         ; data_out[0]         ; yes                    ;
-; data_out[2]                                         ; data_out[0]         ; yes                    ;
-; data_out[3]                                         ; data_out[0]         ; yes                    ;
-; data_out[4]                                         ; data_out[0]         ; yes                    ;
-; data_out[5]                                         ; data_out[0]         ; yes                    ;
-; data_out[6]                                         ; data_out[0]         ; yes                    ;
-; data_out[7]                                         ; data_out[0]         ; yes                    ;
-; data_out[8]                                         ; data_out[0]         ; yes                    ;
-; data_out[9]                                         ; data_out[0]         ; yes                    ;
-; data_out[10]                                        ; data_out[0]         ; yes                    ;
-; data_out[11]                                        ; data_out[0]         ; yes                    ;
-; data_out[12]                                        ; data_out[0]         ; yes                    ;
-; data_out[13]                                        ; data_out[0]         ; yes                    ;
-; data_out[14]                                        ; data_out[0]         ; yes                    ;
-; data_out[15]                                        ; data_out[0]         ; yes                    ;
-; Number of user-specified and inferred latches = 16  ;                     ;                        ;
+; DOUT[0]$latch                                       ; DOUT[15]            ; yes                    ;
+; DOUT[0]_1561                                        ; DOUT[15]            ; yes                    ;
+; DOUT[1]$latch                                       ; DOUT[15]            ; yes                    ;
+; DOUT[2]$latch                                       ; DOUT[15]            ; yes                    ;
+; DOUT[3]$latch                                       ; DOUT[15]            ; yes                    ;
+; DOUT[4]$latch                                       ; DOUT[15]            ; yes                    ;
+; DOUT[5]$latch                                       ; DOUT[15]            ; yes                    ;
+; DOUT[6]$latch                                       ; DOUT[15]            ; yes                    ;
+; DOUT[7]$latch                                       ; DOUT[15]            ; yes                    ;
+; DOUT[8]$latch                                       ; DOUT[15]            ; yes                    ;
+; DOUT[9]$latch                                       ; DOUT[15]            ; yes                    ;
+; DOUT[10]$latch                                      ; DOUT[15]            ; yes                    ;
+; DOUT[11]$latch                                      ; DOUT[15]            ; yes                    ;
+; DOUT[12]$latch                                      ; DOUT[15]            ; yes                    ;
+; DOUT[13]$latch                                      ; DOUT[15]            ; yes                    ;
+; DOUT[14]$latch                                      ; DOUT[15]            ; yes                    ;
+; DOUT[15]$latch                                      ; DOUT[15]            ; yes                    ;
+; Number of user-specified and inferred latches = 17  ;                     ;                        ;
 +-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -252,12 +287,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 256   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 256   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -267,8 +302,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |INS_MEM|data_out[14]      ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |INS_MEM|data_out[7]       ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |DAT_MEM|DOUT[2]           ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |DAT_MEM|DOUT[0]           ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |DAT_MEM|DOUT[8]           ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |DAT_MEM|DOUT[0]           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -277,15 +314,18 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 32                          ;
-; cycloneiii_lcell_comb ; 23                          ;
-;     normal            ; 23                          ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 16                          ;
+; boundary_port         ; 51                          ;
+; cycloneiii_ff         ; 256                         ;
+;     ENA               ; 256                         ;
+; cycloneiii_io_obuf    ; 16                          ;
+; cycloneiii_lcell_comb ; 294                         ;
+;     normal            ; 294                         ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 72                          ;
+;         4 data inputs ; 217                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.87                        ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 5.73                        ;
 +-----------------------+-----------------------------+
 
 
@@ -304,7 +344,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Apr 24 00:11:45 2026
+    Info: Processing started: Fri Apr 24 01:59:35 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab6 -c Lab6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -362,82 +402,83 @@ Info (12021): Found 2 design units, including 1 entities, in source file ADD16.v
 Info (12021): Found 2 design units, including 1 entities, in source file MUX2X16.vhd
     Info (12022): Found design unit 1: MUX2X16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/MUX2X16.vhd Line: 13
     Info (12023): Found entity 1: MUX2X16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/MUX2X16.vhd Line: 5
-Info (12127): Elaborating entity "INS_MEM" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at INS_MEM.vhd(50): signal "addr_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 50
-Warning (10631): VHDL Process Statement warning at INS_MEM.vhd(47): inferring latch(es) for signal or variable "data_out", which holds its previous value in one or more paths through the process File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[0]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[1]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[2]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[3]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[4]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[5]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[6]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[7]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[8]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[9]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[10]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[11]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[12]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[13]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[14]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (10041): Inferred latch for "data_out[15]" at INS_MEM.vhd(47) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Info (12128): Elaborating entity "DCD5X32" for hierarchy "DCD5X32:dec" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 32
-Info (12128): Elaborating entity "DCD3X8_EN" for hierarchy "DCD5X32:dec|DCD3X8_EN:dcd_0" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 33
-Info (12128): Elaborating entity "DCD3x8" for hierarchy "DCD5X32:dec|DCD3X8_EN:dcd_0|DCD3x8:dcd" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD3X8_EN.vhd Line: 24
-Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "data_out[8]" merged with LATCH primitive "data_out[0]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-    Info (13026): Duplicate LATCH primitive "data_out[10]" merged with LATCH primitive "data_out[0]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-    Info (13026): Duplicate LATCH primitive "data_out[11]" merged with LATCH primitive "data_out[0]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-    Info (13026): Duplicate LATCH primitive "data_out[9]" merged with LATCH primitive "data_out[4]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Warning (13012): Latch data_out[0] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch data_out[1] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch data_out[2] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch data_out[3] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch data_out[4] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch data_out[5] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch data_out[6] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch data_out[7] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch data_out[12] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch data_out[13] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch data_out[14] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch data_out[15] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (14026): LATCH primitive "data_out[0]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Warning (14026): LATCH primitive "data_out[1]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Warning (14026): LATCH primitive "data_out[2]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Warning (14026): LATCH primitive "data_out[3]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Warning (14026): LATCH primitive "data_out[4]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Warning (14026): LATCH primitive "data_out[5]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Warning (14026): LATCH primitive "data_out[6]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Warning (14026): LATCH primitive "data_out[7]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Warning (14026): LATCH primitive "data_out[12]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Warning (14026): LATCH primitive "data_out[13]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Warning (14026): LATCH primitive "data_out[14]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
-Warning (14026): LATCH primitive "data_out[15]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 47
+Info (12127): Elaborating entity "DAT_MEM" for the top level hierarchy
+Warning (10631): VHDL Process Statement warning at DAT_MEM.vhd(68): inferring latch(es) for signal or variable "DOUT", which holds its previous value in one or more paths through the process File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[0]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[1]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[2]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[3]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[4]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[5]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[6]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[7]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[8]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[9]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[10]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[11]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[12]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[13]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[14]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[15]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (12128): Elaborating entity "DCD5X32" for hierarchy "DCD5X32:dcd" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 41
+Info (12128): Elaborating entity "DCD3X8_EN" for hierarchy "DCD5X32:dcd|DCD3X8_EN:dcd_0" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 31
+Info (12128): Elaborating entity "DCD3x8" for hierarchy "DCD5X32:dcd|DCD3X8_EN:dcd_0|DCD3x8:dcd" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD3X8_EN.vhd Line: 24
+Info (12128): Elaborating entity "REG8" for hierarchy "REG8:\reg_gen:31:regs" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 59
+Warning (13012): Latch DOUT[0]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[1] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Warning (13012): Latch DOUT[1]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[1] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Warning (13012): Latch DOUT[2]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[1] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Warning (13012): Latch DOUT[3]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[1] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Warning (13012): Latch DOUT[4]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[1] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Warning (13012): Latch DOUT[5]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Warning (13012): Latch DOUT[6]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[1] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Warning (13012): Latch DOUT[7]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Warning (13012): Latch DOUT[8]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Warning (13012): Latch DOUT[9]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Warning (13012): Latch DOUT[10]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Warning (13012): Latch DOUT[11]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Warning (13012): Latch DOUT[12]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Warning (13012): Latch DOUT[13]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Warning (13012): Latch DOUT[14]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Warning (13012): Latch DOUT[15]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADDR[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "ADDR[0]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 7
-Info (21057): Implemented 55 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 16 input pins
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "ADDR[5]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[6]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[7]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[8]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[9]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[10]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[11]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[12]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[13]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[14]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[15]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 7
+Info (21057): Implemented 601 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 35 input pins
     Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 23 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
-    Info: Peak virtual memory: 443 megabytes
-    Info: Processing ended: Fri Apr 24 00:11:51 2026
+    Info (21061): Implemented 550 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
+    Info: Peak virtual memory: 486 megabytes
+    Info: Processing ended: Fri Apr 24 01:59:41 2026
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:18
 
 

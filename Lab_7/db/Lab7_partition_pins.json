@@ -1,0 +1,129 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "JMPOUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPOUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPOUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPOUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPOUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPOUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPOUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPOUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPOUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPOUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPOUT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPOUT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPOUT[13]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPOUT[14]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPOUT[15]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPADDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPADDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPADDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPADDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPADDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPADDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPADDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPADDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPADDR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPADDR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPADDR[10]",
+					"strict" : false
+				},
+				{
+					"name" : "JMPADDR[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

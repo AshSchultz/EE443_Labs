@@ -132,10 +132,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "ADD_R1[0]",
-					"strict" : false
-				},
-				{
 					"name" : "ADD_R1[1]",
 					"strict" : false
 				},
@@ -144,7 +140,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "ADD_R2[0]",
+					"name" : "ADD_R1[0]",
 					"strict" : false
 				},
 				{
@@ -153,6 +149,10 @@
 				},
 				{
 					"name" : "ADD_R2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ADD_R2[0]",
 					"strict" : false
 				},
 				{
@@ -168,15 +168,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "ADD_W[1]",
-					"strict" : false
-				},
-				{
 					"name" : "ADD_W[0]",
 					"strict" : false
 				},
 				{
 					"name" : "WE",
+					"strict" : false
+				},
+				{
+					"name" : "ADD_W[1]",
 					"strict" : false
 				},
 				{

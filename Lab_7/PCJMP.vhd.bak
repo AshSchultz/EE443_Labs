@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity PCJMP is
+  port (
+    JMPADDR : in std_logic_vector(11 downto 0);
+	 PC : IN std_logic_vector(15 downto 0);
+    JMPOUT : out std_logic_vector(15 downto 0)
+  );
+end entity PCJMP;
+architecture behavior of PCJMP is
+begin
+
+ JMPOUT <= (PC(15 downto 13), JMPADDR(11 downto 0), '0');
+
+end architecture;

@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "03/17/2026 13:49:48"
+-- DATE "04/24/2026 01:45:40"
 
 -- 
 -- Device: Altera EP4CE115F29C7 Package FBGA780
@@ -80,10 +80,10 @@ ENTITY 	ALU16 IS
 	A : IN std_logic_vector(15 DOWNTO 0);
 	B : IN std_logic_vector(15 DOWNTO 0);
 	SEL : IN std_logic_vector(2 DOWNTO 0);
-	F : OUT std_logic_vector(15 DOWNTO 0);
-	COUT : OUT std_logic;
-	OVERFLOW : OUT std_logic;
-	ZERO : OUT std_logic
+	F : BUFFER std_logic_vector(15 DOWNTO 0);
+	COUT : BUFFER std_logic;
+	OVERFLOW : BUFFER std_logic;
+	ZERO : BUFFER std_logic
 	);
 END ALU16;
 

@@ -44,25 +44,25 @@ SEL[2] => ALU4:alu0.CIN
 SEL[2] => ALU4:alu1.SEL[2]
 SEL[2] => ALU4:alu2.SEL[2]
 SEL[2] => ALU4:alu3.SEL[2]
-F[0] <= ALU4:alu0.F[0]
-F[1] <= ALU4:alu0.F[1]
-F[2] <= ALU4:alu0.F[2]
-F[3] <= ALU4:alu0.F[3]
-F[4] <= ALU4:alu1.F[0]
-F[5] <= ALU4:alu1.F[1]
-F[6] <= ALU4:alu1.F[2]
-F[7] <= ALU4:alu1.F[3]
-F[8] <= ALU4:alu2.F[0]
-F[9] <= ALU4:alu2.F[1]
-F[10] <= ALU4:alu2.F[2]
-F[11] <= ALU4:alu2.F[3]
-F[12] <= ALU4:alu3.F[0]
-F[13] <= ALU4:alu3.F[1]
-F[14] <= ALU4:alu3.F[2]
-F[15] <= ALU4:alu3.F[3]
-COUT <= ALU4:alu3.COUT
-OVERFLOW <= ALU4:alu3.OVERFLOW
-ZERO <= ZERO.DB_MAX_OUTPUT_PORT_TYPE
+F[0] << ALU4:alu0.F[0]
+F[1] << ALU4:alu0.F[1]
+F[2] << ALU4:alu0.F[2]
+F[3] << ALU4:alu0.F[3]
+F[4] << ALU4:alu1.F[0]
+F[5] << ALU4:alu1.F[1]
+F[6] << ALU4:alu1.F[2]
+F[7] << ALU4:alu1.F[3]
+F[8] << ALU4:alu2.F[0]
+F[9] << ALU4:alu2.F[1]
+F[10] << ALU4:alu2.F[2]
+F[11] << ALU4:alu2.F[3]
+F[12] << ALU4:alu3.F[0]
+F[13] << ALU4:alu3.F[1]
+F[14] << ALU4:alu3.F[2]
+F[15] << ALU4:alu3.F[3]
+COUT << ALU4:alu3.COUT
+OVERFLOW << ALU4:alu3.OVERFLOW
+ZERO << ZERO.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU16|ALU4:alu0

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab5
-Tue Mar 17 13:49:36 2026
+Fri Apr 24 01:45:27 2026
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -49,7 +49,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 17 13:49:36 2026          ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 24 01:45:27 2026          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; Lab5                                           ;
 ; Top-level Entity Name              ; ALU16                                          ;
@@ -173,13 +173,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                               ; Library ;
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
-; ADD4.vhd                         ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab_5/ADD4.vhd   ;         ;
-; BWAND4.vhd                       ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab_5/BWAND4.vhd ;         ;
-; BWOR4.vhd                        ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab_5/BWOR4.vhd  ;         ;
-; PINV4.vhd                        ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab_5/PINV4.vhd  ;         ;
-; MUX4X4.vhd                       ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab_5/MUX4X4.vhd ;         ;
-; ALU4.vhd                         ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab_5/ALU4.vhd   ;         ;
-; ALU16.vhd                        ; yes             ; User VHDL File  ; /home/ashinashell/class_coding/EE443_Labs/Lab_5/ALU16.vhd  ;         ;
+; ADD4.vhd                         ; yes             ; User VHDL File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/ADD4.vhd   ;         ;
+; BWAND4.vhd                       ; yes             ; User VHDL File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWAND4.vhd ;         ;
+; BWOR4.vhd                        ; yes             ; User VHDL File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd  ;         ;
+; PINV4.vhd                        ; yes             ; User VHDL File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/PINV4.vhd  ;         ;
+; MUX4X4.vhd                       ; yes             ; User VHDL File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/MUX4X4.vhd ;         ;
+; ALU4.vhd                         ; yes             ; User VHDL File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd   ;         ;
+; ALU16.vhd                        ; yes             ; User VHDL File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd  ;         ;
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
 
 
@@ -345,38 +345,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Tue Mar 17 13:49:30 2026
+    Info: Processing started: Fri Apr 24 01:45:21 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab5 -c Lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file ADD4.vhd
-    Info (12022): Found design unit 1: ADD4-behavior File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/ADD4.vhd Line: 14
-    Info (12023): Found entity 1: ADD4 File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/ADD4.vhd Line: 4
+    Info (12022): Found design unit 1: ADD4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ADD4.vhd Line: 14
+    Info (12023): Found entity 1: ADD4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ADD4.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file BWAND4.vhd
-    Info (12022): Found design unit 1: BWAND4-behavior File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/BWAND4.vhd Line: 11
-    Info (12023): Found entity 1: BWAND4 File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/BWAND4.vhd Line: 4
+    Info (12022): Found design unit 1: BWAND4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWAND4.vhd Line: 11
+    Info (12023): Found entity 1: BWAND4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWAND4.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file BWOR4.vhd
-    Info (12022): Found design unit 1: BWOR4-behavior File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 11
-    Info (12023): Found entity 1: BWOR4 File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 4
+    Info (12022): Found design unit 1: BWOR4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 11
+    Info (12023): Found entity 1: BWOR4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file PINV4.vhd
-    Info (12022): Found design unit 1: PINV4-behavior File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/PINV4.vhd Line: 12
-    Info (12023): Found entity 1: PINV4 File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/PINV4.vhd Line: 4
+    Info (12022): Found design unit 1: PINV4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/PINV4.vhd Line: 12
+    Info (12023): Found entity 1: PINV4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/PINV4.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file MUX4X4.vhd
-    Info (12022): Found design unit 1: MUX4X4-behavior File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/MUX4X4.vhd Line: 12
-    Info (12023): Found entity 1: MUX4X4 File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/MUX4X4.vhd Line: 5
+    Info (12022): Found design unit 1: MUX4X4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/MUX4X4.vhd Line: 12
+    Info (12023): Found entity 1: MUX4X4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/MUX4X4.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ALU4.vhd
-    Info (12022): Found design unit 1: ALU4-behavior File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/ALU4.vhd Line: 14
-    Info (12023): Found entity 1: ALU4 File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/ALU4.vhd Line: 5
+    Info (12022): Found design unit 1: ALU4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 14
+    Info (12023): Found entity 1: ALU4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ALU16.vhd
-    Info (12022): Found design unit 1: ALU16-behavior File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/ALU16.vhd Line: 13
-    Info (12023): Found entity 1: ALU16 File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/ALU16.vhd Line: 5
+    Info (12022): Found design unit 1: ALU16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd Line: 13
+    Info (12023): Found entity 1: ALU16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd Line: 5
 Info (12127): Elaborating entity "ALU16" for the top level hierarchy
-Info (12128): Elaborating entity "ALU4" for hierarchy "ALU4:alu0" File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/ALU16.vhd Line: 33
-Info (12128): Elaborating entity "PINV4" for hierarchy "ALU4:alu0|PINV4:inverter" File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/ALU4.vhd Line: 61
-Info (12128): Elaborating entity "ADD4" for hierarchy "ALU4:alu0|ADD4:adder" File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/ALU4.vhd Line: 68
-Info (12128): Elaborating entity "BWAND4" for hierarchy "ALU4:alu0|BWAND4:ander" File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/ALU4.vhd Line: 78
-Info (12128): Elaborating entity "BWOR4" for hierarchy "ALU4:alu0|BWOR4:bitwor" File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/ALU4.vhd Line: 85
-Info (12128): Elaborating entity "MUX4X4" for hierarchy "ALU4:alu0|MUX4X4:mux" File: /home/ashinashell/class_coding/EE443_Labs/Lab_5/ALU4.vhd Line: 94
+Info (12128): Elaborating entity "ALU4" for hierarchy "ALU4:alu0" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd Line: 33
+Info (12128): Elaborating entity "PINV4" for hierarchy "ALU4:alu0|PINV4:inverter" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 61
+Info (12128): Elaborating entity "ADD4" for hierarchy "ALU4:alu0|ADD4:adder" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 68
+Info (12128): Elaborating entity "BWAND4" for hierarchy "ALU4:alu0|BWAND4:ander" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 78
+Info (12128): Elaborating entity "BWOR4" for hierarchy "ALU4:alu0|BWOR4:bitwor" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 85
+Info (12128): Elaborating entity "MUX4X4" for hierarchy "ALU4:alu0|MUX4X4:mux" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 94
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -385,9 +385,9 @@ Info (21057): Implemented 112 device resources after synthesis - the final resou
     Info (21059): Implemented 19 output pins
     Info (21061): Implemented 58 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 443 megabytes
-    Info: Processing ended: Tue Mar 17 13:49:36 2026
+    Info: Peak virtual memory: 437 megabytes
+    Info: Processing ended: Fri Apr 24 01:45:27 2026
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Total CPU time (on all processors): 00:00:17
 
 

@@ -60,28 +60,28 @@ begin
 	
 	mux_1: MUX8X16
 		port map(
-			reg_to_muxes(0),
+			(others => '0'),
 			reg_to_muxes(1),
 			reg_to_muxes(2),
 			reg_to_muxes(3),
 			reg_to_muxes(4),
 			reg_to_muxes(5),
 			reg_to_muxes(6),
-			reg_to_muxes(7),
+			x"0100",
 			ADD_R1,
 			DOUT1
 		);
 	
 	mux_2: MUX8X16
 		port map(
-			reg_to_muxes(0),
+			(others => '0'),
 			reg_to_muxes(1),
 			reg_to_muxes(2),
 			reg_to_muxes(3),
 			reg_to_muxes(4),
 			reg_to_muxes(5),
 			reg_to_muxes(6),
-			reg_to_muxes(7),
+			x"0100",
 			ADD_R2,
 			DOUT2
 		);

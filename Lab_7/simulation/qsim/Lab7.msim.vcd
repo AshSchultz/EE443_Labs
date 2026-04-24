@@ -1,0 +1,363 @@
+$comment
+	File created using the following command:
+		vcd file Lab7.msim.vcd -direction
+$end
+$date
+	Fri Apr 24 01:31:51 2026
+$end
+$version
+	Questa Intel Starter FPGA Edition Version 2023.3
+$end
+$timescale
+	1ps
+$end
+
+$scope module pcjmp_vhd_vec_tst $end
+$var wire 1 ! JMPADDR [11] $end
+$var wire 1 " JMPADDR [10] $end
+$var wire 1 # JMPADDR [9] $end
+$var wire 1 $ JMPADDR [8] $end
+$var wire 1 % JMPADDR [7] $end
+$var wire 1 & JMPADDR [6] $end
+$var wire 1 ' JMPADDR [5] $end
+$var wire 1 ( JMPADDR [4] $end
+$var wire 1 ) JMPADDR [3] $end
+$var wire 1 * JMPADDR [2] $end
+$var wire 1 + JMPADDR [1] $end
+$var wire 1 , JMPADDR [0] $end
+$var wire 1 - JMPOUT [15] $end
+$var wire 1 . JMPOUT [14] $end
+$var wire 1 / JMPOUT [13] $end
+$var wire 1 0 JMPOUT [12] $end
+$var wire 1 1 JMPOUT [11] $end
+$var wire 1 2 JMPOUT [10] $end
+$var wire 1 3 JMPOUT [9] $end
+$var wire 1 4 JMPOUT [8] $end
+$var wire 1 5 JMPOUT [7] $end
+$var wire 1 6 JMPOUT [6] $end
+$var wire 1 7 JMPOUT [5] $end
+$var wire 1 8 JMPOUT [4] $end
+$var wire 1 9 JMPOUT [3] $end
+$var wire 1 : JMPOUT [2] $end
+$var wire 1 ; JMPOUT [1] $end
+$var wire 1 < JMPOUT [0] $end
+$var wire 1 = PC [15] $end
+$var wire 1 > PC [14] $end
+$var wire 1 ? PC [13] $end
+$var wire 1 @ PC [12] $end
+$var wire 1 A PC [11] $end
+$var wire 1 B PC [10] $end
+$var wire 1 C PC [9] $end
+$var wire 1 D PC [8] $end
+$var wire 1 E PC [7] $end
+$var wire 1 F PC [6] $end
+$var wire 1 G PC [5] $end
+$var wire 1 H PC [4] $end
+$var wire 1 I PC [3] $end
+$var wire 1 J PC [2] $end
+$var wire 1 K PC [1] $end
+$var wire 1 L PC [0] $end
+
+$scope module i1 $end
+$var wire 1 M gnd $end
+$var wire 1 N vcc $end
+$var wire 1 O unknown $end
+$var wire 1 P devoe $end
+$var wire 1 Q devclrn $end
+$var wire 1 R devpor $end
+$var wire 1 S ww_devoe $end
+$var wire 1 T ww_devclrn $end
+$var wire 1 U ww_devpor $end
+$var wire 1 V ww_JMPADDR [11] $end
+$var wire 1 W ww_JMPADDR [10] $end
+$var wire 1 X ww_JMPADDR [9] $end
+$var wire 1 Y ww_JMPADDR [8] $end
+$var wire 1 Z ww_JMPADDR [7] $end
+$var wire 1 [ ww_JMPADDR [6] $end
+$var wire 1 \ ww_JMPADDR [5] $end
+$var wire 1 ] ww_JMPADDR [4] $end
+$var wire 1 ^ ww_JMPADDR [3] $end
+$var wire 1 _ ww_JMPADDR [2] $end
+$var wire 1 ` ww_JMPADDR [1] $end
+$var wire 1 a ww_JMPADDR [0] $end
+$var wire 1 b ww_PC [15] $end
+$var wire 1 c ww_PC [14] $end
+$var wire 1 d ww_PC [13] $end
+$var wire 1 e ww_PC [12] $end
+$var wire 1 f ww_PC [11] $end
+$var wire 1 g ww_PC [10] $end
+$var wire 1 h ww_PC [9] $end
+$var wire 1 i ww_PC [8] $end
+$var wire 1 j ww_PC [7] $end
+$var wire 1 k ww_PC [6] $end
+$var wire 1 l ww_PC [5] $end
+$var wire 1 m ww_PC [4] $end
+$var wire 1 n ww_PC [3] $end
+$var wire 1 o ww_PC [2] $end
+$var wire 1 p ww_PC [1] $end
+$var wire 1 q ww_PC [0] $end
+$var wire 1 r ww_JMPOUT [15] $end
+$var wire 1 s ww_JMPOUT [14] $end
+$var wire 1 t ww_JMPOUT [13] $end
+$var wire 1 u ww_JMPOUT [12] $end
+$var wire 1 v ww_JMPOUT [11] $end
+$var wire 1 w ww_JMPOUT [10] $end
+$var wire 1 x ww_JMPOUT [9] $end
+$var wire 1 y ww_JMPOUT [8] $end
+$var wire 1 z ww_JMPOUT [7] $end
+$var wire 1 { ww_JMPOUT [6] $end
+$var wire 1 | ww_JMPOUT [5] $end
+$var wire 1 } ww_JMPOUT [4] $end
+$var wire 1 ~ ww_JMPOUT [3] $end
+$var wire 1 !! ww_JMPOUT [2] $end
+$var wire 1 "! ww_JMPOUT [1] $end
+$var wire 1 #! ww_JMPOUT [0] $end
+$var wire 1 $! \PC[0]~input_o\ $end
+$var wire 1 %! \PC[1]~input_o\ $end
+$var wire 1 &! \PC[2]~input_o\ $end
+$var wire 1 '! \PC[3]~input_o\ $end
+$var wire 1 (! \PC[4]~input_o\ $end
+$var wire 1 )! \PC[5]~input_o\ $end
+$var wire 1 *! \PC[6]~input_o\ $end
+$var wire 1 +! \PC[7]~input_o\ $end
+$var wire 1 ,! \PC[8]~input_o\ $end
+$var wire 1 -! \PC[9]~input_o\ $end
+$var wire 1 .! \PC[10]~input_o\ $end
+$var wire 1 /! \PC[11]~input_o\ $end
+$var wire 1 0! \PC[12]~input_o\ $end
+$var wire 1 1! \JMPOUT[0]~output_o\ $end
+$var wire 1 2! \JMPOUT[1]~output_o\ $end
+$var wire 1 3! \JMPOUT[2]~output_o\ $end
+$var wire 1 4! \JMPOUT[3]~output_o\ $end
+$var wire 1 5! \JMPOUT[4]~output_o\ $end
+$var wire 1 6! \JMPOUT[5]~output_o\ $end
+$var wire 1 7! \JMPOUT[6]~output_o\ $end
+$var wire 1 8! \JMPOUT[7]~output_o\ $end
+$var wire 1 9! \JMPOUT[8]~output_o\ $end
+$var wire 1 :! \JMPOUT[9]~output_o\ $end
+$var wire 1 ;! \JMPOUT[10]~output_o\ $end
+$var wire 1 <! \JMPOUT[11]~output_o\ $end
+$var wire 1 =! \JMPOUT[12]~output_o\ $end
+$var wire 1 >! \JMPOUT[13]~output_o\ $end
+$var wire 1 ?! \JMPOUT[14]~output_o\ $end
+$var wire 1 @! \JMPOUT[15]~output_o\ $end
+$var wire 1 A! \JMPADDR[0]~input_o\ $end
+$var wire 1 B! \JMPADDR[1]~input_o\ $end
+$var wire 1 C! \JMPADDR[2]~input_o\ $end
+$var wire 1 D! \JMPADDR[3]~input_o\ $end
+$var wire 1 E! \JMPADDR[4]~input_o\ $end
+$var wire 1 F! \JMPADDR[5]~input_o\ $end
+$var wire 1 G! \JMPADDR[6]~input_o\ $end
+$var wire 1 H! \JMPADDR[7]~input_o\ $end
+$var wire 1 I! \JMPADDR[8]~input_o\ $end
+$var wire 1 J! \JMPADDR[9]~input_o\ $end
+$var wire 1 K! \JMPADDR[10]~input_o\ $end
+$var wire 1 L! \JMPADDR[11]~input_o\ $end
+$var wire 1 M! \PC[13]~input_o\ $end
+$var wire 1 N! \PC[14]~input_o\ $end
+$var wire 1 O! \PC[15]~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0M
+1N
+xO
+1P
+1Q
+1R
+1S
+1T
+1U
+0$!
+0%!
+0&!
+0'!
+0(!
+1)!
+0*!
+0+!
+0,!
+0-!
+0.!
+0/!
+00!
+01!
+12!
+13!
+14!
+15!
+16!
+17!
+18!
+19!
+1:!
+0;!
+0<!
+0=!
+1>!
+1?!
+1@!
+1A!
+1B!
+1C!
+1D!
+1E!
+1F!
+1G!
+1H!
+1I!
+0J!
+0K!
+0L!
+1M!
+1N!
+1O!
+0!
+0"
+0#
+1$
+1%
+1&
+1'
+1(
+1)
+1*
+1+
+1,
+1=
+1>
+1?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+1G
+0H
+0I
+0J
+0K
+0L
+0V
+0W
+0X
+1Y
+1Z
+1[
+1\
+1]
+1^
+1_
+1`
+1a
+1b
+1c
+1d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+1l
+0m
+0n
+0o
+0p
+0q
+1-
+1.
+1/
+00
+01
+02
+13
+14
+15
+16
+17
+18
+19
+1:
+1;
+0<
+1r
+1s
+1t
+0u
+0v
+0w
+1x
+1y
+1z
+1{
+1|
+1}
+1~
+1!!
+1"!
+0#!
+$end
+#100000
+1L
+1q
+1$!
+#200000
+0L
+1K
+0q
+1p
+1%!
+0$!
+#300000
+1L
+1q
+1$!
+#400000
+0L
+0K
+1J
+0q
+0p
+1o
+1&!
+0%!
+0$!
+#500000
+1L
+1q
+1$!
+#600000
+0L
+1K
+0q
+1p
+1%!
+0$!
+#700000
+1L
+1q
+1$!
+#800000
+0L
+0K
+0J
+1I
+0q
+0p
+0o
+1n
+1'!
+0&!
+0%!
+0$!
+#900000
+1L
+1q
+1$!
+#1000000
