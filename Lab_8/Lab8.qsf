@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY PC
+set_global_assignment -name TOP_LEVEL_ENTITY CONTROL
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 23.1STD.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:44:52  APRIL 24, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.1 Lite Edition"
@@ -62,7 +62,35 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE ../Lab_4/REG8x16.vhd
+set_global_assignment -name VHDL_FILE ../Lab_4/MUX8X16.vhd
+set_global_assignment -name VHDL_FILE ../Lab_4/MUX4X16.vhd
+set_global_assignment -name VHDL_FILE ../Lab_4/DCD3x8.vhd
+set_global_assignment -name VHDL_FILE ../Lab_5/PINV4.vhd
+set_global_assignment -name VHDL_FILE ../Lab_5/MUX4X4.vhd
+set_global_assignment -name VHDL_FILE ../Lab_5/BWOR4.vhd
+set_global_assignment -name VHDL_FILE ../Lab_5/BWAND4.vhd
+set_global_assignment -name VHDL_FILE ../Lab_5/ALU4.vhd
+set_global_assignment -name VHDL_FILE ../Lab_5/ALU16.vhd
+set_global_assignment -name VHDL_FILE ../Lab_5/ADD4.vhd
+set_global_assignment -name VHDL_FILE ../Lab_6/SHLONE.vhd
+set_global_assignment -name VHDL_FILE ../Lab_6/SGNEXT6x16.vhd
+set_global_assignment -name VHDL_FILE ../Lab_6/MUX2X16.vhd
+set_global_assignment -name VHDL_FILE ../Lab_6/INS_MEM.vhd
+set_global_assignment -name VHDL_FILE ../Lab_6/INCTWO.vhd
+set_global_assignment -name VHDL_FILE ../Lab_6/DCD5X32.vhd
+set_global_assignment -name VHDL_FILE ../Lab_6/DCD3X8_EN.vhd
+set_global_assignment -name VHDL_FILE ../Lab_6/DAT_MEM.vhd
+set_global_assignment -name VHDL_FILE ../Lab_6/ADD16.vhd
+set_global_assignment -name VHDL_FILE ../Lab_7/MUX2X3.vhd
+set_global_assignment -name VHDL_FILE ../Lab_7/PCJMP.vhd
 set_global_assignment -name VHDL_FILE "../Lab 0/REG8.vhd"
 set_global_assignment -name VHDL_FILE "../Lab 0/REG16.vhd"
 set_global_assignment -name VHDL_FILE PC.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VHDL_FILE CONTROL.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name BDF_FILE m16dp.bdf
+set_global_assignment -name BDF_FILE m16dp1.bdf
+set_global_assignment -name BDF_FILE m16dp2.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

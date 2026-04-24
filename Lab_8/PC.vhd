@@ -18,14 +18,19 @@ architecture behavior of PC is
       Q      : out std_logic_vector(15 downto 0)
     );
   end component REG16;
+  
+  signal to_pc : std_logic_vector(15 downto 0);
+  
 begin
+  rst_gen: for i in 15 downto 0 generate
+  	  to_pc(i) <= PCIN(i) and (not RST);
+  	end generate rst_gen;	
 
     reg : REG16
         port map(
-            PCIN,
+            to_pc,
             EN,
             CLK,
             PCOUT
         );
-
 end architecture;

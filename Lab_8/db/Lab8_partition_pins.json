@@ -4,139 +4,67 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "PCOUT[0]",
+					"name" : "RegDst",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[1]",
+					"name" : "Jump",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[2]",
+					"name" : "Branch",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[3]",
+					"name" : "MemRead",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[4]",
+					"name" : "MemtoReg",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[5]",
+					"name" : "MemWrite",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[6]",
+					"name" : "ALUSrc",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[7]",
+					"name" : "RegWrite",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[8]",
+					"name" : "ALUCon",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[9]",
+					"name" : "ALUOp[1]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[10]",
+					"name" : "ALUOp[2]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[11]",
+					"name" : "INS_OP[2]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[12]",
+					"name" : "INS_OP[1]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[13]",
+					"name" : "INS_OP[0]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[14]",
+					"name" : "INS_OP[3]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[15]",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[0]",
-					"strict" : false
-				},
-				{
-					"name" : "CLK",
-					"strict" : false
-				},
-				{
-					"name" : "EN",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[1]",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[2]",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[3]",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[4]",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[5]",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[6]",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[7]",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[8]",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[9]",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[10]",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[11]",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[12]",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[13]",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[14]",
-					"strict" : false
-				},
-				{
-					"name" : "PCIN[15]",
+					"name" : "ZERO",
 					"strict" : false
 				}
 			]

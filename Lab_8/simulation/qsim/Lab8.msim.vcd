@@ -1,0 +1,292 @@
+$comment
+	File created using the following command:
+		vcd file Lab8.msim.vcd -direction
+$end
+$date
+	Fri Apr 24 14:11:50 2026
+$end
+$version
+	Questa Intel Starter FPGA Edition Version 2023.3
+$end
+$timescale
+	1ps
+$end
+
+$scope module control_vhd_vec_tst $end
+$var wire 1 ! ALUCon $end
+$var wire 1 " ALUOp [2] $end
+$var wire 1 # ALUOp [1] $end
+$var wire 1 $ ALUOp [0] $end
+$var wire 1 % ALUSrc $end
+$var wire 1 & Branch $end
+$var wire 1 ' INS_OP [3] $end
+$var wire 1 ( INS_OP [2] $end
+$var wire 1 ) INS_OP [1] $end
+$var wire 1 * INS_OP [0] $end
+$var wire 1 + Jump $end
+$var wire 1 , MemRead $end
+$var wire 1 - MemtoReg $end
+$var wire 1 . MemWrite $end
+$var wire 1 / RegDst $end
+$var wire 1 0 RegWrite $end
+$var wire 1 1 ZERO $end
+
+$scope module i1 $end
+$var wire 1 2 gnd $end
+$var wire 1 3 vcc $end
+$var wire 1 4 unknown $end
+$var wire 1 5 devoe $end
+$var wire 1 6 devclrn $end
+$var wire 1 7 devpor $end
+$var wire 1 8 ww_devoe $end
+$var wire 1 9 ww_devclrn $end
+$var wire 1 : ww_devpor $end
+$var wire 1 ; ww_INS_OP [3] $end
+$var wire 1 < ww_INS_OP [2] $end
+$var wire 1 = ww_INS_OP [1] $end
+$var wire 1 > ww_INS_OP [0] $end
+$var wire 1 ? ww_ZERO $end
+$var wire 1 @ ww_RegDst $end
+$var wire 1 A ww_Jump $end
+$var wire 1 B ww_Branch $end
+$var wire 1 C ww_MemRead $end
+$var wire 1 D ww_MemtoReg $end
+$var wire 1 E ww_MemWrite $end
+$var wire 1 F ww_ALUSrc $end
+$var wire 1 G ww_RegWrite $end
+$var wire 1 H ww_ALUCon $end
+$var wire 1 I ww_ALUOp [2] $end
+$var wire 1 J ww_ALUOp [1] $end
+$var wire 1 K ww_ALUOp [0] $end
+$var wire 1 L \RegDst~output_o\ $end
+$var wire 1 M \Jump~output_o\ $end
+$var wire 1 N \Branch~output_o\ $end
+$var wire 1 O \MemRead~output_o\ $end
+$var wire 1 P \MemtoReg~output_o\ $end
+$var wire 1 Q \MemWrite~output_o\ $end
+$var wire 1 R \ALUSrc~output_o\ $end
+$var wire 1 S \RegWrite~output_o\ $end
+$var wire 1 T \ALUCon~output_o\ $end
+$var wire 1 U \ALUOp[0]~output_o\ $end
+$var wire 1 V \ALUOp[1]~output_o\ $end
+$var wire 1 W \ALUOp[2]~output_o\ $end
+$var wire 1 X \INS_OP[2]~input_o\ $end
+$var wire 1 Y \INS_OP[3]~input_o\ $end
+$var wire 1 Z \INS_OP[1]~input_o\ $end
+$var wire 1 [ \INS_OP[0]~input_o\ $end
+$var wire 1 \ \Mux0~0_combout\ $end
+$var wire 1 ] \Mux2~0_combout\ $end
+$var wire 1 ^ \Mux3~0_combout\ $end
+$var wire 1 _ \ZERO~input_o\ $end
+$var wire 1 ` \Mux3~1_combout\ $end
+$var wire 1 a \Mux4~0_combout\ $end
+$var wire 1 b \Mux6~0_combout\ $end
+$var wire 1 c \Mux4~1_combout\ $end
+$var wire 1 d \Mux1~0_combout\ $end
+$var wire 1 e \Mux8~0_combout\ $end
+$var wire 1 f \ALT_INV_Mux1~0_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0%
+0&
+0+
+0,
+0-
+0.
+1/
+10
+01
+02
+13
+x4
+15
+16
+17
+18
+19
+1:
+0?
+1@
+0A
+0B
+0C
+0D
+0E
+0F
+1G
+0H
+1L
+0M
+0N
+0O
+0P
+0Q
+0R
+1S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+1\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+1f
+0'
+0(
+0)
+0*
+0;
+0<
+0=
+0>
+0"
+0#
+0$
+0I
+0J
+0K
+$end
+#150000
+1'
+1)
+1*
+1>
+1=
+1;
+1Y
+1Z
+1[
+0\
+1a
+1c
+1e
+1T
+1V
+1R
+1O
+1P
+0L
+1H
+1J
+1F
+1C
+1D
+0@
+1!
+1#
+1%
+1,
+1-
+0/
+#280000
+1(
+1<
+1X
+0a
+1b
+1d
+0f
+1Q
+0O
+0P
+0S
+1E
+0C
+0D
+0G
+1.
+0,
+0-
+00
+#400000
+0'
+0)
+0*
+0>
+0=
+0;
+0Y
+0Z
+0[
+1^
+0b
+0c
+0R
+0Q
+1W
+0F
+0E
+1I
+0%
+0.
+1"
+#440000
+11
+1?
+1_
+1`
+1N
+1B
+1&
+#490000
+01
+1)
+0(
+0?
+1=
+0<
+0X
+1Z
+0_
+0`
+1]
+0^
+0e
+0T
+0V
+0W
+1M
+0N
+0H
+0J
+0I
+1A
+0B
+0!
+0#
+0"
+1+
+0&
+#590000
+0)
+0=
+0Z
+1\
+0]
+0d
+1f
+0M
+1L
+1S
+0A
+1@
+1G
+0+
+1/
+10
+#1000000

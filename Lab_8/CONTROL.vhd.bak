@@ -1,0 +1,36 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity CONTROL is
+  port (
+    INS_OP         : in std_logic_vector(3 downto 0);
+	 ZERO				 : in STD_LOGIC;
+    RegDst			 : OUT STD_LOGIC;
+	 Jump				 : OUT STD_LOGIC;
+	 Branch			 : OUT STD_LOGIC;
+	 MemRead			 : OUT STD_LOGIC;
+	 MemtoReg			 : OUT STD_LOGIC;
+	 MemWrite			 : OUT STD_LOGIC;
+	 ALUSrc			 : OUT STD_LOGIC;
+	 RegWrite			 : OUT STD_LOGIC;
+	 ALUOp			 : OUT STD_LOGIC;
+	 ALUCon			 : OUT std_logic_vector(2 downto 0)
+  );
+end CONTROL;
+
+architecture behavior of CONTROL is
+begin
+
+	process(INS_OP, ZERO) is
+	begin
+		case INS_OP:
+			when x"0" =>
+				RegDst <= '1';
+				Jump, Branch <= '0';
+			when others =>
+				ALUOp <= '0';
+		end case;
+
+	end process;
+
+end architecture;
