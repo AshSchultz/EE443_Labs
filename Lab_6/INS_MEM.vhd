@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity INS_MEM is
   port (
     ADDR : in std_logic_vector(15 downto 0);
-    DOUT : out std_logic_vector(15 downto 0)
+    INS_OUT : out std_logic_vector(15 downto 0)
   );
 end entity INS_MEM;
 architecture behavior of INS_MEM is
@@ -40,10 +40,10 @@ begin
   --	I-Type opcode = I[15:12], Rs = I[11:9], Rt = I[8:6], imm = I[5:0]
   --	R-Type opcode = I[15:12], Rs = I[11:9], Rt = I[8:6], Rd = I[5:3], funct = I[2:0]
   --	J-Type opcode = I[15:12], adr = I[11:0]
-  mem(0) <= "1011000001000000"; -- loads some data from the lowest memory address into R1
-  mem(1) <= "1011000010000010"; --loads some data from the next address into R2,
-  mem(2) <= "0000001010011010"; -- adds R1 and R2 and stores the result into R3
-  mem(3) <= "1111000011000100"; -- stores the contents of R3 in the next memory address, and
+  mem(0) <= "1011111001000000"; -- ld  $1, 0($7)  # loads some data from the lowest memory address into R1
+  mem(1) <= "1011111010000010"; -- ld  $2, 2($7)  # loads some data from the next address into R2,
+  mem(2) <= "0000001010011010"; -- add $3, $2, $1 # adds R1 and R2 and stores the result into R3
+  mem(3) <= "1111111011000100"; -- sw  $3, 4($7)  # stores the contents of R3 in the next memory address, and
   mem(4) <= "0010111111111111"; -- uses an infinite loop as a halt
   process (mem, ADDR, exception, data_out) is
   begin
@@ -53,9 +53,9 @@ begin
       end if;
     end loop;
     if exception = '1' then
-      DOUT <= (others => '0');
+      INS_OUT <= (others => '0');
     else
-      DOUT <= data_out;
+      INS_OUT <= data_out;
     end if;
   end process;
 
