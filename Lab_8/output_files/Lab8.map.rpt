@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Lab8
-Fri Apr 24 16:42:33 2026
-Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Sat Apr 25 00:22:14 2026
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -10,30 +10,29 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "ADD16:inst3|ADD4:add_4"
- 10. Port Connectivity Checks: "ADD16:inst3|ADD4:add_3"
- 11. Port Connectivity Checks: "ADD16:inst3|ADD4:add_2"
- 12. Port Connectivity Checks: "ADD16:inst3|ADD4:add_1"
- 13. Port Connectivity Checks: "INCTWO:inst2|ALU16:alu0|ALU4:alu3"
- 14. Port Connectivity Checks: "INCTWO:inst2|ALU16:alu0|ALU4:alu2"
- 15. Port Connectivity Checks: "INCTWO:inst2|ALU16:alu0|ALU4:alu1"
- 16. Port Connectivity Checks: "INCTWO:inst2|ALU16:alu0|ALU4:alu0|MUX4X4:mux"
- 17. Port Connectivity Checks: "INCTWO:inst2|ALU16:alu0|ALU4:alu0"
- 18. Port Connectivity Checks: "INCTWO:inst2|ALU16:alu0"
- 19. Post-Synthesis Netlist Statistics for Top Partition
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
+  5. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_4"
+  6. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_3"
+  7. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_2"
+  8. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_1"
+  9. Port Connectivity Checks: "m16dp1:inst4|INCTWO:inst2|ALU16:alu0"
+ 10. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2"
+ 11. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1"
+ 12. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1"
+ 13. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:7:regs"
+ 14. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:0:regs"
+ 15. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu3"
+ 16. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu2"
+ 17. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu1"
+ 18. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu0|MUX4X4:mux"
+ 19. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu0"
+ 20. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2024  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -53,20 +52,20 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 24 16:42:33 2026          ;
-; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
+; Analysis & Synthesis Status        ; Failed - Sat Apr 25 00:22:14 2026              ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; Lab8                                           ;
-; Top-level Entity Name              ; m16dp1                                         ;
+; Top-level Entity Name              ; m16dp                                          ;
 ; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 0                                              ;
-;     Total combinational functions  ; 0                                              ;
-;     Dedicated logic registers      ; 0                                              ;
-; Total registers                    ; 0                                              ;
-; Total pins                         ; 19                                             ;
-; Total virtual pins                 ; 0                                              ;
-; Total memory bits                  ; 0                                              ;
-; Embedded Multiplier 9-bit elements ; 0                                              ;
-; Total PLLs                         ; 0                                              ;
+; Total logic elements               ; N/A until Partition Merge                      ;
+;     Total combinational functions  ; N/A until Partition Merge                      ;
+;     Dedicated logic registers      ; N/A until Partition Merge                      ;
+; Total registers                    ; N/A until Partition Merge                      ;
+; Total pins                         ; N/A until Partition Merge                      ;
+; Total virtual pins                 ; N/A until Partition Merge                      ;
+; Total memory bits                  ; N/A until Partition Merge                      ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                      ;
+; Total PLLs                         ; N/A until Partition Merge                      ;
 +------------------------------------+------------------------------------------------+
 
 
@@ -76,7 +75,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; m16dp1             ; Lab8               ;
+; Top-level entity name                                            ; m16dp              ; Lab8               ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -161,8 +160,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -172,95 +171,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                              ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                    ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
-; ../Lab_4/DCD3x8.vhd              ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/DCD3x8.vhd     ;         ;
-; ../Lab_5/PINV4.vhd               ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/PINV4.vhd      ;         ;
-; ../Lab_5/MUX4X4.vhd              ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/MUX4X4.vhd     ;         ;
-; ../Lab_5/BWOR4.vhd               ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd      ;         ;
-; ../Lab_5/BWAND4.vhd              ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWAND4.vhd     ;         ;
-; ../Lab_5/ALU4.vhd                ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd       ;         ;
-; ../Lab_5/ALU16.vhd               ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU16.vhd      ;         ;
-; ../Lab_5/ADD4.vhd                ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ADD4.vhd       ;         ;
-; ../Lab_6/SGNEXT6x16.vhd          ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/SGNEXT6x16.vhd ;         ;
-; ../Lab_6/MUX2X16.vhd             ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/MUX2X16.vhd    ;         ;
-; ../Lab_6/INS_MEM.vhd             ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd    ;         ;
-; ../Lab_6/INCTWO.vhd              ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INCTWO.vhd     ;         ;
-; ../Lab_6/DCD5X32.vhd             ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd    ;         ;
-; ../Lab_6/DCD3X8_EN.vhd           ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD3X8_EN.vhd  ;         ;
-; ../Lab_6/DAT_MEM.vhd             ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd    ;         ;
-; ../Lab_6/ADD16.vhd               ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/ADD16.vhd      ;         ;
-; ../Lab_7/PCJMP.vhd               ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_7/PCJMP.vhd      ;         ;
-; ../Lab 0/REG8.vhd                ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG8.vhd       ;         ;
-; ../Lab 0/REG16.vhd               ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG16.vhd      ;         ;
-; PC.vhd                           ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/PC.vhd         ;         ;
-; CONTROL.vhd                      ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/CONTROL.vhd    ;         ;
-; m16dp.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/m16dp.bdf      ;         ;
-; m16dp1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/m16dp1.bdf     ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 19    ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; CLK   ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 19    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |m16dp1                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |m16dp1             ; m16dp1      ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ADD16:inst3|ADD4:add_4"                                                             ;
+; Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_4"                                                ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -270,7 +182,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ADD16:inst3|ADD4:add_3"                                                             ;
+; Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_3"                                                ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -279,7 +191,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ADD16:inst3|ADD4:add_2"                                                             ;
+; Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_2"                                                ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -288,7 +200,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ADD16:inst3|ADD4:add_1"                                                             ;
+; Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_1"                                                ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -297,58 +209,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------+
-; Port Connectivity Checks: "INCTWO:inst2|ALU16:alu0|ALU4:alu3" ;
-+------+-------+----------+-------------------------------------+
-; Port ; Type  ; Severity ; Details                             ;
-+------+-------+----------+-------------------------------------+
-; less ; Input ; Info     ; Stuck at GND                        ;
-+------+-------+----------+-------------------------------------+
-
-
 +--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "INCTWO:inst2|ALU16:alu0|ALU4:alu2"                                                      ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
-; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "INCTWO:inst2|ALU16:alu0|ALU4:alu1"                                                      ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
-; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------+
-; Port Connectivity Checks: "INCTWO:inst2|ALU16:alu0|ALU4:alu0|MUX4X4:mux" ;
-+-----------+-------+----------+-------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                   ;
-+-----------+-------+----------+-------------------------------------------+
-; in4[2..0] ; Input ; Info     ; Stuck at GND                              ;
-+-----------+-------+----------+-------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "INCTWO:inst2|ALU16:alu0|ALU4:alu0"                                                      ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "INCTWO:inst2|ALU16:alu0"                                                                ;
+; Port Connectivity Checks: "m16dp1:inst4|INCTWO:inst2|ALU16:alu0"                                                   ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -364,25 +226,107 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 19                              ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2" ;
++-----------+-------+----------+--------------------------------------+
+; Port      ; Type  ; Severity ; Details                              ;
++-----------+-------+----------+--------------------------------------+
+; i1        ; Input ; Info     ; Stuck at GND                         ;
+; i8[15..9] ; Input ; Info     ; Stuck at GND                         ;
+; i8[7..0]  ; Input ; Info     ; Stuck at GND                         ;
+; i8[8]     ; Input ; Info     ; Stuck at VCC                         ;
++-----------+-------+----------+--------------------------------------+
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1" ;
++--------+-------+----------+-------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                               ;
++--------+-------+----------+-------------------------------------------------------+
+; inp3   ; Input ; Info     ; Stuck at GND                                          ;
+; inp4   ; Input ; Info     ; Stuck at GND                                          ;
+; con[1] ; Input ; Info     ; Stuck at GND                                          ;
++--------+-------+----------+-------------------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1" ;
++-----------+-------+----------+--------------------------------------+
+; Port      ; Type  ; Severity ; Details                              ;
++-----------+-------+----------+--------------------------------------+
+; i1        ; Input ; Info     ; Stuck at GND                         ;
+; i8[15..9] ; Input ; Info     ; Stuck at GND                         ;
+; i8[7..0]  ; Input ; Info     ; Stuck at GND                         ;
+; i8[8]     ; Input ; Info     ; Stuck at VCC                         ;
++-----------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:7:regs"                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:0:regs"                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu3" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu2"                                                     ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu1"                                                     ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu0|MUX4X4:mux" ;
++-----------+-------+----------+--------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                    ;
++-----------+-------+----------+--------------------------------------------+
+; in4[2..0] ; Input ; Info     ; Stuck at GND                               ;
++-----------+-------+----------+--------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu0"                                                     ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -390,185 +334,184 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Fri Apr 24 16:42:26 2026
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Sat Apr 25 00:22:09 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab8 -c Lab8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_4/reg8x16.vhd
-    Info (12022): Found design unit 1: REG8X16-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/REG8x16.vhd Line: 13
-    Info (12023): Found entity 1: REG8X16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/REG8x16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_4/mux8x16.vhd
-    Info (12022): Found design unit 1: MUX8X16-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/MUX8X16.vhd Line: 12
-    Info (12023): Found entity 1: MUX8X16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/MUX8X16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_4/mux4x16.vhd
-    Info (12022): Found design unit 1: MUX4X16-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/MUX4X16.vhd Line: 12
-    Info (12023): Found entity 1: MUX4X16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/MUX4X16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_4/dcd3x8.vhd
-    Info (12022): Found design unit 1: DCD3x8-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/DCD3x8.vhd Line: 11
-    Info (12023): Found entity 1: DCD3x8 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/DCD3x8.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_5/pinv4.vhd
-    Info (12022): Found design unit 1: PINV4-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/PINV4.vhd Line: 12
-    Info (12023): Found entity 1: PINV4 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/PINV4.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_5/mux4x4.vhd
-    Info (12022): Found design unit 1: MUX4X4-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/MUX4X4.vhd Line: 12
-    Info (12023): Found entity 1: MUX4X4 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/MUX4X4.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_5/bwor4.vhd
-    Info (12022): Found design unit 1: BWOR4-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 11
-    Info (12023): Found entity 1: BWOR4 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_5/bwand4.vhd
-    Info (12022): Found design unit 1: BWAND4-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWAND4.vhd Line: 11
-    Info (12023): Found entity 1: BWAND4 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWAND4.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_5/alu4.vhd
-    Info (12022): Found design unit 1: ALU4-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd Line: 14
-    Info (12023): Found entity 1: ALU4 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_5/alu16.vhd
-    Info (12022): Found design unit 1: ALU16-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU16.vhd Line: 13
-    Info (12023): Found entity 1: ALU16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU16.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_5/add4.vhd
-    Info (12022): Found design unit 1: ADD4-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ADD4.vhd Line: 14
-    Info (12023): Found entity 1: ADD4 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ADD4.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/shlone.vhd
-    Info (12022): Found design unit 1: SHLONE-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/SHLONE.vhd Line: 11
-    Info (12023): Found entity 1: SHLONE File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/SHLONE.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/sgnext6x16.vhd
-    Info (12022): Found design unit 1: SGNEXT6x16-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/SGNEXT6x16.vhd Line: 11
-    Info (12023): Found entity 1: SGNEXT6x16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/SGNEXT6x16.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/mux2x16.vhd
-    Info (12022): Found design unit 1: MUX2X16-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/MUX2X16.vhd Line: 13
-    Info (12023): Found entity 1: MUX2X16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/MUX2X16.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/ins_mem.vhd
-    Info (12022): Found design unit 1: INS_MEM-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 11
-    Info (12023): Found entity 1: INS_MEM File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/inctwo.vhd
-    Info (12022): Found design unit 1: INCTWO-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INCTWO.vhd Line: 11
-    Info (12023): Found entity 1: INCTWO File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INCTWO.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/dcd5x32.vhd
-    Info (12022): Found design unit 1: DCD5X32-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 11
-    Info (12023): Found entity 1: DCD5X32 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/dcd3x8_en.vhd
-    Info (12022): Found design unit 1: DCD3X8_EN-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD3X8_EN.vhd Line: 12
-    Info (12023): Found entity 1: DCD3X8_EN File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD3X8_EN.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/dat_mem.vhd
-    Info (12022): Found design unit 1: DAT_MEM-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 13
-    Info (12023): Found entity 1: DAT_MEM File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/add16.vhd
-    Info (12022): Found design unit 1: ADD16-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/ADD16.vhd Line: 11
-    Info (12023): Found entity 1: ADD16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/ADD16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_7/mux2x3.vhd
-    Info (12022): Found design unit 1: MUX2X3-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_7/MUX2X3.vhd Line: 12
-    Info (12023): Found entity 1: MUX2X3 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_7/MUX2X3.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_7/pcjmp.vhd
-    Info (12022): Found design unit 1: PCJMP-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_7/PCJMP.vhd Line: 12
-    Info (12023): Found entity 1: PCJMP File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_7/PCJMP.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab 0/reg8.vhd
-    Info (12022): Found design unit 1: REG8-clk File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG8.vhd Line: 12
-    Info (12023): Found entity 1: REG8 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG8.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab 0/reg16.vhd
-    Info (12022): Found design unit 1: REG16-logical_stuff File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG16.vhd Line: 13
-    Info (12023): Found entity 1: REG16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
-    Info (12022): Found design unit 1: PC-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/PC.vhd Line: 12
-    Info (12023): Found entity 1: PC File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/PC.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file control.vhd
-    Info (12022): Found design unit 1: CONTROL-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/CONTROL.vhd Line: 21
-    Info (12023): Found entity 1: CONTROL File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/CONTROL.vhd Line: 4
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd
+    Info (12022): Found design unit 1: REG8X16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 13
+    Info (12023): Found entity 1: REG8X16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX8X16.vhd
+    Info (12022): Found design unit 1: MUX8X16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX8X16.vhd Line: 12
+    Info (12023): Found entity 1: MUX8X16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX8X16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX4X16.vhd
+    Info (12022): Found design unit 1: MUX4X16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX4X16.vhd Line: 12
+    Info (12023): Found entity 1: MUX4X16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX4X16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd
+    Info (12022): Found design unit 1: DCD3x8-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 11
+    Info (12023): Found entity 1: DCD3x8 File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/PINV4.vhd
+    Info (12022): Found design unit 1: PINV4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/PINV4.vhd Line: 12
+    Info (12023): Found entity 1: PINV4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/PINV4.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/MUX4X4.vhd
+    Info (12022): Found design unit 1: MUX4X4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/MUX4X4.vhd Line: 12
+    Info (12023): Found entity 1: MUX4X4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/MUX4X4.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd
+    Info (12022): Found design unit 1: BWOR4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 11
+    Info (12023): Found entity 1: BWOR4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWAND4.vhd
+    Info (12022): Found design unit 1: BWAND4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWAND4.vhd Line: 11
+    Info (12023): Found entity 1: BWAND4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWAND4.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd
+    Info (12022): Found design unit 1: ALU4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 14
+    Info (12023): Found entity 1: ALU4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd
+    Info (12022): Found design unit 1: ALU16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd Line: 13
+    Info (12023): Found entity 1: ALU16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/ADD4.vhd
+    Info (12022): Found design unit 1: ADD4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ADD4.vhd Line: 14
+    Info (12023): Found entity 1: ADD4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ADD4.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/SHLONE.vhd
+    Info (12022): Found design unit 1: SHLONE-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/SHLONE.vhd Line: 11
+    Info (12023): Found entity 1: SHLONE File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/SHLONE.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/SGNEXT6x16.vhd
+    Info (12022): Found design unit 1: SGNEXT6x16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/SGNEXT6x16.vhd Line: 11
+    Info (12023): Found entity 1: SGNEXT6x16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/SGNEXT6x16.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/MUX2X16.vhd
+    Info (12022): Found design unit 1: MUX2X16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/MUX2X16.vhd Line: 13
+    Info (12023): Found entity 1: MUX2X16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/MUX2X16.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd
+    Info (12022): Found design unit 1: INS_MEM-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 11
+    Info (12023): Found entity 1: INS_MEM File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/INCTWO.vhd
+    Info (12022): Found design unit 1: INCTWO-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INCTWO.vhd Line: 11
+    Info (12023): Found entity 1: INCTWO File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INCTWO.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd
+    Info (12022): Found design unit 1: DCD5X32-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 11
+    Info (12023): Found entity 1: DCD5X32 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD3X8_EN.vhd
+    Info (12022): Found design unit 1: DCD3X8_EN-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD3X8_EN.vhd Line: 12
+    Info (12023): Found entity 1: DCD3X8_EN File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD3X8_EN.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd
+    Info (12022): Found design unit 1: DAT_MEM-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 13
+    Info (12023): Found entity 1: DAT_MEM File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/ADD16.vhd
+    Info (12022): Found design unit 1: ADD16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/ADD16.vhd Line: 11
+    Info (12023): Found entity 1: ADD16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/ADD16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_7/MUX2X3.vhd
+    Info (12022): Found design unit 1: MUX2X3-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_7/MUX2X3.vhd Line: 12
+    Info (12023): Found entity 1: MUX2X3 File: /home/ashinashell/class-coding/EE443_Labs/Lab_7/MUX2X3.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_7/PCJMP.vhd
+    Info (12022): Found design unit 1: PCJMP-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_7/PCJMP.vhd Line: 12
+    Info (12023): Found entity 1: PCJMP File: /home/ashinashell/class-coding/EE443_Labs/Lab_7/PCJMP.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG8.vhd
+    Info (12022): Found design unit 1: REG8-clk File: /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG8.vhd Line: 12
+    Info (12023): Found entity 1: REG8 File: /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG8.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG16.vhd
+    Info (12022): Found design unit 1: REG16-logical_stuff File: /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG16.vhd Line: 13
+    Info (12023): Found entity 1: REG16 File: /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file PC.vhd
+    Info (12022): Found design unit 1: PC-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_8/PC.vhd Line: 12
+    Info (12023): Found entity 1: PC File: /home/ashinashell/class-coding/EE443_Labs/Lab_8/PC.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file CONTROL.vhd
+    Info (12022): Found design unit 1: CONTROL-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_8/CONTROL.vhd Line: 21
+    Info (12023): Found entity 1: CONTROL File: /home/ashinashell/class-coding/EE443_Labs/Lab_8/CONTROL.vhd Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file m16dp.bdf
     Info (12023): Found entity 1: m16dp
 Info (12021): Found 1 design units, including 1 entities, in source file m16dp1.bdf
     Info (12023): Found entity 1: m16dp1
 Info (12021): Found 1 design units, including 1 entities, in source file m16dp2.bdf
     Info (12023): Found entity 1: m16dp2
-Info (12127): Elaborating entity "m16dp1" for the top level hierarchy
-Warning (275013): Port "CLK" of type m16dp and instance "inst6" is missing source signal
-Info (12128): Elaborating entity "PC" for hierarchy "PC:inst"
-Info (12128): Elaborating entity "REG16" for hierarchy "PC:inst|REG16:reg" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/PC.vhd Line: 29
-Info (12128): Elaborating entity "REG8" for hierarchy "PC:inst|REG16:reg|REG8:reg_1" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG16.vhd Line: 26
-Info (12128): Elaborating entity "INS_MEM" for hierarchy "INS_MEM:inst1"
-Warning (10492): VHDL Process Statement warning at INS_MEM.vhd(51): signal "addr_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 51
-Warning (10631): VHDL Process Statement warning at INS_MEM.vhd(48): inferring latch(es) for signal or variable "data_out", which holds its previous value in one or more paths through the process File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[0]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[1]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[2]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[3]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[4]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[5]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[6]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[7]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[8]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[9]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[10]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[11]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[12]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[13]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[14]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (10041): Inferred latch for "data_out[15]" at INS_MEM.vhd(48) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
-Info (12128): Elaborating entity "DCD5X32" for hierarchy "INS_MEM:inst1|DCD5X32:dec" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 32
-Info (12128): Elaborating entity "DCD3X8_EN" for hierarchy "INS_MEM:inst1|DCD5X32:dec|DCD3X8_EN:dcd_0" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 31
-Info (12128): Elaborating entity "DCD3x8" for hierarchy "INS_MEM:inst1|DCD5X32:dec|DCD3X8_EN:dcd_0|DCD3x8:dcd" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD3X8_EN.vhd Line: 24
-Info (12128): Elaborating entity "INCTWO" for hierarchy "INCTWO:inst2"
-Warning (10036): Verilog HDL or VHDL warning at INCTWO.vhd(14): object "aluOutputs" assigned a value but never read File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INCTWO.vhd Line: 14
-Info (12128): Elaborating entity "ALU16" for hierarchy "INCTWO:inst2|ALU16:alu0" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INCTWO.vhd Line: 29
-Info (12128): Elaborating entity "ALU4" for hierarchy "INCTWO:inst2|ALU16:alu0|ALU4:alu0" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU16.vhd Line: 33
-Info (12128): Elaborating entity "PINV4" for hierarchy "INCTWO:inst2|ALU16:alu0|ALU4:alu0|PINV4:inverter" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd Line: 61
-Info (12128): Elaborating entity "ADD4" for hierarchy "INCTWO:inst2|ALU16:alu0|ALU4:alu0|ADD4:adder" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd Line: 68
-Info (12128): Elaborating entity "BWAND4" for hierarchy "INCTWO:inst2|ALU16:alu0|ALU4:alu0|BWAND4:ander" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd Line: 78
-Info (12128): Elaborating entity "BWOR4" for hierarchy "INCTWO:inst2|ALU16:alu0|ALU4:alu0|BWOR4:bitwor" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd Line: 85
-Info (12128): Elaborating entity "MUX4X4" for hierarchy "INCTWO:inst2|ALU16:alu0|ALU4:alu0|MUX4X4:mux" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd Line: 94
-Info (12128): Elaborating entity "ADD16" for hierarchy "ADD16:inst3"
-Warning (10036): Verilog HDL or VHDL warning at ADD16.vhd(24): object "overflows" assigned a value but never read File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/ADD16.vhd Line: 24
-Info (12128): Elaborating entity "SGNEXT6x16" for hierarchy "SGNEXT6x16:inst5"
-Info (12128): Elaborating entity "PCJMP" for hierarchy "PCJMP:inst4"
-Info (12128): Elaborating entity "m16dp" for hierarchy "m16dp:inst6"
-Info (12128): Elaborating entity "CONTROL" for hierarchy "m16dp:inst6|CONTROL:inst"
-Info (12128): Elaborating entity "DAT_MEM" for hierarchy "m16dp:inst6|DAT_MEM:inst1"
-Warning (10631): VHDL Process Statement warning at DAT_MEM.vhd(68): inferring latch(es) for signal or variable "DOUT", which holds its previous value in one or more paths through the process File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[0]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[1]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[2]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[3]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[4]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[5]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[6]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[7]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[8]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[9]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[10]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[11]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[12]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[13]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[14]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[15]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (12128): Elaborating entity "MUX2X16" for hierarchy "MUX2X16:inst7"
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 19 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLK"
-    Warning (15610): No output dependent on input pin "EN"
-    Warning (15610): No output dependent on input pin "RST"
-    Warning (15610): No output dependent on input pin "PCIN[15]"
-    Warning (15610): No output dependent on input pin "PCIN[14]"
-    Warning (15610): No output dependent on input pin "PCIN[13]"
-    Warning (15610): No output dependent on input pin "PCIN[12]"
-    Warning (15610): No output dependent on input pin "PCIN[11]"
-    Warning (15610): No output dependent on input pin "PCIN[10]"
-    Warning (15610): No output dependent on input pin "PCIN[9]"
-    Warning (15610): No output dependent on input pin "PCIN[8]"
-    Warning (15610): No output dependent on input pin "PCIN[7]"
-    Warning (15610): No output dependent on input pin "PCIN[6]"
-    Warning (15610): No output dependent on input pin "PCIN[5]"
-    Warning (15610): No output dependent on input pin "PCIN[4]"
-    Warning (15610): No output dependent on input pin "PCIN[3]"
-    Warning (15610): No output dependent on input pin "PCIN[2]"
-    Warning (15610): No output dependent on input pin "PCIN[1]"
-    Warning (15610): No output dependent on input pin "PCIN[0]"
-Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 19 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
-    Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Fri Apr 24 16:42:33 2026
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:12
+Info (12127): Elaborating entity "m16dp" for the top level hierarchy
+Warning (275083): Bus "DOUT2[15..0]" found using same base name as "DOUT", which might lead to a name conflict.
+Warning (275083): Bus "DOUT2[15..0]" found using same base name as "DOUT", which might lead to a name conflict.
+Warning (275080): Converted elements in bus name "DOUT" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "DOUT[15..0]" to "DOUT15..0"
+Warning (275080): Converted elements in bus name "DOUT2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "DOUT2[15..0]" to "DOUT215..0"
+    Warning (275081): Converted element name(s) from "DOUT2[15..0]" to "DOUT215..0"
+Warning (275013): Port "CLK" of type m16dp1 and instance "inst4" is missing source signal
+Info (12128): Elaborating entity "CONTROL" for hierarchy "CONTROL:inst"
+Info (12128): Elaborating entity "m16dp2" for hierarchy "m16dp2:inst2"
+Info (12128): Elaborating entity "ALU16" for hierarchy "m16dp2:inst2|ALU16:inst1"
+Info (12128): Elaborating entity "ALU4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd Line: 33
+Info (12128): Elaborating entity "PINV4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|PINV4:inverter" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 61
+Info (12128): Elaborating entity "ADD4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|ADD4:adder" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 68
+Info (12128): Elaborating entity "BWAND4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWAND4:ander" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 78
+Info (12128): Elaborating entity "BWOR4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 85
+Info (12128): Elaborating entity "MUX4X4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|MUX4X4:mux" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 94
+Info (12128): Elaborating entity "MUX2X3" for hierarchy "m16dp2:inst2|MUX2X3:inst3"
+Info (12128): Elaborating entity "REG8X16" for hierarchy "m16dp2:inst2|REG8X16:inst"
+Info (12128): Elaborating entity "DCD3x8" for hierarchy "m16dp2:inst2|REG8X16:inst|DCD3x8:add_reg1_dcd" File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 45
+Info (12128): Elaborating entity "REG16" for hierarchy "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:0:regs" File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 52
+Info (12128): Elaborating entity "REG8" for hierarchy "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:0:regs|REG8:reg_1" File: /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG16.vhd Line: 26
+Info (12128): Elaborating entity "MUX8X16" for hierarchy "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1" File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 61
+Info (12128): Elaborating entity "MUX4X16" for hierarchy "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1" File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX8X16.vhd Line: 27
+Info (12128): Elaborating entity "MUX2X16" for hierarchy "MUX2X16:inst3"
+Info (12128): Elaborating entity "DAT_MEM" for hierarchy "DAT_MEM:inst1"
+Warning (10631): VHDL Process Statement warning at DAT_MEM.vhd(68): inferring latch(es) for signal or variable "DOUT", which holds its previous value in one or more paths through the process File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[0]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[1]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[2]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[3]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[4]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[5]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[6]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[7]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[8]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[9]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[10]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[11]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[12]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[13]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[14]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[15]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (12128): Elaborating entity "DCD5X32" for hierarchy "DAT_MEM:inst1|DCD5X32:dcd" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 41
+Info (12128): Elaborating entity "DCD3X8_EN" for hierarchy "DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_0" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 31
+Info (12128): Elaborating entity "m16dp1" for hierarchy "m16dp1:inst4"
+Info (12128): Elaborating entity "INS_MEM" for hierarchy "m16dp1:inst4|INS_MEM:inst1"
+Warning (10492): VHDL Process Statement warning at INS_MEM.vhd(51): signal "addr_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at INS_MEM.vhd(48): inferring latch(es) for signal or variable "data_out", which holds its previous value in one or more paths through the process File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[0]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[1]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[2]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[3]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[4]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[5]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[6]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[7]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[8]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[9]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[10]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[11]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[12]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[13]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[14]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (10041): Inferred latch for "data_out[15]" at INS_MEM.vhd(48) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 48
+Info (12128): Elaborating entity "PC" for hierarchy "m16dp1:inst4|PC:inst"
+Info (12128): Elaborating entity "INCTWO" for hierarchy "m16dp1:inst4|INCTWO:inst2"
+Warning (10036): Verilog HDL or VHDL warning at INCTWO.vhd(14): object "aluOutputs" assigned a value but never read File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INCTWO.vhd Line: 14
+Info (12128): Elaborating entity "ADD16" for hierarchy "m16dp1:inst4|ADD16:inst3"
+Warning (10036): Verilog HDL or VHDL warning at ADD16.vhd(24): object "overflows" assigned a value but never read File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/ADD16.vhd Line: 24
+Info (12128): Elaborating entity "SGNEXT6x16" for hierarchy "m16dp1:inst4|SGNEXT6x16:inst5"
+Info (12128): Elaborating entity "PCJMP" for hierarchy "m16dp1:inst4|PCJMP:inst4"
+Error (12009): Node "m16dp2:inst2|CONALU" is missing source
+Error (12009): Node "m16dp2:inst2|INS[2]" is missing source
+Error (12009): Node "m16dp2:inst2|INS[1]" is missing source
+Error (12009): Node "m16dp2:inst2|INS[0]" is missing source
+Error (12009): Node "m16dp2:inst2|RegWrite" is missing source
+Error (12009): Node "m16dp2:inst2|INS[8]" is missing source
+Error (12009): Node "m16dp2:inst2|INS[7]" is missing source
+Error (12009): Node "m16dp2:inst2|INS[6]" is missing source
+Error (12009): Node "m16dp2:inst2|RegDst" is missing source
+Error (12009): Node "m16dp2:inst2|INS[5]" is missing source
+Error (12009): Node "m16dp2:inst2|INS[4]" is missing source
+Error (12009): Node "m16dp2:inst2|INS[3]" is missing source
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 12 errors, 14 warnings
+    Error: Peak virtual memory: 408 megabytes
+    Error: Processing ended: Sat Apr 25 00:22:14 2026
+    Error: Elapsed time: 00:00:05
+    Error: Total CPU time (on all processors): 00:00:17
 
 
