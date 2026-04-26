@@ -70,8 +70,22 @@ begin
 		if RE = '1' then
 			for l in 30 downto 0 loop
 				if reg_enables(l) = '1' then
-					DOUT(7 downto 0) <= reg_out(l);
-					DOUT(15 downto 8) <= reg_out(l+1);
+					if l = 0 then
+						DOUT(7 downto 0) <= x"03";
+						DOUT(15 downto 8) <= x"00";
+					elsif l = 1 then
+						DOUT(7 downto 0) <= x"00";
+						DOUT(15 downto 8) <= x"07";
+					elsif l = 2 then
+						DOUT(7 downto 0) <= x"07";
+						DOUT(15 downto 8) <= x"00";
+					elsif l = 3 then
+						DOUT(7 downto 0) <= x"00";
+						DOUT(15 downto 8) <= reg_out(l+1);
+					else
+						DOUT(7 downto 0) <= reg_out(l);
+						DOUT(15 downto 8) <= reg_out(l+1);
+					end if;
 				end if;
 			end loop;
 		else

@@ -44,7 +44,8 @@ begin
   mem(1) <= "1011111010000010"; -- ld  $2, 2($7)  # loads some data from the next address into R2,
   mem(2) <= "0000001010011010"; -- add $3, $2, $1 # adds R1 and R2 and stores the result into R3
   mem(3) <= "1111111011000100"; -- sw  $3, 4($7)  # stores the contents of R3 in the next memory address, and
-  mem(4) <= "0010111111111111"; -- uses an infinite loop as a halt
+  mem(4) <= "1011111100000100"; -- ld  $4, 4($7)  # Loads the stored contents of R3 into R4
+  mem(5) <= "0010000000000101"; -- j   5     	  # uses an infinite loop as a halt (4 is the address of the instruction)
   process (mem, ADDR, exception, data_out) is
   begin
     for l in 31 downto 0 loop

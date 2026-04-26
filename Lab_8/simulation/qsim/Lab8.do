@@ -1,11 +1,11 @@
 onerror {exit -code 1}
 vlib work
 vcom -work work Lab8.vho
-vcom -work work Waveform5.vwf.vht
-vsim -voptargs="+acc" -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.m16dp1_vhd_vec_tst
+vcom -work work Waveform11.vwf.vht
+vsim -voptargs="+acc" -c -t 1ps -sdfmax m16dp_vhd_vec_tst/i1=Lab8_vhd.sdo -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.m16dp_vhd_vec_tst
 vcd file -direction Lab8.msim.vcd
-vcd add -internal m16dp1_vhd_vec_tst/*
-vcd add -internal m16dp1_vhd_vec_tst/i1/*
+vcd add -internal m16dp_vhd_vec_tst/*
+vcd add -internal m16dp_vhd_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -15,4 +15,3 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
