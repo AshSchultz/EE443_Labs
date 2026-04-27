@@ -1,0 +1,973 @@
+Analysis & Synthesis report for Lab9
+Sat Apr 25 22:42:05 2026
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:0:regs"
+ 12. Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:1:regs"
+ 13. Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:2:regs"
+ 14. Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:3:regs"
+ 15. Port Connectivity Checks: "m16dp1:inst4|INCTWO:inst2|ALU16:alu0"
+ 16. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_4"
+ 17. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_3"
+ 18. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_2"
+ 19. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_1"
+ 20. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2"
+ 21. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1"
+ 22. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1"
+ 23. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:7:regs"
+ 24. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:0:regs"
+ 25. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu3"
+ 26. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu2"
+ 27. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu1"
+ 28. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu0|MUX4X4:mux"
+ 29. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu0"
+ 30. Post-Synthesis Netlist Statistics for Top Partition
+ 31. Elapsed Time Per Partition
+ 32. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Apr 25 22:42:05 2026          ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                      ; Lab9                                           ;
+; Top-level Entity Name              ; m16dp                                          ;
+; Family                             ; Cyclone IV E                                   ;
+; Total logic elements               ; 942                                            ;
+;     Total combinational functions  ; 654                                            ;
+;     Dedicated logic registers      ; 336                                            ;
+; Total registers                    ; 336                                            ;
+; Total pins                         ; 191                                            ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; m16dp              ; Lab9               ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processors 3-16        ;   0.1%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                             ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+---------+
+; ../Lab 0/REG8.vhd                ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG8.vhd       ;         ;
+; ../Lab 0/REG16.vhd               ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG16.vhd      ;         ;
+; ../Lab_4/REG8x16.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd    ;         ;
+; ../Lab_4/MUX8X16.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX8X16.vhd    ;         ;
+; ../Lab_4/MUX4X16.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX4X16.vhd    ;         ;
+; ../Lab_4/DCD3x8.vhd              ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd     ;         ;
+; ../Lab_5/PINV4.vhd               ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/PINV4.vhd      ;         ;
+; ../Lab_5/MUX4X4.vhd              ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/MUX4X4.vhd     ;         ;
+; ../Lab_5/BWOR4.vhd               ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd      ;         ;
+; ../Lab_5/BWAND4.vhd              ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWAND4.vhd     ;         ;
+; ../Lab_5/ALU4.vhd                ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd       ;         ;
+; ../Lab_5/ALU16.vhd               ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd      ;         ;
+; ../Lab_5/ADD4.vhd                ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/ADD4.vhd       ;         ;
+; ../Lab_6/SGNEXT6x16.vhd          ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/SGNEXT6x16.vhd ;         ;
+; ../Lab_6/MUX2X16.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/MUX2X16.vhd    ;         ;
+; ../Lab_6/INS_MEM.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd    ;         ;
+; ../Lab_6/INCTWO.vhd              ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/INCTWO.vhd     ;         ;
+; ../Lab_6/DCD5X32.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd    ;         ;
+; ../Lab_6/DCD3X8_EN.vhd           ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD3X8_EN.vhd  ;         ;
+; ../Lab_6/DAT_MEM.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd    ;         ;
+; ../Lab_6/ADD16.vhd               ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/ADD16.vhd      ;         ;
+; ../Lab_7/PCJMP.vhd               ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_7/PCJMP.vhd      ;         ;
+; ../Lab_7/MUX2X3.vhd              ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_7/MUX2X3.vhd     ;         ;
+; ../Lab_8/m16dp2.bdf              ; yes             ; User Block Diagram/Schematic File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_8/m16dp2.bdf     ;         ;
+; ../Lab_8/m16dp1.bdf              ; yes             ; User Block Diagram/Schematic File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_8/m16dp1.bdf     ;         ;
+; ../Lab_8/m16dp.bdf               ; yes             ; User Block Diagram/Schematic File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_8/m16dp.bdf      ;         ;
+; ../Lab_8/CONTROL.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_8/CONTROL.vhd    ;         ;
+; ../Lab_8/PC.vhd                  ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_8/PC.vhd         ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 942       ;
+;                                             ;           ;
+; Total combinational functions               ; 654       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 447       ;
+;     -- 3 input functions                    ; 175       ;
+;     -- <=2 input functions                  ; 32        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 654       ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 336       ;
+;     -- Dedicated logic registers            ; 336       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 191       ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 336       ;
+; Total fan-out                               ; 3779      ;
+; Average fan-out                             ; 2.75      ;
++---------------------------------------------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                               ;
++-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                       ; Entity Name ; Library Name ;
++-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+-------------+--------------+
+; |m16dp                                        ; 654 (0)             ; 336 (0)                   ; 0           ; 0            ; 0       ; 0         ; 191  ; 0            ; |m16dp                                                                                    ; m16dp       ; work         ;
+;    |CONTROL:inst|                             ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|CONTROL:inst                                                                       ; CONTROL     ; work         ;
+;    |DAT_MEM:inst1|                            ; 311 (302)           ; 224 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1                                                                      ; DAT_MEM     ; work         ;
+;       |DCD5X32:dcd|                           ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|DCD5X32:dcd                                                          ; DCD5X32     ; work         ;
+;          |DCD3X8_EN:dcd_0|                    ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_0                                          ; DCD3X8_EN   ; work         ;
+;          |DCD3X8_EN:dcd_3|                    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3                                          ; DCD3X8_EN   ; work         ;
+;             |DCD3x8:dcd|                      ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd                               ; DCD3x8      ; work         ;
+;       |REG8:\reg_gen:10:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:10:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:11:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:11:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:12:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:12:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:13:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:13:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:14:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:14:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:15:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:15:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:16:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:16:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:17:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:17:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:18:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:18:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:19:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:19:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:20:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:20:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:21:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:21:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:22:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:22:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:23:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:23:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:24:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:24:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:25:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:25:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:26:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:26:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:27:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:27:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:28:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:28:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:29:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:29:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:30:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:30:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:31:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:31:regs                                                ; REG8        ; work         ;
+;       |REG8:\reg_gen:4:regs|                  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:4:regs                                                 ; REG8        ; work         ;
+;       |REG8:\reg_gen:5:regs|                  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:5:regs                                                 ; REG8        ; work         ;
+;       |REG8:\reg_gen:6:regs|                  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:6:regs                                                 ; REG8        ; work         ;
+;       |REG8:\reg_gen:7:regs|                  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:7:regs                                                 ; REG8        ; work         ;
+;       |REG8:\reg_gen:8:regs|                  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:8:regs                                                 ; REG8        ; work         ;
+;       |REG8:\reg_gen:9:regs|                  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:9:regs                                                 ; REG8        ; work         ;
+;    |MUX2X16:inst3|                            ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|MUX2X16:inst3                                                                      ; MUX2X16     ; work         ;
+;    |m16dp1:inst4|                             ; 130 (0)             ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4                                                                       ; m16dp1      ; work         ;
+;       |ADD16:inst3|                           ; 31 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|ADD16:inst3                                                           ; ADD16       ; work         ;
+;          |ADD4:add_1|                         ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|ADD16:inst3|ADD4:add_1                                                ; ADD4        ; work         ;
+;          |ADD4:add_2|                         ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|ADD16:inst3|ADD4:add_2                                                ; ADD4        ; work         ;
+;          |ADD4:add_3|                         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|ADD16:inst3|ADD4:add_3                                                ; ADD4        ; work         ;
+;          |ADD4:add_4|                         ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|ADD16:inst3|ADD4:add_4                                                ; ADD4        ; work         ;
+;       |INCTWO:inst2|                          ; 23 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INCTWO:inst2                                                          ; INCTWO      ; work         ;
+;          |ALU16:alu0|                         ; 23 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INCTWO:inst2|ALU16:alu0                                               ; ALU16       ; work         ;
+;             |ALU4:alu0|                       ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INCTWO:inst2|ALU16:alu0|ALU4:alu0                                     ; ALU4        ; work         ;
+;                |ADD4:adder|                   ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INCTWO:inst2|ALU16:alu0|ALU4:alu0|ADD4:adder                          ; ADD4        ; work         ;
+;             |ALU4:alu1|                       ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INCTWO:inst2|ALU16:alu0|ALU4:alu1                                     ; ALU4        ; work         ;
+;                |ADD4:adder|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INCTWO:inst2|ALU16:alu0|ALU4:alu1|ADD4:adder                          ; ADD4        ; work         ;
+;             |ALU4:alu2|                       ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INCTWO:inst2|ALU16:alu0|ALU4:alu2                                     ; ALU4        ; work         ;
+;                |ADD4:adder|                   ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INCTWO:inst2|ALU16:alu0|ALU4:alu2|ADD4:adder                          ; ADD4        ; work         ;
+;             |ALU4:alu3|                       ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INCTWO:inst2|ALU16:alu0|ALU4:alu3                                     ; ALU4        ; work         ;
+;                |ADD4:adder|                   ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INCTWO:inst2|ALU16:alu0|ALU4:alu3|ADD4:adder                          ; ADD4        ; work         ;
+;       |INS_MEM:inst1|                         ; 31 (28)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INS_MEM:inst1                                                         ; INS_MEM     ; work         ;
+;          |DCD5X32:dec|                        ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec                                             ; DCD5X32     ; work         ;
+;             |DCD3X8_EN:dcd_0|                 ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|DCD3X8_EN:dcd_0                             ; DCD3X8_EN   ; work         ;
+;       |MUX2X16:JUMPMUX|                       ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|MUX2X16:JUMPMUX                                                       ; MUX2X16     ; work         ;
+;       |MUX2X16:inst7|                         ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|MUX2X16:inst7                                                         ; MUX2X16     ; work         ;
+;       |PC:inst|                               ; 16 (16)             ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|PC:inst                                                               ; PC          ; work         ;
+;          |REG16:reg|                          ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|PC:inst|REG16:reg                                                     ; REG16       ; work         ;
+;             |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1                                          ; REG8        ; work         ;
+;             |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|PC:inst|REG16:reg|REG8:reg_2                                          ; REG8        ; work         ;
+;    |m16dp2:inst2|                             ; 187 (0)             ; 96 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2                                                                       ; m16dp2      ; work         ;
+;       |ALU16:inst1|                           ; 56 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1                                                           ; ALU16       ; work         ;
+;          |ALU4:alu0|                          ; 17 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu0                                                 ; ALU4        ; work         ;
+;             |ADD4:adder|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu0|ADD4:adder                                      ; ADD4        ; work         ;
+;             |BWAND4:ander|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWAND4:ander                                    ; BWAND4      ; work         ;
+;             |BWOR4:bitwor|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor                                    ; BWOR4       ; work         ;
+;             |MUX4X4:mux|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu0|MUX4X4:mux                                      ; MUX4X4      ; work         ;
+;             |PINV4:inverter|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu0|PINV4:inverter                                  ; PINV4       ; work         ;
+;          |ALU4:alu1|                          ; 13 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu1                                                 ; ALU4        ; work         ;
+;             |ADD4:adder|                      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu1|ADD4:adder                                      ; ADD4        ; work         ;
+;             |MUX4X4:mux|                      ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu1|MUX4X4:mux                                      ; MUX4X4      ; work         ;
+;          |ALU4:alu2|                          ; 13 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu2                                                 ; ALU4        ; work         ;
+;             |ADD4:adder|                      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu2|ADD4:adder                                      ; ADD4        ; work         ;
+;             |MUX4X4:mux|                      ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu2|MUX4X4:mux                                      ; MUX4X4      ; work         ;
+;          |ALU4:alu3|                          ; 13 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu3                                                 ; ALU4        ; work         ;
+;             |ADD4:adder|                      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu3|ADD4:adder                                      ; ADD4        ; work         ;
+;             |MUX4X4:mux|                      ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu3|MUX4X4:mux                                      ; MUX4X4      ; work         ;
+;       |MUX2X16:inst2|                         ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|MUX2X16:inst2                                                         ; MUX2X16     ; work         ;
+;       |MUX2X3:inst3|                          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|MUX2X3:inst3                                                          ; MUX2X3      ; work         ;
+;       |MUX2X3:inst5|                          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|MUX2X3:inst5                                                          ; MUX2X3      ; work         ;
+;       |REG8X16:inst|                          ; 107 (0)             ; 96 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst                                                          ; REG8X16     ; work         ;
+;          |DCD3x8:add_reg1_dcd|                ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|DCD3x8:add_reg1_dcd                                      ; DCD3x8      ; work         ;
+;          |MUX8X16:mux_1|                      ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1                                            ; MUX8X16     ; work         ;
+;             |MUX4X16:mux_1|                   ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1                              ; MUX4X16     ; work         ;
+;                |MUX4X4:\mux_generate:0:mux_i| ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:0:mux_i ; MUX4X4      ; work         ;
+;                |MUX4X4:\mux_generate:1:mux_i| ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:1:mux_i ; MUX4X4      ; work         ;
+;                |MUX4X4:\mux_generate:2:mux_i| ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:2:mux_i ; MUX4X4      ; work         ;
+;                |MUX4X4:\mux_generate:3:mux_i| ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:3:mux_i ; MUX4X4      ; work         ;
+;          |MUX8X16:mux_2|                      ; 68 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2                                            ; MUX8X16     ; work         ;
+;             |MUX4X16:mux_1|                   ; 68 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1                              ; MUX4X16     ; work         ;
+;                |MUX4X4:\mux_generate:0:mux_i| ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:0:mux_i ; MUX4X4      ; work         ;
+;                |MUX4X4:\mux_generate:1:mux_i| ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:1:mux_i ; MUX4X4      ; work         ;
+;                |MUX4X4:\mux_generate:2:mux_i| ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:2:mux_i ; MUX4X4      ; work         ;
+;                |MUX4X4:\mux_generate:3:mux_i| ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:3:mux_i ; MUX4X4      ; work         ;
+;          |REG16:\reg_gen:1:regs|              ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:1:regs                                    ; REG16       ; work         ;
+;             |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:1:regs|REG8:reg_1                         ; REG8        ; work         ;
+;             |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:1:regs|REG8:reg_2                         ; REG8        ; work         ;
+;          |REG16:\reg_gen:2:regs|              ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:2:regs                                    ; REG16       ; work         ;
+;             |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:2:regs|REG8:reg_1                         ; REG8        ; work         ;
+;             |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:2:regs|REG8:reg_2                         ; REG8        ; work         ;
+;          |REG16:\reg_gen:3:regs|              ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:3:regs                                    ; REG16       ; work         ;
+;             |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:3:regs|REG8:reg_1                         ; REG8        ; work         ;
+;             |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:3:regs|REG8:reg_2                         ; REG8        ; work         ;
+;          |REG16:\reg_gen:4:regs|              ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:4:regs                                    ; REG16       ; work         ;
+;             |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:4:regs|REG8:reg_1                         ; REG8        ; work         ;
+;             |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:4:regs|REG8:reg_2                         ; REG8        ; work         ;
+;          |REG16:\reg_gen:5:regs|              ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:5:regs                                    ; REG16       ; work         ;
+;             |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:5:regs|REG8:reg_1                         ; REG8        ; work         ;
+;             |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:5:regs|REG8:reg_2                         ; REG8        ; work         ;
+;          |REG16:\reg_gen:6:regs|              ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:6:regs                                    ; REG16       ; work         ;
+;             |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:6:regs|REG8:reg_1                         ; REG8        ; work         ;
+;             |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:6:regs|REG8:reg_2                         ; REG8        ; work         ;
++-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                   ;
++-----------------------------------------------------+----------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                    ; Free of Timing Hazards ;
++-----------------------------------------------------+----------------------------------------+------------------------+
+; m16dp1:inst4|INS_MEM:inst1|data_out[14]             ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[15]             ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[13]             ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[12]             ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[5]              ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[4]              ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[3]              ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[2]              ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[1]              ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[0]              ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[8]              ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[7]              ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[6]              ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[11]             ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[10]             ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[9]              ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; DAT_MEM:inst1|DOUT[15]$latch                        ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
+; DAT_MEM:inst1|DOUT[15]_2612                         ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
+; DAT_MEM:inst1|DOUT[14]$latch                        ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
+; DAT_MEM:inst1|DOUT[13]$latch                        ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
+; DAT_MEM:inst1|DOUT[12]$latch                        ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
+; DAT_MEM:inst1|DOUT[11]$latch                        ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
+; DAT_MEM:inst1|DOUT[10]$latch                        ; DAT_MEM:inst1|DOUT[15]                 ; no                     ;
+; DAT_MEM:inst1|DOUT[9]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; no                     ;
+; DAT_MEM:inst1|DOUT[8]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; no                     ;
+; DAT_MEM:inst1|DOUT[7]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
+; DAT_MEM:inst1|DOUT[7]_2052                          ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
+; DAT_MEM:inst1|DOUT[6]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
+; DAT_MEM:inst1|DOUT[5]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
+; DAT_MEM:inst1|DOUT[4]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
+; DAT_MEM:inst1|DOUT[3]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
+; DAT_MEM:inst1|DOUT[2]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; no                     ;
+; DAT_MEM:inst1|DOUT[1]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; no                     ;
+; DAT_MEM:inst1|DOUT[0]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; no                     ;
+; Number of user-specified and inferred latches = 34  ;                                        ;                        ;
++-----------------------------------------------------+----------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 336   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 336   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------+
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu1|MUX4X4:mux|Mux3                                      ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |m16dp|m16dp1:inst4|INS_MEM:inst1|data_out[3]                                                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |m16dp|m16dp1:inst4|INS_MEM:inst1|data_out[4]                                                  ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |m16dp|DAT_MEM:inst1|DOUT[8]                                                                   ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |m16dp|m16dp1:inst4|INS_MEM:inst1|data_out[9]                                                  ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 64 LEs               ; 16 LEs                 ; No         ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:0:mux_i|Mux3 ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 64 LEs               ; 16 LEs                 ; No         ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:2:mux_i|Mux2 ;
+; 18:1               ; 8 bits    ; 96 LEs        ; 72 LEs               ; 24 LEs                 ; No         ; |m16dp|DAT_MEM:inst1|DOUT[3]                                                                   ;
+; 18:1               ; 8 bits    ; 96 LEs        ; 72 LEs               ; 24 LEs                 ; No         ; |m16dp|DAT_MEM:inst1|DOUT[12]                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:0:regs"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; y    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:1:regs"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; y    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:2:regs"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; y    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:3:regs"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; y    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp1:inst4|INCTWO:inst2|ALU16:alu0"                                                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; b[15..2] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; b[1]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; b[0]     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; sel[2]   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; sel[1]   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; sel[0]   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; zero     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_4"                                                ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; c4   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; over ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_3"                                                ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; over ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_2"                                                ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; over ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_1"                                                ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; c0   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; over ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2" ;
++-----------+-------+----------+--------------------------------------+
+; Port      ; Type  ; Severity ; Details                              ;
++-----------+-------+----------+--------------------------------------+
+; i1        ; Input ; Info     ; Stuck at GND                         ;
+; i8[15..9] ; Input ; Info     ; Stuck at GND                         ;
+; i8[7..0]  ; Input ; Info     ; Stuck at GND                         ;
+; i8[8]     ; Input ; Info     ; Stuck at VCC                         ;
++-----------+-------+----------+--------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1" ;
++--------+-------+----------+-------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                               ;
++--------+-------+----------+-------------------------------------------------------+
+; inp3   ; Input ; Info     ; Stuck at GND                                          ;
+; inp4   ; Input ; Info     ; Stuck at GND                                          ;
+; con[1] ; Input ; Info     ; Stuck at GND                                          ;
++--------+-------+----------+-------------------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1" ;
++-----------+-------+----------+--------------------------------------+
+; Port      ; Type  ; Severity ; Details                              ;
++-----------+-------+----------+--------------------------------------+
+; i1        ; Input ; Info     ; Stuck at GND                         ;
+; i8[15..9] ; Input ; Info     ; Stuck at GND                         ;
+; i8[7..0]  ; Input ; Info     ; Stuck at GND                         ;
+; i8[8]     ; Input ; Info     ; Stuck at VCC                         ;
++-----------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:7:regs"                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:0:regs"                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu3" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu2"                                                     ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu1"                                                     ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu0|MUX4X4:mux" ;
++-----------+-------+----------+--------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                    ;
++-----------+-------+----------+--------------------------------------------+
+; in4[2..0] ; Input ; Info     ; Stuck at GND                               ;
++-----------+-------+----------+--------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu0"                                                     ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 191                         ;
+; cycloneiii_ff         ; 336                         ;
+;     ENA               ; 336                         ;
+; cycloneiii_io_obuf    ; 16                          ;
+; cycloneiii_lcell_comb ; 659                         ;
+;     normal            ; 659                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 32                          ;
+;         3 data inputs ; 175                         ;
+;         4 data inputs ; 447                         ;
+;                       ;                             ;
+; Max LUT depth         ; 32.00                       ;
+; Average LUT depth     ; 19.57                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Sat Apr 25 22:41:57 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab9 -c Lab9
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 0 design units, including 0 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab 0/sim_REG8.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG8.vhd
+    Info (12022): Found design unit 1: REG8-clk File: /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG8.vhd Line: 12
+    Info (12023): Found entity 1: REG8 File: /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG8.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG16.vhd
+    Info (12022): Found design unit 1: REG16-logical_stuff File: /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG16.vhd Line: 13
+    Info (12023): Found entity 1: REG16 File: /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd
+    Info (12022): Found design unit 1: REG8X16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 13
+    Info (12023): Found entity 1: REG8X16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX8X16.vhd
+    Info (12022): Found design unit 1: MUX8X16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX8X16.vhd Line: 12
+    Info (12023): Found entity 1: MUX8X16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX8X16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX4X16.vhd
+    Info (12022): Found design unit 1: MUX4X16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX4X16.vhd Line: 12
+    Info (12023): Found entity 1: MUX4X16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX4X16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd
+    Info (12022): Found design unit 1: DCD3x8-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 11
+    Info (12023): Found entity 1: DCD3x8 File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/PINV4.vhd
+    Info (12022): Found design unit 1: PINV4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/PINV4.vhd Line: 12
+    Info (12023): Found entity 1: PINV4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/PINV4.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/MUX4X4.vhd
+    Info (12022): Found design unit 1: MUX4X4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/MUX4X4.vhd Line: 12
+    Info (12023): Found entity 1: MUX4X4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/MUX4X4.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd
+    Info (12022): Found design unit 1: BWOR4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 11
+    Info (12023): Found entity 1: BWOR4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWAND4.vhd
+    Info (12022): Found design unit 1: BWAND4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWAND4.vhd Line: 11
+    Info (12023): Found entity 1: BWAND4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWAND4.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd
+    Info (12022): Found design unit 1: ALU4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 14
+    Info (12023): Found entity 1: ALU4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd
+    Info (12022): Found design unit 1: ALU16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd Line: 13
+    Info (12023): Found entity 1: ALU16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/ADD4.vhd
+    Info (12022): Found design unit 1: ADD4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ADD4.vhd Line: 14
+    Info (12023): Found entity 1: ADD4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ADD4.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/SHLONE.vhd
+    Info (12022): Found design unit 1: SHLONE-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/SHLONE.vhd Line: 11
+    Info (12023): Found entity 1: SHLONE File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/SHLONE.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/SGNEXT6x16.vhd
+    Info (12022): Found design unit 1: SGNEXT6x16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/SGNEXT6x16.vhd Line: 11
+    Info (12023): Found entity 1: SGNEXT6x16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/SGNEXT6x16.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/MUX2X16.vhd
+    Info (12022): Found design unit 1: MUX2X16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/MUX2X16.vhd Line: 13
+    Info (12023): Found entity 1: MUX2X16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/MUX2X16.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd
+    Info (12022): Found design unit 1: INS_MEM-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 11
+    Info (12023): Found entity 1: INS_MEM File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/INCTWO.vhd
+    Info (12022): Found design unit 1: INCTWO-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INCTWO.vhd Line: 11
+    Info (12023): Found entity 1: INCTWO File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INCTWO.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd
+    Info (12022): Found design unit 1: DCD5X32-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 11
+    Info (12023): Found entity 1: DCD5X32 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD3X8_EN.vhd
+    Info (12022): Found design unit 1: DCD3X8_EN-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD3X8_EN.vhd Line: 12
+    Info (12023): Found entity 1: DCD3X8_EN File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD3X8_EN.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd
+    Info (12022): Found design unit 1: DAT_MEM-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 13
+    Info (12023): Found entity 1: DAT_MEM File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/ADD16.vhd
+    Info (12022): Found design unit 1: ADD16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/ADD16.vhd Line: 11
+    Info (12023): Found entity 1: ADD16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/ADD16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_7/PCJMP.vhd
+    Info (12022): Found design unit 1: PCJMP-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_7/PCJMP.vhd Line: 12
+    Info (12023): Found entity 1: PCJMP File: /home/ashinashell/class-coding/EE443_Labs/Lab_7/PCJMP.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_7/MUX2X3.vhd
+    Info (12022): Found design unit 1: MUX2X3-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_7/MUX2X3.vhd Line: 12
+    Info (12023): Found entity 1: MUX2X3 File: /home/ashinashell/class-coding/EE443_Labs/Lab_7/MUX2X3.vhd Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_8/m16dp2.bdf
+    Info (12023): Found entity 1: m16dp2
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_8/m16dp1.bdf
+    Info (12023): Found entity 1: m16dp1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_8/m16dp.bdf
+    Info (12023): Found entity 1: m16dp
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_8/CONTROL.vhd
+    Info (12022): Found design unit 1: CONTROL-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_8/CONTROL.vhd Line: 21
+    Info (12023): Found entity 1: CONTROL File: /home/ashinashell/class-coding/EE443_Labs/Lab_8/CONTROL.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_8/PC.vhd
+    Info (12022): Found design unit 1: PC-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_8/PC.vhd Line: 12
+    Info (12023): Found entity 1: PC File: /home/ashinashell/class-coding/EE443_Labs/Lab_8/PC.vhd Line: 4
+Info (12127): Elaborating entity "m16dp" for the top level hierarchy
+Info (12128): Elaborating entity "CONTROL" for hierarchy "CONTROL:inst"
+Info (12128): Elaborating entity "m16dp2" for hierarchy "m16dp2:inst2"
+Warning (275011): Block or symbol "MUX2X3" of instance "inst5" overlaps another block or symbol
+Info (12128): Elaborating entity "ALU16" for hierarchy "m16dp2:inst2|ALU16:inst1"
+Info (12128): Elaborating entity "ALU4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd Line: 33
+Info (12128): Elaborating entity "PINV4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|PINV4:inverter" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 61
+Info (12128): Elaborating entity "ADD4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|ADD4:adder" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 68
+Info (12128): Elaborating entity "BWAND4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWAND4:ander" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 78
+Info (12128): Elaborating entity "BWOR4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 85
+Info (12128): Elaborating entity "MUX4X4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|MUX4X4:mux" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 94
+Info (12128): Elaborating entity "REG8X16" for hierarchy "m16dp2:inst2|REG8X16:inst"
+Info (12128): Elaborating entity "DCD3x8" for hierarchy "m16dp2:inst2|REG8X16:inst|DCD3x8:add_reg1_dcd" File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 45
+Info (12128): Elaborating entity "REG16" for hierarchy "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:0:regs" File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 52
+Info (12128): Elaborating entity "REG8" for hierarchy "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:0:regs|REG8:reg_1" File: /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG16.vhd Line: 26
+Info (12128): Elaborating entity "MUX8X16" for hierarchy "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1" File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 61
+Info (12128): Elaborating entity "MUX4X16" for hierarchy "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1" File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX8X16.vhd Line: 27
+Info (12128): Elaborating entity "MUX2X3" for hierarchy "m16dp2:inst2|MUX2X3:inst5"
+Info (12128): Elaborating entity "MUX2X16" for hierarchy "m16dp2:inst2|MUX2X16:inst2"
+Info (12128): Elaborating entity "m16dp1" for hierarchy "m16dp1:inst4"
+Info (12128): Elaborating entity "ADD16" for hierarchy "m16dp1:inst4|ADD16:inst3"
+Warning (10036): Verilog HDL or VHDL warning at ADD16.vhd(24): object "overflows" assigned a value but never read File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/ADD16.vhd Line: 24
+Info (12128): Elaborating entity "SGNEXT6x16" for hierarchy "m16dp1:inst4|SGNEXT6x16:inst5"
+Info (12128): Elaborating entity "INS_MEM" for hierarchy "m16dp1:inst4|INS_MEM:inst1"
+Warning (10492): VHDL Process Statement warning at INS_MEM.vhd(52): signal "addr_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 52
+Warning (10631): VHDL Process Statement warning at INS_MEM.vhd(49): inferring latch(es) for signal or variable "data_out", which holds its previous value in one or more paths through the process File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[0]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[1]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[2]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[3]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[4]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[5]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[6]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[7]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[8]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[9]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[10]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[11]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[12]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[13]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[14]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (10041): Inferred latch for "data_out[15]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Info (12128): Elaborating entity "DCD5X32" for hierarchy "m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 32
+Info (12128): Elaborating entity "DCD3X8_EN" for hierarchy "m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|DCD3X8_EN:dcd_0" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 31
+Info (12128): Elaborating entity "PC" for hierarchy "m16dp1:inst4|PC:inst"
+Info (12128): Elaborating entity "INCTWO" for hierarchy "m16dp1:inst4|INCTWO:inst2"
+Warning (10036): Verilog HDL or VHDL warning at INCTWO.vhd(14): object "aluOutputs" assigned a value but never read File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INCTWO.vhd Line: 14
+Info (12128): Elaborating entity "PCJMP" for hierarchy "m16dp1:inst4|PCJMP:inst4"
+Info (12128): Elaborating entity "DAT_MEM" for hierarchy "DAT_MEM:inst1"
+Warning (10631): VHDL Process Statement warning at DAT_MEM.vhd(68): inferring latch(es) for signal or variable "DOUT", which holds its previous value in one or more paths through the process File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[0]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[1]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[2]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[3]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[4]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[5]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[6]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[7]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[8]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[9]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[10]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[11]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[12]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[13]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[14]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[15]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[15]" to the node "MUX2X16:inst3|OUT16B[15]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[14]" to the node "MUX2X16:inst3|OUT16B[14]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[13]" to the node "MUX2X16:inst3|OUT16B[13]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[12]" to the node "MUX2X16:inst3|OUT16B[12]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[11]" to the node "MUX2X16:inst3|OUT16B[11]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[10]" to the node "MUX2X16:inst3|OUT16B[10]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[9]" to the node "MUX2X16:inst3|OUT16B[9]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[8]" to the node "MUX2X16:inst3|OUT16B[8]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[7]" to the node "MUX2X16:inst3|OUT16B[7]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[6]" to the node "MUX2X16:inst3|OUT16B[6]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[5]" to the node "MUX2X16:inst3|OUT16B[5]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[4]" to the node "MUX2X16:inst3|OUT16B[4]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[3]" to the node "MUX2X16:inst3|OUT16B[3]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[2]" to the node "MUX2X16:inst3|OUT16B[2]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[1]" to the node "MUX2X16:inst3|OUT16B[1]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[0]" to the node "MUX2X16:inst3|OUT16B[0]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[10]" merged with LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[15]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Info (13026): Duplicate LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[11]" merged with LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[15]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[14] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[15] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[13] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[12] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[5] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[4] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[3] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[2] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[1] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[0] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[8] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[7] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[6] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[9] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[15]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[15]_2612 has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[14]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu1|BWOR4:bitwor|Res[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[13]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[12]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu1|BWOR4:bitwor|Res[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[11]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[10]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu1|BWOR4:bitwor|Res[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd|Mux7~synth File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 16
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[9]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd|Mux7~synth File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 16
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[8]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu1|BWOR4:bitwor|Res[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd|Mux7~synth File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 16
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[7]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[7]_2052 has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[6]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[5]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[4]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[3]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[2]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd|Mux7~synth File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 16
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[1]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[0]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[14]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[15]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[13]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[12]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[5]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[4]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[3]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[2]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[1]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[0]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[8]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[7]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[6]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[9]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ALUOp[0]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1165 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 188 output pins
+    Info (21061): Implemented 974 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 124 warnings
+    Info: Peak virtual memory: 498 megabytes
+    Info: Processing ended: Sat Apr 25 22:42:05 2026
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:17
+
+

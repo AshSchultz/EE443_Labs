@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
+Slack : -23.457
+TNS   : -201.856
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -21.814
+TNS   : -5273.149
+
+Type  : Slow 1200mV 85C Model Hold 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
+Slack : -11.373
+TNS   : -93.408
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : -0.511
+TNS   : -3.145
+
+Type  : Slow 1200mV 85C Model Recovery 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
+Slack : -25.280
+TNS   : -160.758
+
+Type  : Slow 1200mV 85C Model Removal 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
+Slack : -12.057
+TNS   : -98.186
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
+Slack : -8.613
+TNS   : -2761.924
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -434.760
+
+Type  : Slow 1200mV 0C Model Setup 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
+Slack : -21.864
+TNS   : -188.920
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -20.105
+TNS   : -4859.031
+
+Type  : Slow 1200mV 0C Model Hold 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
+Slack : -10.183
+TNS   : -83.273
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : -0.487
+TNS   : -3.034
+
+Type  : Slow 1200mV 0C Model Recovery 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
+Slack : -23.498
+TNS   : -149.760
+
+Type  : Slow 1200mV 0C Model Removal 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
+Slack : -10.755
+TNS   : -87.386
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
+Slack : -7.990
+TNS   : -2463.299
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -434.760
+
+Type  : Fast 1200mV 0C Model Setup 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
+Slack : -11.936
+TNS   : -100.745
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -10.805
+TNS   : -2449.448
+
+Type  : Fast 1200mV 0C Model Hold 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
+Slack : -5.978
+TNS   : -48.719
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : -0.444
+TNS   : -5.822
+
+Type  : Fast 1200mV 0C Model Recovery 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
+Slack : -13.143
+TNS   : -80.370
+
+Type  : Fast 1200mV 0C Model Removal 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
+Slack : -6.297
+TNS   : -51.759
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
+Slack : -4.176
+TNS   : -1071.075
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -355.286
+
+------------------------------------------------------------
