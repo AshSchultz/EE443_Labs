@@ -42,10 +42,14 @@ begin
   --	J-Type opcode = I[15:12], adr = I[11:0]
   mem(0) <= "1011111001000000"; -- ld  $1, 0($7)  # loads some data from the lowest memory address into R1
   mem(1) <= "1011111010000010"; -- ld  $2, 2($7)  # loads some data from the next address into R2,
-  mem(2) <= "0000001010011010"; -- add $3, $2, $1 # adds R1 and R2 and stores the result into R3
-  mem(3) <= "1111111011000100"; -- sw  $3, 4($7)  # stores the contents of R3 in the next memory address, and
-  mem(4) <= "1011111100000100"; -- ld  $4, 4($7)  # Loads the stored contents of R3 into R4
-  mem(5) <= "0010000000000101"; -- j   5     	  # uses an infinite loop as a halt (4 is the address of the instruction)
+  mem(2) <= "1011111100000100"; -- ld  $4, 4($7)  # Loads the stored contents of R3 into R4
+  mem(3) <= "0000001010011010"; -- add $3, $2, $1 # adds R1 and R2 and stores the result into R3
+  mem(4) <= "0000001011011010"; -- add $3, $3, $1 # adds R1 and R3 and stores the result into R3
+  mem(5) <= "1111111011000110"; -- sw  $3, 6($7)  # stores the contents of R3 in the next memory address, and
+  mem(6) <= "0100011100000100"; -- beq $3, $4, 4  # checks if R3 equals the value in memory(16)
+  mem(7) <= "0010000000000100"; -- j   4    	  	  # Loops back to summing r3 and r1 if not equal to 16
+  mem(8) <= "1011111101000100"; -- ld  $5, 6($7)  # Loads the stored contents of R3 into R5
+  mem(9) <= "0010000000000101"; -- j   9     	  # uses an infinite loop as a halt (9 is the address of the instruction)
   process (mem, ADDR, exception, data_out) is
   begin
     for l in 31 downto 0 loop

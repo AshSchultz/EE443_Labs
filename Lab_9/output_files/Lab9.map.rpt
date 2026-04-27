@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Lab9
-Sat Apr 25 22:42:05 2026
-Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Mon Apr 27 13:39:38 2026
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
 ---------------------
@@ -20,31 +20,33 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
  12. Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:1:regs"
  13. Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:2:regs"
  14. Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:3:regs"
- 15. Port Connectivity Checks: "m16dp1:inst4|INCTWO:inst2|ALU16:alu0"
- 16. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_4"
- 17. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_3"
- 18. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_2"
- 19. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_1"
- 20. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2"
- 21. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1"
- 22. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1"
- 23. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:7:regs"
- 24. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:0:regs"
- 25. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu3"
- 26. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu2"
- 27. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu1"
- 28. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu0|MUX4X4:mux"
- 29. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu0"
- 30. Post-Synthesis Netlist Statistics for Top Partition
- 31. Elapsed Time Per Partition
- 32. Analysis & Synthesis Messages
+ 15. Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:4:regs"
+ 16. Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:5:regs"
+ 17. Port Connectivity Checks: "m16dp1:inst4|INCTWO:inst2|ALU16:alu0"
+ 18. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_4"
+ 19. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_3"
+ 20. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_2"
+ 21. Port Connectivity Checks: "m16dp1:inst4|ADD16:inst3|ADD4:add_1"
+ 22. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2"
+ 23. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1"
+ 24. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1"
+ 25. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:7:regs"
+ 26. Port Connectivity Checks: "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:0:regs"
+ 27. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu3"
+ 28. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu2"
+ 29. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu1"
+ 30. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu0|MUX4X4:mux"
+ 31. Port Connectivity Checks: "m16dp2:inst2|ALU16:inst1|ALU4:alu0"
+ 32. Post-Synthesis Netlist Statistics for Top Partition
+ 33. Elapsed Time Per Partition
+ 34. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2024  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -64,16 +66,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 25 22:42:05 2026          ;
-; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 27 13:39:38 2026          ;
+; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; Lab9                                           ;
 ; Top-level Entity Name              ; m16dp                                          ;
 ; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 942                                            ;
-;     Total combinational functions  ; 654                                            ;
-;     Dedicated logic registers      ; 336                                            ;
-; Total registers                    ; 336                                            ;
-; Total pins                         ; 191                                            ;
+; Total logic elements               ; 1,096                                          ;
+;     Total combinational functions  ; 824                                            ;
+;     Dedicated logic registers      ; 320                                            ;
+; Total registers                    ; 320                                            ;
+; Total pins                         ; 247                                            ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
 ; Embedded Multiplier 9-bit elements ; 0                                              ;
@@ -172,85 +174,87 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
-; Maximum used               ; 16          ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
-;     Processors 3-16        ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                   ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+---------+
-; ../Lab 0/REG8.vhd                ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG8.vhd       ;         ;
-; ../Lab 0/REG16.vhd               ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG16.vhd      ;         ;
-; ../Lab_4/REG8x16.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd    ;         ;
-; ../Lab_4/MUX8X16.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX8X16.vhd    ;         ;
-; ../Lab_4/MUX4X16.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX4X16.vhd    ;         ;
-; ../Lab_4/DCD3x8.vhd              ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd     ;         ;
-; ../Lab_5/PINV4.vhd               ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/PINV4.vhd      ;         ;
-; ../Lab_5/MUX4X4.vhd              ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/MUX4X4.vhd     ;         ;
-; ../Lab_5/BWOR4.vhd               ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd      ;         ;
-; ../Lab_5/BWAND4.vhd              ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWAND4.vhd     ;         ;
-; ../Lab_5/ALU4.vhd                ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd       ;         ;
-; ../Lab_5/ALU16.vhd               ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd      ;         ;
-; ../Lab_5/ADD4.vhd                ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_5/ADD4.vhd       ;         ;
-; ../Lab_6/SGNEXT6x16.vhd          ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/SGNEXT6x16.vhd ;         ;
-; ../Lab_6/MUX2X16.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/MUX2X16.vhd    ;         ;
-; ../Lab_6/INS_MEM.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd    ;         ;
-; ../Lab_6/INCTWO.vhd              ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/INCTWO.vhd     ;         ;
-; ../Lab_6/DCD5X32.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd    ;         ;
-; ../Lab_6/DCD3X8_EN.vhd           ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD3X8_EN.vhd  ;         ;
-; ../Lab_6/DAT_MEM.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd    ;         ;
-; ../Lab_6/ADD16.vhd               ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_6/ADD16.vhd      ;         ;
-; ../Lab_7/PCJMP.vhd               ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_7/PCJMP.vhd      ;         ;
-; ../Lab_7/MUX2X3.vhd              ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_7/MUX2X3.vhd     ;         ;
-; ../Lab_8/m16dp2.bdf              ; yes             ; User Block Diagram/Schematic File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_8/m16dp2.bdf     ;         ;
-; ../Lab_8/m16dp1.bdf              ; yes             ; User Block Diagram/Schematic File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_8/m16dp1.bdf     ;         ;
-; ../Lab_8/m16dp.bdf               ; yes             ; User Block Diagram/Schematic File  ; /home/ashinashell/class-coding/EE443_Labs/Lab_8/m16dp.bdf      ;         ;
-; ../Lab_8/CONTROL.vhd             ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_8/CONTROL.vhd    ;         ;
-; ../Lab_8/PC.vhd                  ; yes             ; User VHDL File                     ; /home/ashinashell/class-coding/EE443_Labs/Lab_8/PC.vhd         ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+; gen.vhd                          ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_9/gen.vhd        ;         ;
+; ../Lab 0/REG8.vhd                ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG8.vhd       ;         ;
+; ../Lab 0/REG16.vhd               ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG16.vhd      ;         ;
+; ../Lab_4/REG8x16.vhd             ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/REG8x16.vhd    ;         ;
+; ../Lab_4/MUX8X16.vhd             ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/MUX8X16.vhd    ;         ;
+; ../Lab_4/MUX4X16.vhd             ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/MUX4X16.vhd    ;         ;
+; ../Lab_4/DCD3x8.vhd              ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/DCD3x8.vhd     ;         ;
+; ../Lab_5/PINV4.vhd               ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/PINV4.vhd      ;         ;
+; ../Lab_5/MUX4X4.vhd              ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/MUX4X4.vhd     ;         ;
+; ../Lab_5/BWOR4.vhd               ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd      ;         ;
+; ../Lab_5/BWAND4.vhd              ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWAND4.vhd     ;         ;
+; ../Lab_5/ALU4.vhd                ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd       ;         ;
+; ../Lab_5/ALU16.vhd               ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU16.vhd      ;         ;
+; ../Lab_5/ADD4.vhd                ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ADD4.vhd       ;         ;
+; ../Lab_6/SGNEXT6x16.vhd          ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/SGNEXT6x16.vhd ;         ;
+; ../Lab_6/MUX2X16.vhd             ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/MUX2X16.vhd    ;         ;
+; ../Lab_6/INS_MEM.vhd             ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd    ;         ;
+; ../Lab_6/INCTWO.vhd              ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INCTWO.vhd     ;         ;
+; ../Lab_6/DCD5X32.vhd             ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd    ;         ;
+; ../Lab_6/DCD3X8_EN.vhd           ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD3X8_EN.vhd  ;         ;
+; ../Lab_6/DAT_MEM.vhd             ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd    ;         ;
+; ../Lab_6/ADD16.vhd               ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/ADD16.vhd      ;         ;
+; ../Lab_7/PCJMP.vhd               ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_7/PCJMP.vhd      ;         ;
+; ../Lab_7/MUX2X3.vhd              ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_7/MUX2X3.vhd     ;         ;
+; ../Lab_8/m16dp2.bdf              ; yes             ; User Block Diagram/Schematic File  ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/m16dp2.bdf     ;         ;
+; ../Lab_8/m16dp1.bdf              ; yes             ; User Block Diagram/Schematic File  ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/m16dp1.bdf     ;         ;
+; ../Lab_8/m16dp.bdf               ; yes             ; User Block Diagram/Schematic File  ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/m16dp.bdf      ;         ;
+; ../Lab_8/CONTROL.vhd             ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/CONTROL.vhd    ;         ;
+; ../Lab_8/PC.vhd                  ; yes             ; User VHDL File                     ; D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/PC.vhd         ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 942       ;
-;                                             ;           ;
-; Total combinational functions               ; 654       ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 447       ;
-;     -- 3 input functions                    ; 175       ;
-;     -- <=2 input functions                  ; 32        ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 654       ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 336       ;
-;     -- Dedicated logic registers            ; 336       ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 191       ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 336       ;
-; Total fan-out                               ; 3779      ;
-; Average fan-out                             ; 2.75      ;
-+---------------------------------------------+-----------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 1,096        ;
+;                                             ;              ;
+; Total combinational functions               ; 824          ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 556          ;
+;     -- 3 input functions                    ; 206          ;
+;     -- <=2 input functions                  ; 62           ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 824          ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 320          ;
+;     -- Dedicated logic registers            ; 320          ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 247          ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; SW[17]~input ;
+; Maximum fan-out                             ; 320          ;
+; Total fan-out                               ; 4416         ;
+; Average fan-out                             ; 2.70         ;
++---------------------------------------------+--------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -258,13 +262,13 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                       ; Entity Name ; Library Name ;
 +-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+-------------+--------------+
-; |m16dp                                        ; 654 (0)             ; 336 (0)                   ; 0           ; 0            ; 0       ; 0         ; 191  ; 0            ; |m16dp                                                                                    ; m16dp       ; work         ;
+; |m16dp                                        ; 824 (0)             ; 320 (0)                   ; 0           ; 0            ; 0       ; 0         ; 247  ; 0            ; |m16dp                                                                                    ; m16dp       ; work         ;
 ;    |CONTROL:inst|                             ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|CONTROL:inst                                                                       ; CONTROL     ; work         ;
-;    |DAT_MEM:inst1|                            ; 311 (302)           ; 224 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1                                                                      ; DAT_MEM     ; work         ;
-;       |DCD5X32:dcd|                           ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|DCD5X32:dcd                                                          ; DCD5X32     ; work         ;
-;          |DCD3X8_EN:dcd_0|                    ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_0                                          ; DCD3X8_EN   ; work         ;
-;          |DCD3X8_EN:dcd_3|                    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3                                          ; DCD3X8_EN   ; work         ;
-;             |DCD3x8:dcd|                      ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd                               ; DCD3x8      ; work         ;
+;    |DAT_MEM:inst1|                            ; 329 (315)           ; 208 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1                                                                      ; DAT_MEM     ; work         ;
+;       |DCD5X32:dcd|                           ; 14 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|DCD5X32:dcd                                                          ; DCD5X32     ; work         ;
+;          |DCD3X8_EN:dcd_0|                    ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_0                                          ; DCD3X8_EN   ; work         ;
+;          |DCD3X8_EN:dcd_3|                    ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3                                          ; DCD3X8_EN   ; work         ;
+;             |DCD3x8:dcd|                      ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd                               ; DCD3x8      ; work         ;
 ;       |REG8:\reg_gen:10:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:10:regs                                                ; REG8        ; work         ;
 ;       |REG8:\reg_gen:11:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:11:regs                                                ; REG8        ; work         ;
 ;       |REG8:\reg_gen:12:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:12:regs                                                ; REG8        ; work         ;
@@ -287,14 +291,20 @@ https://fpgasoftware.intel.com/eula.
 ;       |REG8:\reg_gen:29:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:29:regs                                                ; REG8        ; work         ;
 ;       |REG8:\reg_gen:30:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:30:regs                                                ; REG8        ; work         ;
 ;       |REG8:\reg_gen:31:regs|                 ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:31:regs                                                ; REG8        ; work         ;
-;       |REG8:\reg_gen:4:regs|                  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:4:regs                                                 ; REG8        ; work         ;
-;       |REG8:\reg_gen:5:regs|                  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:5:regs                                                 ; REG8        ; work         ;
 ;       |REG8:\reg_gen:6:regs|                  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:6:regs                                                 ; REG8        ; work         ;
 ;       |REG8:\reg_gen:7:regs|                  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:7:regs                                                 ; REG8        ; work         ;
 ;       |REG8:\reg_gen:8:regs|                  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:8:regs                                                 ; REG8        ; work         ;
 ;       |REG8:\reg_gen:9:regs|                  ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|DAT_MEM:inst1|REG8:\reg_gen:9:regs                                                 ; REG8        ; work         ;
-;    |MUX2X16:inst3|                            ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|MUX2X16:inst3                                                                      ; MUX2X16     ; work         ;
-;    |m16dp1:inst4|                             ; 130 (0)             ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4                                                                       ; m16dp1      ; work         ;
+;    |MUX2X16:inst3|                            ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|MUX2X16:inst3                                                                      ; MUX2X16     ; work         ;
+;    |gen:inst10|                               ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|gen:inst10                                                                         ; gen         ; work         ;
+;    |gen:inst11|                               ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|gen:inst11                                                                         ; gen         ; work         ;
+;    |gen:inst12|                               ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|gen:inst12                                                                         ; gen         ; work         ;
+;    |gen:inst5|                                ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|gen:inst5                                                                          ; gen         ; work         ;
+;    |gen:inst6|                                ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|gen:inst6                                                                          ; gen         ; work         ;
+;    |gen:inst7|                                ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|gen:inst7                                                                          ; gen         ; work         ;
+;    |gen:inst8|                                ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|gen:inst8                                                                          ; gen         ; work         ;
+;    |gen:inst9|                                ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|gen:inst9                                                                          ; gen         ; work         ;
+;    |m16dp1:inst4|                             ; 133 (0)             ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4                                                                       ; m16dp1      ; work         ;
 ;       |ADD16:inst3|                           ; 31 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|ADD16:inst3                                                           ; ADD16       ; work         ;
 ;          |ADD4:add_1|                         ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|ADD16:inst3|ADD4:add_1                                                ; ADD4        ; work         ;
 ;          |ADD4:add_2|                         ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|ADD16:inst3|ADD4:add_2                                                ; ADD4        ; work         ;
@@ -310,49 +320,48 @@ https://fpgasoftware.intel.com/eula.
 ;                |ADD4:adder|                   ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INCTWO:inst2|ALU16:alu0|ALU4:alu2|ADD4:adder                          ; ADD4        ; work         ;
 ;             |ALU4:alu3|                       ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INCTWO:inst2|ALU16:alu0|ALU4:alu3                                     ; ALU4        ; work         ;
 ;                |ADD4:adder|                   ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INCTWO:inst2|ALU16:alu0|ALU4:alu3|ADD4:adder                          ; ADD4        ; work         ;
-;       |INS_MEM:inst1|                         ; 31 (28)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INS_MEM:inst1                                                         ; INS_MEM     ; work         ;
-;          |DCD5X32:dec|                        ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec                                             ; DCD5X32     ; work         ;
-;             |DCD3X8_EN:dcd_0|                 ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|DCD3X8_EN:dcd_0                             ; DCD3X8_EN   ; work         ;
+;       |INS_MEM:inst1|                         ; 34 (33)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INS_MEM:inst1                                                         ; INS_MEM     ; work         ;
+;          |DCD5X32:dec|                        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec                                             ; DCD5X32     ; work         ;
 ;       |MUX2X16:JUMPMUX|                       ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|MUX2X16:JUMPMUX                                                       ; MUX2X16     ; work         ;
 ;       |MUX2X16:inst7|                         ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|MUX2X16:inst7                                                         ; MUX2X16     ; work         ;
 ;       |PC:inst|                               ; 16 (16)             ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|PC:inst                                                               ; PC          ; work         ;
 ;          |REG16:reg|                          ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|PC:inst|REG16:reg                                                     ; REG16       ; work         ;
 ;             |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1                                          ; REG8        ; work         ;
 ;             |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp1:inst4|PC:inst|REG16:reg|REG8:reg_2                                          ; REG8        ; work         ;
-;    |m16dp2:inst2|                             ; 187 (0)             ; 96 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2                                                                       ; m16dp2      ; work         ;
-;       |ALU16:inst1|                           ; 56 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1                                                           ; ALU16       ; work         ;
-;          |ALU4:alu0|                          ; 17 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu0                                                 ; ALU4        ; work         ;
-;             |ADD4:adder|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu0|ADD4:adder                                      ; ADD4        ; work         ;
+;    |m16dp2:inst2|                             ; 251 (0)             ; 96 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2                                                                       ; m16dp2      ; work         ;
+;       |ALU16:inst1|                           ; 71 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1                                                           ; ALU16       ; work         ;
+;          |ALU4:alu0|                          ; 20 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu0                                                 ; ALU4        ; work         ;
+;             |ADD4:adder|                      ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu0|ADD4:adder                                      ; ADD4        ; work         ;
 ;             |BWAND4:ander|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWAND4:ander                                    ; BWAND4      ; work         ;
 ;             |BWOR4:bitwor|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor                                    ; BWOR4       ; work         ;
-;             |MUX4X4:mux|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu0|MUX4X4:mux                                      ; MUX4X4      ; work         ;
+;             |MUX4X4:mux|                      ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu0|MUX4X4:mux                                      ; MUX4X4      ; work         ;
 ;             |PINV4:inverter|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu0|PINV4:inverter                                  ; PINV4       ; work         ;
-;          |ALU4:alu1|                          ; 13 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu1                                                 ; ALU4        ; work         ;
-;             |ADD4:adder|                      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu1|ADD4:adder                                      ; ADD4        ; work         ;
+;          |ALU4:alu1|                          ; 16 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu1                                                 ; ALU4        ; work         ;
+;             |ADD4:adder|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu1|ADD4:adder                                      ; ADD4        ; work         ;
 ;             |MUX4X4:mux|                      ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu1|MUX4X4:mux                                      ; MUX4X4      ; work         ;
-;          |ALU4:alu2|                          ; 13 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu2                                                 ; ALU4        ; work         ;
-;             |ADD4:adder|                      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu2|ADD4:adder                                      ; ADD4        ; work         ;
+;          |ALU4:alu2|                          ; 17 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu2                                                 ; ALU4        ; work         ;
+;             |ADD4:adder|                      ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu2|ADD4:adder                                      ; ADD4        ; work         ;
 ;             |MUX4X4:mux|                      ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu2|MUX4X4:mux                                      ; MUX4X4      ; work         ;
-;          |ALU4:alu3|                          ; 13 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu3                                                 ; ALU4        ; work         ;
-;             |ADD4:adder|                      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu3|ADD4:adder                                      ; ADD4        ; work         ;
-;             |MUX4X4:mux|                      ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu3|MUX4X4:mux                                      ; MUX4X4      ; work         ;
-;       |MUX2X16:inst2|                         ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|MUX2X16:inst2                                                         ; MUX2X16     ; work         ;
+;          |ALU4:alu3|                          ; 18 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu3                                                 ; ALU4        ; work         ;
+;             |ADD4:adder|                      ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu3|ADD4:adder                                      ; ADD4        ; work         ;
+;             |MUX4X4:mux|                      ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu3|MUX4X4:mux                                      ; MUX4X4      ; work         ;
+;       |MUX2X16:inst2|                         ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|MUX2X16:inst2                                                         ; MUX2X16     ; work         ;
 ;       |MUX2X3:inst3|                          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|MUX2X3:inst3                                                          ; MUX2X3      ; work         ;
 ;       |MUX2X3:inst5|                          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|MUX2X3:inst5                                                          ; MUX2X3      ; work         ;
-;       |REG8X16:inst|                          ; 107 (0)             ; 96 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst                                                          ; REG8X16     ; work         ;
+;       |REG8X16:inst|                          ; 158 (0)             ; 96 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst                                                          ; REG8X16     ; work         ;
 ;          |DCD3x8:add_reg1_dcd|                ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|DCD3x8:add_reg1_dcd                                      ; DCD3x8      ; work         ;
-;          |MUX8X16:mux_1|                      ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1                                            ; MUX8X16     ; work         ;
-;             |MUX4X16:mux_1|                   ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1                              ; MUX4X16     ; work         ;
-;                |MUX4X4:\mux_generate:0:mux_i| ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:0:mux_i ; MUX4X4      ; work         ;
-;                |MUX4X4:\mux_generate:1:mux_i| ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:1:mux_i ; MUX4X4      ; work         ;
-;                |MUX4X4:\mux_generate:2:mux_i| ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:2:mux_i ; MUX4X4      ; work         ;
-;                |MUX4X4:\mux_generate:3:mux_i| ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:3:mux_i ; MUX4X4      ; work         ;
-;          |MUX8X16:mux_2|                      ; 68 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2                                            ; MUX8X16     ; work         ;
-;             |MUX4X16:mux_1|                   ; 68 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1                              ; MUX4X16     ; work         ;
+;          |MUX8X16:mux_1|                      ; 68 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1                                            ; MUX8X16     ; work         ;
+;             |MUX4X16:mux_1|                   ; 68 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1                              ; MUX4X16     ; work         ;
+;                |MUX4X4:\mux_generate:0:mux_i| ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:0:mux_i ; MUX4X4      ; work         ;
+;                |MUX4X4:\mux_generate:1:mux_i| ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:1:mux_i ; MUX4X4      ; work         ;
+;                |MUX4X4:\mux_generate:2:mux_i| ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:2:mux_i ; MUX4X4      ; work         ;
+;                |MUX4X4:\mux_generate:3:mux_i| ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:3:mux_i ; MUX4X4      ; work         ;
+;          |MUX8X16:mux_2|                      ; 84 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2                                            ; MUX8X16     ; work         ;
+;             |MUX4X16:mux_1|                   ; 84 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1                              ; MUX4X16     ; work         ;
 ;                |MUX4X4:\mux_generate:0:mux_i| ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:0:mux_i ; MUX4X4      ; work         ;
-;                |MUX4X4:\mux_generate:1:mux_i| ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:1:mux_i ; MUX4X4      ; work         ;
-;                |MUX4X4:\mux_generate:2:mux_i| ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:2:mux_i ; MUX4X4      ; work         ;
-;                |MUX4X4:\mux_generate:3:mux_i| ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:3:mux_i ; MUX4X4      ; work         ;
+;                |MUX4X4:\mux_generate:1:mux_i| ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:1:mux_i ; MUX4X4      ; work         ;
+;                |MUX4X4:\mux_generate:2:mux_i| ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:2:mux_i ; MUX4X4      ; work         ;
+;                |MUX4X4:\mux_generate:3:mux_i| ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:3:mux_i ; MUX4X4      ; work         ;
 ;          |REG16:\reg_gen:1:regs|              ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:1:regs                                    ; REG16       ; work         ;
 ;             |REG8:reg_1|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:1:regs|REG8:reg_1                         ; REG8        ; work         ;
 ;             |REG8:reg_2|                      ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |m16dp|m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:1:regs|REG8:reg_2                         ; REG8        ; work         ;
@@ -380,8 +389,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+----------------------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal                    ; Free of Timing Hazards ;
 +-----------------------------------------------------+----------------------------------------+------------------------+
-; m16dp1:inst4|INS_MEM:inst1|data_out[14]             ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
 ; m16dp1:inst4|INS_MEM:inst1|data_out[15]             ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
+; m16dp1:inst4|INS_MEM:inst1|data_out[14]             ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
 ; m16dp1:inst4|INS_MEM:inst1|data_out[13]             ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
 ; m16dp1:inst4|INS_MEM:inst1|data_out[12]             ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
 ; m16dp1:inst4|INS_MEM:inst1|data_out[5]              ; m16dp1:inst4|INS_MEM:inst1|data_out[0] ; yes                    ;
@@ -400,7 +409,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DAT_MEM:inst1|DOUT[15]_2612                         ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
 ; DAT_MEM:inst1|DOUT[14]$latch                        ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
 ; DAT_MEM:inst1|DOUT[13]$latch                        ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
-; DAT_MEM:inst1|DOUT[12]$latch                        ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
+; DAT_MEM:inst1|DOUT[12]$latch                        ; DAT_MEM:inst1|DOUT[15]                 ; no                     ;
 ; DAT_MEM:inst1|DOUT[11]$latch                        ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
 ; DAT_MEM:inst1|DOUT[10]$latch                        ; DAT_MEM:inst1|DOUT[15]                 ; no                     ;
 ; DAT_MEM:inst1|DOUT[9]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; no                     ;
@@ -409,7 +418,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DAT_MEM:inst1|DOUT[7]_2052                          ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
 ; DAT_MEM:inst1|DOUT[6]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
 ; DAT_MEM:inst1|DOUT[5]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
-; DAT_MEM:inst1|DOUT[4]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
+; DAT_MEM:inst1|DOUT[4]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; no                     ;
 ; DAT_MEM:inst1|DOUT[3]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; yes                    ;
 ; DAT_MEM:inst1|DOUT[2]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; no                     ;
 ; DAT_MEM:inst1|DOUT[1]$latch                         ; DAT_MEM:inst1|DOUT[15]                 ; no                     ;
@@ -424,12 +433,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 336   ;
+; Total registers                              ; 320   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 336   ;
+; Number of registers using Clock Enable       ; 304   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -439,15 +448,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------+
-; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu1|MUX4X4:mux|Mux3                                      ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |m16dp|m16dp1:inst4|INS_MEM:inst1|data_out[3]                                                  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |m16dp|m16dp1:inst4|INS_MEM:inst1|data_out[4]                                                  ;
-; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |m16dp|DAT_MEM:inst1|DOUT[8]                                                                   ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |m16dp|m16dp1:inst4|INS_MEM:inst1|data_out[9]                                                  ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 64 LEs               ; 16 LEs                 ; No         ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:0:mux_i|Mux3 ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 64 LEs               ; 16 LEs                 ; No         ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:2:mux_i|Mux2 ;
-; 18:1               ; 8 bits    ; 96 LEs        ; 72 LEs               ; 24 LEs                 ; No         ; |m16dp|DAT_MEM:inst1|DOUT[3]                                                                   ;
-; 18:1               ; 8 bits    ; 96 LEs        ; 72 LEs               ; 24 LEs                 ; No         ; |m16dp|DAT_MEM:inst1|DOUT[12]                                                                  ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |m16dp|m16dp2:inst2|ALU16:inst1|ALU4:alu1|MUX4X4:mux|Mux2                                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |m16dp|m16dp1:inst4|INS_MEM:inst1|data_out[8]                                                  ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |m16dp|DAT_MEM:inst1|DOUT[11]                                                                  ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 6 LEs                ; 14 LEs                 ; No         ; |m16dp|m16dp1:inst4|INS_MEM:inst1|data_out[4]                                                  ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 64 LEs               ; 16 LEs                 ; No         ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_2|MUX4X16:mux_1|MUX4X4:\mux_generate:3:mux_i|Mux1 ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 64 LEs               ; 16 LEs                 ; No         ; |m16dp|m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1|MUX4X4:\mux_generate:0:mux_i|Mux0 ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |m16dp|m16dp1:inst4|INS_MEM:inst1|data_out[3]                                                  ;
+; 21:1               ; 8 bits    ; 112 LEs       ; 80 LEs               ; 32 LEs                 ; No         ; |m16dp|DAT_MEM:inst1|DOUT[3]                                                                   ;
+; 21:1               ; 8 bits    ; 112 LEs       ; 80 LEs               ; 32 LEs                 ; No         ; |m16dp|DAT_MEM:inst1|DOUT[14]                                                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------+
 
 
@@ -480,6 +489,24 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 +----------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:3:regs"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; y    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:4:regs"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; y    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DAT_MEM:inst1|REG8:\reg_gen:5:regs"                                                 ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -650,20 +677,21 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 191                         ;
-; cycloneiii_ff         ; 336                         ;
-;     ENA               ; 336                         ;
+; boundary_port         ; 247                         ;
+; cycloneiii_ff         ; 320                         ;
+;     ENA               ; 304                         ;
+;     plain             ; 16                          ;
 ; cycloneiii_io_obuf    ; 16                          ;
-; cycloneiii_lcell_comb ; 659                         ;
-;     normal            ; 659                         ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 32                          ;
-;         3 data inputs ; 175                         ;
-;         4 data inputs ; 447                         ;
+; cycloneiii_lcell_comb ; 840                         ;
+;     normal            ; 840                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 14                          ;
+;         2 data inputs ; 62                          ;
+;         3 data inputs ; 206                         ;
+;         4 data inputs ; 556                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 32.00                       ;
-; Average LUT depth     ; 19.57                       ;
+; Max LUT depth         ; 30.00                       ;
+; Average LUT depth     ; 16.89                       ;
 +-----------------------+-----------------------------+
 
 
@@ -672,7 +700,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -681,293 +709,300 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Sat Apr 25 22:41:57 2026
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Processing started: Mon Apr 27 13:39:27 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab9 -c Lab9
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Info (12021): Found 0 design units, including 0 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab 0/sim_REG8.vhd
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG8.vhd
-    Info (12022): Found design unit 1: REG8-clk File: /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG8.vhd Line: 12
-    Info (12023): Found entity 1: REG8 File: /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG8.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG16.vhd
-    Info (12022): Found design unit 1: REG16-logical_stuff File: /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG16.vhd Line: 13
-    Info (12023): Found entity 1: REG16 File: /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd
-    Info (12022): Found design unit 1: REG8X16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 13
-    Info (12023): Found entity 1: REG8X16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX8X16.vhd
-    Info (12022): Found design unit 1: MUX8X16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX8X16.vhd Line: 12
-    Info (12023): Found entity 1: MUX8X16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX8X16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX4X16.vhd
-    Info (12022): Found design unit 1: MUX4X16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX4X16.vhd Line: 12
-    Info (12023): Found entity 1: MUX4X16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX4X16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd
-    Info (12022): Found design unit 1: DCD3x8-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 11
-    Info (12023): Found entity 1: DCD3x8 File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/PINV4.vhd
-    Info (12022): Found design unit 1: PINV4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/PINV4.vhd Line: 12
-    Info (12023): Found entity 1: PINV4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/PINV4.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/MUX4X4.vhd
-    Info (12022): Found design unit 1: MUX4X4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/MUX4X4.vhd Line: 12
-    Info (12023): Found entity 1: MUX4X4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/MUX4X4.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd
-    Info (12022): Found design unit 1: BWOR4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 11
-    Info (12023): Found entity 1: BWOR4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWAND4.vhd
-    Info (12022): Found design unit 1: BWAND4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWAND4.vhd Line: 11
-    Info (12023): Found entity 1: BWAND4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWAND4.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd
-    Info (12022): Found design unit 1: ALU4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 14
-    Info (12023): Found entity 1: ALU4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd
-    Info (12022): Found design unit 1: ALU16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd Line: 13
-    Info (12023): Found entity 1: ALU16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_5/ADD4.vhd
-    Info (12022): Found design unit 1: ADD4-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ADD4.vhd Line: 14
-    Info (12023): Found entity 1: ADD4 File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ADD4.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/SHLONE.vhd
-    Info (12022): Found design unit 1: SHLONE-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/SHLONE.vhd Line: 11
-    Info (12023): Found entity 1: SHLONE File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/SHLONE.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/SGNEXT6x16.vhd
-    Info (12022): Found design unit 1: SGNEXT6x16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/SGNEXT6x16.vhd Line: 11
-    Info (12023): Found entity 1: SGNEXT6x16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/SGNEXT6x16.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/MUX2X16.vhd
-    Info (12022): Found design unit 1: MUX2X16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/MUX2X16.vhd Line: 13
-    Info (12023): Found entity 1: MUX2X16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/MUX2X16.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd
-    Info (12022): Found design unit 1: INS_MEM-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 11
-    Info (12023): Found entity 1: INS_MEM File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/INCTWO.vhd
-    Info (12022): Found design unit 1: INCTWO-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INCTWO.vhd Line: 11
-    Info (12023): Found entity 1: INCTWO File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INCTWO.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd
-    Info (12022): Found design unit 1: DCD5X32-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 11
-    Info (12023): Found entity 1: DCD5X32 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD3X8_EN.vhd
-    Info (12022): Found design unit 1: DCD3X8_EN-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD3X8_EN.vhd Line: 12
-    Info (12023): Found entity 1: DCD3X8_EN File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD3X8_EN.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd
-    Info (12022): Found design unit 1: DAT_MEM-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 13
-    Info (12023): Found entity 1: DAT_MEM File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_6/ADD16.vhd
-    Info (12022): Found design unit 1: ADD16-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/ADD16.vhd Line: 11
-    Info (12023): Found entity 1: ADD16 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/ADD16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_7/PCJMP.vhd
-    Info (12022): Found design unit 1: PCJMP-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_7/PCJMP.vhd Line: 12
-    Info (12023): Found entity 1: PCJMP File: /home/ashinashell/class-coding/EE443_Labs/Lab_7/PCJMP.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_7/MUX2X3.vhd
-    Info (12022): Found design unit 1: MUX2X3-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_7/MUX2X3.vhd Line: 12
-    Info (12023): Found entity 1: MUX2X3 File: /home/ashinashell/class-coding/EE443_Labs/Lab_7/MUX2X3.vhd Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_8/m16dp2.bdf
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file gen.vhd
+    Info (12022): Found design unit 1: gen-g File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_9/gen.vhd Line: 6
+    Info (12023): Found entity 1: gen File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_9/gen.vhd Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab 0/sim_reg8.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab 0/reg8.vhd
+    Info (12022): Found design unit 1: REG8-clk File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG8.vhd Line: 12
+    Info (12023): Found entity 1: REG8 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG8.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab 0/reg16.vhd
+    Info (12022): Found design unit 1: REG16-logical_stuff File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG16.vhd Line: 13
+    Info (12023): Found entity 1: REG16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_4/reg8x16.vhd
+    Info (12022): Found design unit 1: REG8X16-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/REG8x16.vhd Line: 13
+    Info (12023): Found entity 1: REG8X16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/REG8x16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_4/mux8x16.vhd
+    Info (12022): Found design unit 1: MUX8X16-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/MUX8X16.vhd Line: 12
+    Info (12023): Found entity 1: MUX8X16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/MUX8X16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_4/mux4x16.vhd
+    Info (12022): Found design unit 1: MUX4X16-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/MUX4X16.vhd Line: 12
+    Info (12023): Found entity 1: MUX4X16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/MUX4X16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_4/dcd3x8.vhd
+    Info (12022): Found design unit 1: DCD3x8-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/DCD3x8.vhd Line: 11
+    Info (12023): Found entity 1: DCD3x8 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/DCD3x8.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_5/pinv4.vhd
+    Info (12022): Found design unit 1: PINV4-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/PINV4.vhd Line: 12
+    Info (12023): Found entity 1: PINV4 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/PINV4.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_5/mux4x4.vhd
+    Info (12022): Found design unit 1: MUX4X4-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/MUX4X4.vhd Line: 12
+    Info (12023): Found entity 1: MUX4X4 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/MUX4X4.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_5/bwor4.vhd
+    Info (12022): Found design unit 1: BWOR4-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 11
+    Info (12023): Found entity 1: BWOR4 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_5/bwand4.vhd
+    Info (12022): Found design unit 1: BWAND4-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWAND4.vhd Line: 11
+    Info (12023): Found entity 1: BWAND4 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWAND4.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_5/alu4.vhd
+    Info (12022): Found design unit 1: ALU4-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd Line: 14
+    Info (12023): Found entity 1: ALU4 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_5/alu16.vhd
+    Info (12022): Found design unit 1: ALU16-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU16.vhd Line: 13
+    Info (12023): Found entity 1: ALU16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU16.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_5/add4.vhd
+    Info (12022): Found design unit 1: ADD4-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ADD4.vhd Line: 14
+    Info (12023): Found entity 1: ADD4 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ADD4.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/shlone.vhd
+    Info (12022): Found design unit 1: SHLONE-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/SHLONE.vhd Line: 11
+    Info (12023): Found entity 1: SHLONE File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/SHLONE.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/sgnext6x16.vhd
+    Info (12022): Found design unit 1: SGNEXT6x16-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/SGNEXT6x16.vhd Line: 11
+    Info (12023): Found entity 1: SGNEXT6x16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/SGNEXT6x16.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/mux2x16.vhd
+    Info (12022): Found design unit 1: MUX2X16-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/MUX2X16.vhd Line: 13
+    Info (12023): Found entity 1: MUX2X16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/MUX2X16.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/ins_mem.vhd
+    Info (12022): Found design unit 1: INS_MEM-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 11
+    Info (12023): Found entity 1: INS_MEM File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/inctwo.vhd
+    Info (12022): Found design unit 1: INCTWO-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INCTWO.vhd Line: 11
+    Info (12023): Found entity 1: INCTWO File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INCTWO.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/dcd5x32.vhd
+    Info (12022): Found design unit 1: DCD5X32-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 11
+    Info (12023): Found entity 1: DCD5X32 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/dcd3x8_en.vhd
+    Info (12022): Found design unit 1: DCD3X8_EN-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD3X8_EN.vhd Line: 12
+    Info (12023): Found entity 1: DCD3X8_EN File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD3X8_EN.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/dat_mem.vhd
+    Info (12022): Found design unit 1: DAT_MEM-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 13
+    Info (12023): Found entity 1: DAT_MEM File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_6/add16.vhd
+    Info (12022): Found design unit 1: ADD16-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/ADD16.vhd Line: 11
+    Info (12023): Found entity 1: ADD16 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/ADD16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_7/pcjmp.vhd
+    Info (12022): Found design unit 1: PCJMP-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_7/PCJMP.vhd Line: 12
+    Info (12023): Found entity 1: PCJMP File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_7/PCJMP.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_7/mux2x3.vhd
+    Info (12022): Found design unit 1: MUX2X3-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_7/MUX2X3.vhd Line: 12
+    Info (12023): Found entity 1: MUX2X3 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_7/MUX2X3.vhd Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_8/m16dp2.bdf
     Info (12023): Found entity 1: m16dp2
-Info (12021): Found 1 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_8/m16dp1.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_8/m16dp1.bdf
     Info (12023): Found entity 1: m16dp1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_8/m16dp.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_8/m16dp.bdf
     Info (12023): Found entity 1: m16dp
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_8/CONTROL.vhd
-    Info (12022): Found design unit 1: CONTROL-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_8/CONTROL.vhd Line: 21
-    Info (12023): Found entity 1: CONTROL File: /home/ashinashell/class-coding/EE443_Labs/Lab_8/CONTROL.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ashinashell/class-coding/EE443_Labs/Lab_8/PC.vhd
-    Info (12022): Found design unit 1: PC-behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_8/PC.vhd Line: 12
-    Info (12023): Found entity 1: PC File: /home/ashinashell/class-coding/EE443_Labs/Lab_8/PC.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_8/control.vhd
+    Info (12022): Found design unit 1: CONTROL-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/CONTROL.vhd Line: 22
+    Info (12023): Found entity 1: CONTROL File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/CONTROL.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/akmooreschultz/desktop/ee443_labs/lab_8/pc.vhd
+    Info (12022): Found design unit 1: PC-behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/PC.vhd Line: 12
+    Info (12023): Found entity 1: PC File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_8/PC.vhd Line: 4
 Info (12127): Elaborating entity "m16dp" for the top level hierarchy
 Info (12128): Elaborating entity "CONTROL" for hierarchy "CONTROL:inst"
 Info (12128): Elaborating entity "m16dp2" for hierarchy "m16dp2:inst2"
 Warning (275011): Block or symbol "MUX2X3" of instance "inst5" overlaps another block or symbol
 Info (12128): Elaborating entity "ALU16" for hierarchy "m16dp2:inst2|ALU16:inst1"
-Info (12128): Elaborating entity "ALU4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU16.vhd Line: 33
-Info (12128): Elaborating entity "PINV4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|PINV4:inverter" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 61
-Info (12128): Elaborating entity "ADD4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|ADD4:adder" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 68
-Info (12128): Elaborating entity "BWAND4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWAND4:ander" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 78
-Info (12128): Elaborating entity "BWOR4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 85
-Info (12128): Elaborating entity "MUX4X4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|MUX4X4:mux" File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/ALU4.vhd Line: 94
+Info (12128): Elaborating entity "ALU4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU16.vhd Line: 33
+Info (12128): Elaborating entity "PINV4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|PINV4:inverter" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd Line: 61
+Info (12128): Elaborating entity "ADD4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|ADD4:adder" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd Line: 68
+Info (12128): Elaborating entity "BWAND4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWAND4:ander" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd Line: 78
+Info (12128): Elaborating entity "BWOR4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd Line: 85
+Info (12128): Elaborating entity "MUX4X4" for hierarchy "m16dp2:inst2|ALU16:inst1|ALU4:alu0|MUX4X4:mux" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/ALU4.vhd Line: 94
 Info (12128): Elaborating entity "REG8X16" for hierarchy "m16dp2:inst2|REG8X16:inst"
-Info (12128): Elaborating entity "DCD3x8" for hierarchy "m16dp2:inst2|REG8X16:inst|DCD3x8:add_reg1_dcd" File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 45
-Info (12128): Elaborating entity "REG16" for hierarchy "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:0:regs" File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 52
-Info (12128): Elaborating entity "REG8" for hierarchy "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:0:regs|REG8:reg_1" File: /home/ashinashell/class-coding/EE443_Labs/Lab 0/REG16.vhd Line: 26
-Info (12128): Elaborating entity "MUX8X16" for hierarchy "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1" File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/REG8x16.vhd Line: 61
-Info (12128): Elaborating entity "MUX4X16" for hierarchy "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1" File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/MUX8X16.vhd Line: 27
+Info (12128): Elaborating entity "DCD3x8" for hierarchy "m16dp2:inst2|REG8X16:inst|DCD3x8:add_reg1_dcd" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/REG8x16.vhd Line: 45
+Info (12128): Elaborating entity "REG16" for hierarchy "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:0:regs" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/REG8x16.vhd Line: 52
+Info (12128): Elaborating entity "REG8" for hierarchy "m16dp2:inst2|REG8X16:inst|REG16:\reg_gen:0:regs|REG8:reg_1" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG16.vhd Line: 26
+Info (12128): Elaborating entity "MUX8X16" for hierarchy "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/REG8x16.vhd Line: 61
+Info (12128): Elaborating entity "MUX4X16" for hierarchy "m16dp2:inst2|REG8X16:inst|MUX8X16:mux_1|MUX4X16:mux_1" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/MUX8X16.vhd Line: 27
 Info (12128): Elaborating entity "MUX2X3" for hierarchy "m16dp2:inst2|MUX2X3:inst5"
 Info (12128): Elaborating entity "MUX2X16" for hierarchy "m16dp2:inst2|MUX2X16:inst2"
 Info (12128): Elaborating entity "m16dp1" for hierarchy "m16dp1:inst4"
 Info (12128): Elaborating entity "ADD16" for hierarchy "m16dp1:inst4|ADD16:inst3"
-Warning (10036): Verilog HDL or VHDL warning at ADD16.vhd(24): object "overflows" assigned a value but never read File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/ADD16.vhd Line: 24
+Warning (10036): Verilog HDL or VHDL warning at ADD16.vhd(24): object "overflows" assigned a value but never read File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/ADD16.vhd Line: 24
 Info (12128): Elaborating entity "SGNEXT6x16" for hierarchy "m16dp1:inst4|SGNEXT6x16:inst5"
 Info (12128): Elaborating entity "INS_MEM" for hierarchy "m16dp1:inst4|INS_MEM:inst1"
-Warning (10492): VHDL Process Statement warning at INS_MEM.vhd(52): signal "addr_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 52
-Warning (10631): VHDL Process Statement warning at INS_MEM.vhd(49): inferring latch(es) for signal or variable "data_out", which holds its previous value in one or more paths through the process File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[0]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[1]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[2]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[3]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[4]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[5]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[6]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[7]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[8]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[9]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[10]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[11]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[12]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[13]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[14]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (10041): Inferred latch for "data_out[15]" at INS_MEM.vhd(49) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Info (12128): Elaborating entity "DCD5X32" for hierarchy "m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 32
-Info (12128): Elaborating entity "DCD3X8_EN" for hierarchy "m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|DCD3X8_EN:dcd_0" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at INS_MEM.vhd(56): signal "addr_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 56
+Warning (10631): VHDL Process Statement warning at INS_MEM.vhd(53): inferring latch(es) for signal or variable "data_out", which holds its previous value in one or more paths through the process File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[0]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[1]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[2]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[3]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[4]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[5]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[6]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[7]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[8]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[9]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[10]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[11]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[12]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[13]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[14]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (10041): Inferred latch for "data_out[15]" at INS_MEM.vhd(53) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Info (12128): Elaborating entity "DCD5X32" for hierarchy "m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 32
+Info (12128): Elaborating entity "DCD3X8_EN" for hierarchy "m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|DCD3X8_EN:dcd_0" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 31
 Info (12128): Elaborating entity "PC" for hierarchy "m16dp1:inst4|PC:inst"
 Info (12128): Elaborating entity "INCTWO" for hierarchy "m16dp1:inst4|INCTWO:inst2"
-Warning (10036): Verilog HDL or VHDL warning at INCTWO.vhd(14): object "aluOutputs" assigned a value but never read File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INCTWO.vhd Line: 14
+Warning (10036): Verilog HDL or VHDL warning at INCTWO.vhd(14): object "aluOutputs" assigned a value but never read File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INCTWO.vhd Line: 14
 Info (12128): Elaborating entity "PCJMP" for hierarchy "m16dp1:inst4|PCJMP:inst4"
 Info (12128): Elaborating entity "DAT_MEM" for hierarchy "DAT_MEM:inst1"
-Warning (10631): VHDL Process Statement warning at DAT_MEM.vhd(68): inferring latch(es) for signal or variable "DOUT", which holds its previous value in one or more paths through the process File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[0]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[1]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[2]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[3]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[4]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[5]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[6]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[7]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[8]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[9]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[10]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[11]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[12]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[13]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[14]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-Info (10041): Inferred latch for "DOUT[15]" at DAT_MEM.vhd(68) File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Warning (10631): VHDL Process Statement warning at DAT_MEM.vhd(68): inferring latch(es) for signal or variable "DOUT", which holds its previous value in one or more paths through the process File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[0]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[1]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[2]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[3]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[4]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[5]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[6]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[7]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[8]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[9]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[10]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[11]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[12]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[13]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[14]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (10041): Inferred latch for "DOUT[15]" at DAT_MEM.vhd(68) File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+Info (12128): Elaborating entity "gen" for hierarchy "gen:inst6"
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[15]" to the node "MUX2X16:inst3|OUT16B[15]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[14]" to the node "MUX2X16:inst3|OUT16B[14]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[13]" to the node "MUX2X16:inst3|OUT16B[13]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[12]" to the node "MUX2X16:inst3|OUT16B[12]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[11]" to the node "MUX2X16:inst3|OUT16B[11]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[10]" to the node "MUX2X16:inst3|OUT16B[10]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[9]" to the node "MUX2X16:inst3|OUT16B[9]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[8]" to the node "MUX2X16:inst3|OUT16B[8]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[7]" to the node "MUX2X16:inst3|OUT16B[7]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[6]" to the node "MUX2X16:inst3|OUT16B[6]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[5]" to the node "MUX2X16:inst3|OUT16B[5]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[4]" to the node "MUX2X16:inst3|OUT16B[4]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[3]" to the node "MUX2X16:inst3|OUT16B[3]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[2]" to the node "MUX2X16:inst3|OUT16B[2]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[1]" to the node "MUX2X16:inst3|OUT16B[1]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[0]" to the node "MUX2X16:inst3|OUT16B[0]" into an OR gate File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[15]" to the node "MUX2X16:inst3|OUT16B[15]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[14]" to the node "MUX2X16:inst3|OUT16B[14]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[13]" to the node "MUX2X16:inst3|OUT16B[13]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[12]" to the node "MUX2X16:inst3|OUT16B[12]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[11]" to the node "MUX2X16:inst3|OUT16B[11]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[10]" to the node "MUX2X16:inst3|OUT16B[10]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[9]" to the node "MUX2X16:inst3|OUT16B[9]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[8]" to the node "MUX2X16:inst3|OUT16B[8]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[7]" to the node "MUX2X16:inst3|OUT16B[7]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[6]" to the node "MUX2X16:inst3|OUT16B[6]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[5]" to the node "MUX2X16:inst3|OUT16B[5]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[4]" to the node "MUX2X16:inst3|OUT16B[4]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[3]" to the node "MUX2X16:inst3|OUT16B[3]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[2]" to the node "MUX2X16:inst3|OUT16B[2]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[1]" to the node "MUX2X16:inst3|OUT16B[1]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13047): Converted the fan-out from the tri-state buffer "DAT_MEM:inst1|DOUT[0]" to the node "MUX2X16:inst3|OUT16B[0]" into an OR gate File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
 Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[10]" merged with LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[15]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-    Info (13026): Duplicate LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[11]" merged with LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[15]" File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[14] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[15] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[13] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[12] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[5] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[4] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[3] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[2] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[1] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[0] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[8] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[7] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[6] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[9] has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[15]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[15]_2612 has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[14]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu1|BWOR4:bitwor|Res[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[13]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[12]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu1|BWOR4:bitwor|Res[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[11]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[10]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu1|BWOR4:bitwor|Res[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd|Mux7~synth File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 16
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[9]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd|Mux7~synth File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 16
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[8]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu1|BWOR4:bitwor|Res[0] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd|Mux7~synth File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 16
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[7]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[7]_2052 has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[6]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[5]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[4]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[3]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[2]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd|Mux7~synth File: /home/ashinashell/class-coding/EE443_Labs/Lab_4/DCD3x8.vhd Line: 16
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[1]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (13012): Latch DAT_MEM:inst1|DOUT[0]$latch has unsafe behavior File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: /home/ashinashell/class-coding/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
-Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[14]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[15]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[13]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[12]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[5]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[4]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[3]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[2]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[1]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[0]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[8]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[7]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[6]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
-Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[9]" is permanently enabled File: /home/ashinashell/class-coding/EE443_Labs/Lab_6/INS_MEM.vhd Line: 49
+    Info (13026): Duplicate LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[11]" merged with LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[15]" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+    Info (13026): Duplicate LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[7]" merged with LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[1]" File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[15] has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG8.vhd Line: 22
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[14] has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[5] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG8.vhd Line: 22
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[13] has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[5] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG8.vhd Line: 22
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[12] has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[5] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG8.vhd Line: 22
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[5] has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[4] has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG8.vhd Line: 22
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[3] has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[2] has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[1] has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG8.vhd Line: 22
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[0] has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG8.vhd Line: 22
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[8] has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG8.vhd Line: 22
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[6] has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[10] has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab 0/REG8.vhd Line: 22
+Warning (13012): Latch m16dp1:inst4|INS_MEM:inst1|data_out[9] has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp1:inst4|INS_MEM:inst1|DCD5X32:dec|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[15]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[15]_2612 has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[14]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[13]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[12]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd|Mux7~synth File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/DCD3x8.vhd Line: 16
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[11]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[10]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd|Mux7~synth File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/DCD3x8.vhd Line: 16
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[9]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd|Mux7~synth File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/DCD3x8.vhd Line: 16
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[8]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd|Mux7~synth File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/DCD3x8.vhd Line: 16
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[7]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[7]_2052 has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[6]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[5]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[4]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd|Mux7~synth File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/DCD3x8.vhd Line: 16
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[3]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[2]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|DCD3X8_EN:dcd_3|DCD3x8:dcd|Mux7~synth File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_4/DCD3x8.vhd Line: 16
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[1]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (13012): Latch DAT_MEM:inst1|DOUT[0]$latch has unsafe behavior File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DAT_MEM.vhd Line: 68
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal m16dp2:inst2|ALU16:inst1|ALU4:alu0|BWOR4:bitwor|Res[3] File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_5/BWOR4.vhd Line: 7
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal DAT_MEM:inst1|DCD5X32:dcd|en_0 File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/DCD5X32.vhd Line: 20
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[15]" is permanently enabled File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[14]" is permanently enabled File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[13]" is permanently enabled File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[12]" is permanently enabled File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[5]" is permanently enabled File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[4]" is permanently enabled File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[3]" is permanently enabled File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[2]" is permanently enabled File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[1]" is permanently enabled File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[0]" is permanently enabled File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[8]" is permanently enabled File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[6]" is permanently enabled File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[10]" is permanently enabled File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
+Warning (14026): LATCH primitive "m16dp1:inst4|INS_MEM:inst1|data_out[9]" is permanently enabled File: D:/Users/akmooreschultz/Desktop/EE443_Labs/Lab_6/INS_MEM.vhd Line: 53
 Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "PCEnable" is stuck at VCC
     Warning (13410): Pin "ALUOp[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1165 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 188 output pins
-    Info (21061): Implemented 974 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 124 warnings
-    Info: Peak virtual memory: 498 megabytes
-    Info: Processing ended: Sat Apr 25 22:42:05 2026
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+Info (21057): Implemented 1375 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 245 output pins
+    Info (21061): Implemented 1128 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 127 warnings
+    Info: Peak virtual memory: 4828 megabytes
+    Info: Processing ended: Mon Apr 27 13:39:38 2026
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:15
 
 

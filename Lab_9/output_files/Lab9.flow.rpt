@@ -1,6 +1,6 @@
 Flow report for Lab9
-Sat Apr 25 22:43:28 2026
-Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Mon Apr 27 13:40:50 2026
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2024  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Sat Apr 25 22:43:28 2026          ;
-; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Flow Status                        ; Successful - Mon Apr 27 13:40:50 2026          ;
+; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; Lab9                                           ;
 ; Top-level Entity Name              ; m16dp                                          ;
 ; Family                             ; Cyclone IV E                                   ;
 ; Device                             ; EP4CE115F29C7                                  ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 808 / 114,480 ( < 1 % )                        ;
-;     Total combinational functions  ; 654 / 114,480 ( < 1 % )                        ;
-;     Dedicated logic registers      ; 336 / 114,480 ( < 1 % )                        ;
-; Total registers                    ; 336                                            ;
-; Total pins                         ; 191 / 529 ( 36 % )                             ;
+; Total logic elements               ; 959 / 114,480 ( < 1 % )                        ;
+;     Total combinational functions  ; 824 / 114,480 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 320 / 114,480 ( < 1 % )                        ;
+; Total registers                    ; 320                                            ;
+; Total pins                         ; 247 / 529 ( 47 % )                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                          ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/25/2026 22:41:57 ;
+; Start date & time ; 04/27/2026 13:39:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab9                ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 22072704025325.177718571745267         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 88623634760586.177732596708080         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_timing_analysis               ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -104,26 +104,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 498 MB              ; 00:00:17                           ;
-; Fitter               ; 00:01:15     ; 1.0                     ; 2142 MB             ; 00:01:34                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 362 MB              ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.4                     ; 678 MB              ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 589 MB              ; 00:00:00                           ;
-; Total                ; 00:01:27     ; --                      ; --                  ; 00:01:56                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4828 MB             ; 00:00:15                           ;
+; Fitter               ; 00:01:00     ; 1.0                     ; 5806 MB             ; 00:00:48                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4726 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.2                     ; 4888 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4663 MB             ; 00:00:01                           ;
+; Total                ; 00:01:18     ; --                      ; --                  ; 00:01:09                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                                    ;
-+----------------------+------------------+--------------------+--------------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name            ; OS Version         ; Processor type ;
-+----------------------+------------------+--------------------+--------------------+----------------+
-; Analysis & Synthesis ; ashley-arch      ; \S{PRETTY_NAME} \r ; \S{PRETTY_NAME} \r ; x86_64         ;
-; Fitter               ; ashley-arch      ; \S{PRETTY_NAME} \r ; \S{PRETTY_NAME} \r ; x86_64         ;
-; Assembler            ; ashley-arch      ; \S{PRETTY_NAME} \r ; \S{PRETTY_NAME} \r ; x86_64         ;
-; Timing Analyzer      ; ashley-arch      ; \S{PRETTY_NAME} \r ; \S{PRETTY_NAME} \r ; x86_64         ;
-; EDA Netlist Writer   ; ashley-arch      ; \S{PRETTY_NAME} \r ; \S{PRETTY_NAME} \r ; x86_64         ;
-+----------------------+------------------+--------------------+--------------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; CEM-DIGILAB-10   ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; CEM-DIGILAB-10   ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; CEM-DIGILAB-10   ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; CEM-DIGILAB-10   ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; CEM-DIGILAB-10   ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------

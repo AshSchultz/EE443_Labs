@@ -14,13 +14,16 @@ entity CONTROL is
 	 ALUSrc			 : OUT STD_LOGIC;
 	 RegWrite			 : OUT STD_LOGIC;
 	 ALUCon			 : OUT STD_LOGIC;
-	 ALUOp			 : OUT std_logic_vector(2 downto 0)
+	 ALUOp			 : OUT std_logic_vector(2 downto 0);
+	 PCEnable		: OUT std_logic
   );
 end CONTROL;
 
 architecture behavior of CONTROL is
 begin
-
+	
+	PCEnable <= '1';
+	
 	process(INS_OP, ZERO) is
 	begin
 		case INS_OP is
