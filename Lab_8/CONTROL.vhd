@@ -24,7 +24,7 @@ begin
 	
 	PCEnable <= '1';
 	
-	process(INS_OP, ZERO) is
+	process(INS_OP) is
 	begin
 		case INS_OP is
 		when x"0" => -- add, or, and, sub, slt

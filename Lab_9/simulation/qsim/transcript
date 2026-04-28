@@ -2,7 +2,7 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:50:05 on Apr 27,2026
+# Start time: 18:04:40 on Apr 27,2026
 # vcom -work work Lab9.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -17,21 +17,21 @@
 # -- Loading package altera_primitives_components
 # -- Compiling entity m16dp
 # -- Compiling architecture structure of m16dp
-# End time: 12:50:06 on Apr 27,2026, Elapsed time: 0:00:01
+# End time: 18:04:40 on Apr 27,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:50:06 on Apr 27,2026
-# vcom -work work Waveform1.vwf.vht 
+# Start time: 18:04:40 on Apr 27,2026
+# vcom -work work Waveform2.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity m16dp_vhd_vec_tst
 # -- Compiling architecture m16dp_arch of m16dp_vhd_vec_tst
-# End time: 12:50:06 on Apr 27,2026, Elapsed time: 0:00:00
+# End time: 18:04:40 on Apr 27,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.m16dp_vhd_vec_tst 
-# Start time: 12:50:06 on Apr 27,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# vsim -voptargs=""+acc"" -c -t 1ps -sdfmax "m16dp_vhd_vec_tst/i1=Lab9_vhd.sdo" -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.m16dp_vhd_vec_tst 
+# Start time: 18:04:40 on Apr 27,2026
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Intel Starter FPGA Edition-64
 # //  Version 2021.2 win64 Apr 14 2021
 # //
@@ -59,22 +59,27 @@
 # Loading work.m16dp(structure)#1
 # Loading work.hard_block(structure)#1
 # Loading ieee.std_logic_arith(body)
-# Loading cycloneive.cycloneive_io_obuf(arch)#1
+# Loading cycloneive.cycloneive_io_obuf(arch)#2
 # Loading cycloneive.cycloneive_io_ibuf(arch)#1
-# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)#1
-# Loading cycloneive.cycloneive_ena_reg(behave)#1
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#375
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#73
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#524
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#369
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#376
-# Loading altera.dffeas(vital_dffeas)#1
-# Loading altera.dffeas(vital_dffeas)#2
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#32
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#50
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#69
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#101
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#114
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#130
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#348
+# Loading altera.dffeas(vital_dffeas)#4
+# Loading altera.dffeas(vital_dffeas)#5
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)#2
+# Loading cycloneive.cycloneive_ena_reg(behave)#1
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#368
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#419
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#432
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#367
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#442
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#526
+# Loading altera.dffeas(vital_dffeas)#6
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#356
+# Loading instances from Lab9_vhd.sdo
+# Loading timing data from Lab9_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /m16dp_vhd_vec_tst File: Waveform2.vwf.vht
 # after#36
-# End time: 12:50:08 on Apr 27,2026, Elapsed time: 0:00:02
+# End time: 18:04:43 on Apr 27,2026, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0

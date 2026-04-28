@@ -11,7 +11,6 @@ end entity INCTWO;
 architecture behavior of INCTWO is
 
   signal num_add    : std_logic_vector(15 downto 0);
-  signal aluOutputs : std_logic_vector(2 downto 0);
 
   component ALU16 is
     port (

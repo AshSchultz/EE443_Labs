@@ -50,18 +50,17 @@ begin
   mem(7) <= "0010000000000100"; -- j   4    	  	  # Loops back to summing r3 and r1 if not equal to 16
   mem(8) <= "1011111101000100"; -- ld  $5, 6($7)  # Loads the stored contents of R3 into R5
   mem(9) <= "0010000000000101"; -- j   9     	  # uses an infinite loop as a halt (9 is the address of the instruction)
-  process (mem, ADDR, exception, data_out) is
-  begin
-    for l in 31 downto 0 loop
-      if (addr_out(l) = '1') then
-        data_out <= mem(l);
-      end if;
-    end loop;
-    if exception = '1' then
-      INS_OUT <= (others => '0');
-    else
-      INS_OUT <= data_out;
-    end if;
+  
+ INS_OUT <= (others => '0') when exception = '1' else data_out;
+  
+  process (addr_out) is
+    begin
+		 for l in 31 downto 0 loop
+			if (addr_out(l) = '1') then
+			  data_out <= mem(l);
+			end if;
+		 end loop;
+	 
   end process;
 
 end architecture;

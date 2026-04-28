@@ -65,7 +65,7 @@ begin
 			);
 	end generate;
 	
-	process(RE, reg_enables, reg_out) is
+	process(RE, reg_enables) is
 	begin
 		if RE = '1' then
 			for l in 30 downto 0 loop

@@ -1,11 +1,11 @@
-Fitter Status : Successful - Mon Apr 27 13:40:39 2026
+Fitter Status : Successful - Mon Apr 27 18:02:22 2026
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : Lab9
 Top-level Entity Name : m16dp
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 959 / 114,480 ( < 1 % )
+Total logic elements : 931 / 114,480 ( < 1 % )
     Total combinational functions : 824 / 114,480 ( < 1 % )
     Dedicated logic registers : 320 / 114,480 ( < 1 % )
 Total registers : 320

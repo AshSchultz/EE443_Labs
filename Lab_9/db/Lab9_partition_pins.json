@@ -976,11 +976,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "RST",
+					"name" : "SW0",
 					"strict" : false
 				},
 				{
-					"name" : "SW[17]",
+					"name" : "SW17",
 					"strict" : false
 				}
 			]

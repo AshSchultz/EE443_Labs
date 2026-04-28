@@ -1,9 +1,9 @@
 |m16dp
 RegDst <= CONTROL:inst.RegDst
 RegWrite <= CONTROL:inst.RegWrite
-SW[17] => m16dp2:inst2.CLK
-SW[17] => m16dp1:inst4.CLK
-SW[17] => DAT_MEM:inst1.CLK
+SW17 => m16dp2:inst2.CLK
+SW17 => m16dp1:inst4.CLK
+SW17 => DAT_MEM:inst1.CLK
 ALUCon <= CONTROL:inst.ALUCon
 ALUSrc <= CONTROL:inst.ALUSrc
 EXTEN_OUT[0] <= m16dp1:inst4.EXTEN_OUT[0]
@@ -25,7 +25,7 @@ EXTEN_OUT[15] <= m16dp1:inst4.EXTEN_OUT[15]
 Branch <= CONTROL:inst.Branch
 PCEnable <= CONTROL:inst.PCEnable
 Jump <= CONTROL:inst.Jump
-RST => m16dp1:inst4.RST
+SW0 => m16dp1:inst4.RST
 ALUOp[0] <= CONTROL:inst.ALUOp[0]
 ALUOp[1] <= CONTROL:inst.ALUOp[1]
 ALUOp[2] <= CONTROL:inst.ALUOp[2]
