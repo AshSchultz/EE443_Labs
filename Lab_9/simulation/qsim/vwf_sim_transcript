@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Apr 27 18:04:37 2026
+    Info: Processing started: Tue Apr 28 16:29:30 2026
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Lab9 -c Lab9 --vector_source=D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/Waveform2.vwf --testbench_file=D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim/Waveform2.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -42,9 +42,9 @@ utput pin "W_REG[1]" in vector source file when writing test bench files
 
 Completed successfully. 
 
-**** Generating the timing simulation netlist ****
+**** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim/" Lab9 -c Lab9
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim/" Lab9 -c Lab9
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -63,22 +63,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Apr 27 18:04:38 2026
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory=D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim/ Lab9 -c Lab9
+    Info: Processing started: Tue Apr 28 16:29:31 2026
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim/ Lab9 -c Lab9
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Lab9_7_1200mv_85c_slow.vho in folder "D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file Lab9_7_1200mv_0c_slow.vho in folder "D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file Lab9_min_1200mv_0c_fast.vho in folder "D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim//" for EDA simulation tool
 Info (204019): Generated file Lab9.vho in folder "D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file Lab9_7_1200mv_85c_vhd_slow.sdo in folder "D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file Lab9_7_1200mv_0c_vhd_slow.sdo in folder "D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file Lab9_min_1200mv_0c_vhd_fast.sdo in folder "D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file Lab9_vhd.sdo in folder "D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4696 megabytes
-    Info: Processing ended: Mon Apr 27 18:04:39 2026
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4672 megabytes
+    Info: Processing ended: Tue Apr 28 16:29:31 2026
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
 
 Completed successfully. 
 
@@ -105,7 +98,7 @@ Reading pref.tcl
 
 # Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
 
-# Start time: 18:04:40 on Apr 27,2026
+# Start time: 16:29:32 on Apr 28,2026
 # vcom -work work Lab9.vho 
 
 # -- Loading package STANDARD
@@ -127,20 +120,19 @@ Reading pref.tcl
 # -- Compiling architecture structure of hard_block
 
 # -- Loading package dffeas_pack
-
 # -- Loading package altera_primitives_components
 
 # -- Compiling entity m16dp
 
 # -- Compiling architecture structure of m16dp
 
-# End time: 18:04:40 on Apr 27,2026, Elapsed time: 0:00:00
+# End time: 16:29:32 on Apr 28,2026, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
 
-# Start time: 18:04:40 on Apr 27,2026
+# Start time: 16:29:32 on Apr 28,2026
 # vcom -work work Waveform2.vwf.vht 
 
 # -- Loading package STANDARD
@@ -153,13 +145,13 @@ Reading pref.tcl
 
 # -- Compiling architecture m16dp_arch of m16dp_vhd_vec_tst
 
-# End time: 18:04:40 on Apr 27,2026, Elapsed time: 0:00:00
+# End time: 16:29:32 on Apr 28,2026, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
-# vsim -voptargs=""+acc"" -c -t 1ps -sdfmax "m16dp_vhd_vec_tst/i1=Lab9_vhd.sdo" -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.m16dp_vhd_vec_tst 
-# Start time: 18:04:40 on Apr 27,2026
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim -voptargs=""+acc"" -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.m16dp_vhd_vec_tst 
+# Start time: 16:29:32 on Apr 28,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Intel Starter FPGA Edition-64
 # //  Version 2021.2 win64 Apr 14 2021
 # //
@@ -188,31 +180,27 @@ Reading pref.tcl
 # Loading work.m16dp(structure)#1
 # Loading work.hard_block(structure)#1
 # Loading ieee.std_logic_arith(body)
-# Loading cycloneive.cycloneive_io_obuf(arch)#2
+# Loading cycloneive.cycloneive_io_obuf(arch)#1
 # Loading cycloneive.cycloneive_io_ibuf(arch)#1
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#524
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#369
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#376
-# Loading altera.dffeas(vital_dffeas)#4
-# Loading altera.dffeas(vital_dffeas)#5
-# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)#2
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#302
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#373
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)#1
 # Loading cycloneive.cycloneive_ena_reg(behave)#1
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#368
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#419
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#432
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#367
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#442
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#526
-# Loading altera.dffeas(vital_dffeas)#6
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#356
-# Loading instances from Lab9_vhd.sdo
-# Loading timing data from Lab9_vhd.sdo
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /m16dp_vhd_vec_tst File: Waveform2.vwf.vht
+# Loading altera.dffeas(vital_dffeas)#1
+# Loading altera.dffeas(vital_dffeas)#2
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#43
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#44
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#370
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#70
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#95
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#206
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#301
+# Loading altera.dffeas(vital_dffeas)#3
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#374
 
 # after#36
 
-# End time: 18:04:43 on Apr 27,2026, Elapsed time: 0:00:03
+# End time: 16:29:35 on Apr 28,2026, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -225,7 +213,7 @@ Reading D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim/Lab9_20260427180444.sim.vwf
+Writing the resulting VWF to D:/Users/akmooreschultz/Documents/EE443/EE443_Labs/Lab_9/simulation/qsim/Lab9_20260428162935.sim.vwf
 
 Finished VCD to VWF conversion.
 

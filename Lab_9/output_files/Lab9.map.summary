@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Mon Apr 27 18:01:12 2026
+Analysis & Synthesis Status : Successful - Tue Apr 28 16:28:18 2026
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : Lab9
 Top-level Entity Name : m16dp
 Family : Cyclone IV E
-Total logic elements : 1,096
-    Total combinational functions : 824
-    Dedicated logic registers : 320
-Total registers : 320
+Total logic elements : 1,110
+    Total combinational functions : 838
+    Dedicated logic registers : 319
+Total registers : 319
 Total pins : 247
 Total virtual pins : 0
 Total memory bits : 0

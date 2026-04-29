@@ -22,7 +22,7 @@ https://fpgasoftware.intel.com/eula.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 728 312 896 328)
+	(rect 768 336 936 352)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "SW[17]" (rect 5 0 41 12)(font "Arial" ))
 	(pt 168 8)
@@ -35,13 +35,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 664 328 728 352))
+	(annotation_block (location)(rect 776 368 840 392))
 )
 (pin
 	(input)
 	(rect 64 648 232 664)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW[0]" (rect 5 0 36 12)(font "Arial" ))
+	(text "SW[0]" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1186,10 +1186,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 984 256)
 )
 (connector
-	(pt 984 256)
-	(pt 984 320)
-)
-(connector
 	(pt 952 272)
 	(pt 952 248)
 )
@@ -1284,7 +1280,7 @@ https://fpgasoftware.intel.com/eula.
 	(pt 256 264)
 )
 (connector
-	(text "Branch" (rect 152 568 185 585)(font "Intel Clear" ))
+	(text "Branch" (rect 144 560 177 577)(font "Intel Clear" ))
 	(pt 232 592)
 	(pt 144 592)
 )
@@ -1397,11 +1393,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 616 776)
 	(pt 616 640)
 	(bus)
-)
-(connector
-	(text "CLK" (rect 945 296 965 313)(font "Intel Clear" ))
-	(pt 984 320)
-	(pt 896 320)
 )
 (connector
 	(text "MemRead" (rect 494 256 543 273)(font "Intel Clear" ))
@@ -1597,5 +1588,14 @@ https://fpgasoftware.intel.com/eula.
 	(text "PCEnable" (rect 125 608 172 625)(font "Intel Clear" ))
 	(pt 232 624)
 	(pt 96 624)
+)
+(connector
+	(pt 984 256)
+	(pt 984 344)
+)
+(connector
+	(text "CLK" (rect 985 320 1005 337)(font "Intel Clear" ))
+	(pt 984 344)
+	(pt 936 344)
 )
 (junction (pt 1216 192))

@@ -20,7 +20,9 @@ architecture behavior of INCTWO is
       COUT, OVERFLOW, ZERO : out std_logic
     );
   end component ALU16;
-
+	
+	signal aluOutputs : std_logic_vector(2 downto 0);
+  
 begin
 
   num_add <= (1 => '1', others => '0'); -- Add the number 2 in binary

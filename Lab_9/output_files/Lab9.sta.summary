@@ -3,99 +3,99 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'SW17'
-Slack : -24.536
-TNS   : -5281.243
+Slack : -26.372
+TNS   : -5603.370
 
 Type  : Slow 1200mV 85C Model Setup 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
-Slack : -18.229
-TNS   : -132.379
+Slack : -25.510
+TNS   : -175.730
 
 Type  : Slow 1200mV 85C Model Hold 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
-Slack : -12.010
-TNS   : -93.329
+Slack : -13.676
+TNS   : -102.550
 
 Type  : Slow 1200mV 85C Model Hold 'SW17'
-Slack : -1.162
-TNS   : -5.712
+Slack : -1.616
+TNS   : -11.362
 
 Type  : Slow 1200mV 85C Model Recovery 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
-Slack : -18.980
-TNS   : -167.964
+Slack : -21.971
+TNS   : -157.085
 
 Type  : Slow 1200mV 85C Model Removal 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
-Slack : -11.831
-TNS   : -110.893
+Slack : -12.843
+TNS   : -96.207
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
-Slack : -8.904
-TNS   : -3791.128
+Slack : -10.766
+TNS   : -3708.511
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SW17'
 Slack : -3.000
-TNS   : -414.200
+TNS   : -412.915
 
 Type  : Slow 1200mV 0C Model Setup 'SW17'
-Slack : -22.267
-TNS   : -4809.575
+Slack : -24.162
+TNS   : -5136.099
 
 Type  : Slow 1200mV 0C Model Setup 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
-Slack : -16.975
-TNS   : -123.535
+Slack : -23.658
+TNS   : -164.170
 
 Type  : Slow 1200mV 0C Model Hold 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
-Slack : -11.079
-TNS   : -85.999
+Slack : -12.596
+TNS   : -94.496
 
 Type  : Slow 1200mV 0C Model Hold 'SW17'
-Slack : -1.137
-TNS   : -5.985
+Slack : -1.524
+TNS   : -10.947
 
 Type  : Slow 1200mV 0C Model Recovery 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
-Slack : -17.626
-TNS   : -155.968
+Slack : -20.549
+TNS   : -147.104
 
 Type  : Slow 1200mV 0C Model Removal 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
-Slack : -10.866
-TNS   : -102.329
+Slack : -11.869
+TNS   : -88.958
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
-Slack : -8.220
-TNS   : -3406.516
+Slack : -9.868
+TNS   : -3319.937
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SW17'
 Slack : -3.000
-TNS   : -414.200
+TNS   : -412.915
 
 Type  : Fast 1200mV 0C Model Setup 'SW17'
-Slack : -11.839
-TNS   : -2439.292
+Slack : -12.489
+TNS   : -2608.193
 
 Type  : Fast 1200mV 0C Model Setup 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
-Slack : -9.163
-TNS   : -64.991
+Slack : -12.310
+TNS   : -85.113
 
 Type  : Fast 1200mV 0C Model Hold 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
-Slack : -5.848
-TNS   : -45.039
+Slack : -6.646
+TNS   : -49.526
 
 Type  : Fast 1200mV 0C Model Hold 'SW17'
-Slack : -0.551
-TNS   : -2.934
+Slack : -0.817
+TNS   : -5.821
 
 Type  : Fast 1200mV 0C Model Recovery 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
-Slack : -9.277
-TNS   : -81.594
+Slack : -10.970
+TNS   : -75.630
 
 Type  : Fast 1200mV 0C Model Removal 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
-Slack : -5.675
-TNS   : -53.035
+Slack : -6.177
+TNS   : -46.089
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'm16dp1:inst4|PC:inst|REG16:reg|REG8:reg_1|y[1]'
-Slack : -4.237
-TNS   : -1490.448
+Slack : -4.989
+TNS   : -1436.562
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SW17'
 Slack : -3.000
-TNS   : -381.297
+TNS   : -375.636
 
 ------------------------------------------------------------

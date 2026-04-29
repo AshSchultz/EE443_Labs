@@ -118,7 +118,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(input)
-	(rect -96 224 72 240)
+	(rect -80 200 88 216)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "W1[2..0]" (rect 5 0 47 12)(font "Arial" ))
 	(pt 168 8)
@@ -134,7 +134,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(input)
-	(rect -96 240 72 256)
+	(rect -80 216 88 232)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "W2[2..0]" (rect 5 0 47 12)(font "Arial" ))
 	(pt 168 8)
@@ -214,7 +214,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(input)
-	(rect -96 256 72 272)
+	(rect -80 232 88 248)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "REGD" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
@@ -498,7 +498,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 64 168 240 280)
+	(rect 88 176 264 288)
 	(text "MUX2X3" (rect 5 0 45 12)(font "Arial" ))
 	(text "inst5" (rect 8 96 30 113)(font "Intel Clear" ))
 	(port
@@ -717,54 +717,6 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(pt 72 216)
-	(pt 64 216)
-	(bus)
-)
-(connector
-	(pt 72 232)
-	(pt 64 232)
-	(bus)
-)
-(connector
-	(pt 72 264)
-	(pt 64 264)
-)
-(connector
-	(pt 280 296)
-	(pt 280 200)
-	(bus)
-)
-(connector
-	(pt 280 200)
-	(pt 240 200)
-	(bus)
-)
-(connector
-	(pt 72 216)
-	(pt 72 232)
-	(bus)
-)
-(connector
-	(pt 72 232)
-	(pt 72 248)
-	(bus)
-)
-(connector
-	(pt 64 200)
-	(pt 64 216)
-	(bus)
-)
-(connector
-	(pt 64 216)
-	(pt 64 232)
-	(bus)
-)
-(connector
-	(pt 64 232)
-	(pt 64 264)
-)
-(connector
 	(pt 328 312)
 	(pt 328 304)
 )
@@ -791,6 +743,13 @@ https://fpgasoftware.intel.com/eula.
 	(pt 312 360)
 	(bus)
 )
-(junction (pt 64 232))
-(junction (pt 72 232))
-(junction (pt 64 216))
+(connector
+	(pt 280 296)
+	(pt 280 208)
+	(bus)
+)
+(connector
+	(pt 280 208)
+	(pt 264 208)
+	(bus)
+)

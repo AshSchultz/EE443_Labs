@@ -88,6 +88,6 @@ begin
 		
 		COUT <= c(4);
 		
-		ZERO <= NOT (z(0) OR z(1) OR z(2) OR z(3));
+		ZERO <= (z(0) AND z(1) AND z(2) AND z(3));
 
 end behavior;

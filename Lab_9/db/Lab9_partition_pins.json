@@ -364,10 +364,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "BRADDER_OUT[0]",
-					"strict" : false
-				},
-				{
 					"name" : "DMEMOUT[15]",
 					"strict" : false
 				},
@@ -716,10 +712,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "JOUT[0]",
-					"strict" : false
-				},
-				{
 					"name" : "JUMPMUX_OUT[15]",
 					"strict" : false
 				},
@@ -780,10 +772,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "JUMPMUX_OUT[0]",
-					"strict" : false
-				},
-				{
 					"name" : "PCP2[15]",
 					"strict" : false
 				},
@@ -841,10 +829,6 @@
 				},
 				{
 					"name" : "PCP2[1]",
-					"strict" : false
-				},
-				{
-					"name" : "PCP2[0]",
 					"strict" : false
 				},
 				{
